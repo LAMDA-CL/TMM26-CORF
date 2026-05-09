@@ -18,8 +18,8 @@
 </div>
 
 <div align="center">
-
-  <a href="https://arxiv.org/abs/2503.08510">
+    
+  <a href="https://tex.nju.edu.cn/share/92c1ef8b570543c09e563daf5c4762cc">
     <img src="https://img.shields.io/badge/Paper-red" alt="arXiv">
   </a>
 
@@ -28,16 +28,12 @@
 The code repository for "Cross-Sample Relational Fusion: Unifying Domain Generalization and Class-Incremental Learning" in PyTorch.  If you use any content of this repo for your work, please cite the following bib entry: 
 
 ```bibtex
-@article{zhou2023pycil,
-    author = {Da-Wei Zhou and Fu-Yun Wang and Han-Jia Ye and De-Chuan Zhan},
-    title = {PyCIL: a Python toolbox for class-incremental learning},
-    journal = {SCIENCE CHINA Information Sciences},
-    year = {2023},
-    volume = {66},
-    number = {9},
-    pages = {197101},
-    doi = {https://doi.org/10.1007/s11432-022-3600-y}
-  }
+@article{Xie26CORF,
+  author       = {Zhen-Hao Xie and Yan Wang and Hao Sun and Han-Jia Ye and De-Chuan Zhan and Da-Wei Zhou},
+  title        = {Cross-Sample Relational Fusion: Unifying Domain Generalization and Class-Incremental Learning},
+  journal      = {{IEEE} Trans. Multim.},
+  year         = {2026},
+}
 ```
 
 
@@ -48,7 +44,7 @@ The code repository for "Cross-Sample Relational Fusion: Unifying Domain General
 
 [05/2026] Code has been released.
 
-[05/2026] [arXiv](https://arxiv.org/abs/2503.08510) paper has been released.
+[05/2026] [arXiv]() paper has been released.
 
 
 # 📝 Introduction
@@ -61,11 +57,30 @@ Class-Incremental Learning (CIL) requires a learning system to learn new classes
 
 **Environment**
 
-1 [torch 1.13.0](https://github.com/pytorch/pytorch)
+1. [torch 2.0.1](https://github.com/pytorch/pytorch)
 
-2 [torchvision 0.15.0](https://github.com/pytorch/vision)
+2. [torchvision 0.15.2](https://github.com/pytorch/vision)
 
-3 [open-clip 2.30.0](https://github.com/mlfoundations/open_clip/releases/tag/v2.30.0)
+3. [tqdm](https://github.com/tqdm/tqdm)
+   
+4. [numpy](https://github.com/numpy/numpy)
+   
+5. [scipy](https://github.com/scipy/scipy)
+   
+6. [quadprog](https://github.com/quadprog/quadprog)
+ 
+7. [timm 0.6.12](https://github.com/huggingface/pytorch-image-models)
+   
+8. [easydict](https://github.com/makinacorpus/easydict)
+
+
+## 🔎 Datasets
+
+We have implemented the pre-processing datasets as follows:
+
+ - **OfficeHome**: Official website: [link](https://www.hemanthdv.org/officeHomeDataset.html) or Hugging Face: [link](https://huggingface.co/datasets/flwrlabs/office-home)
+- **PACS**: Official benchmark website: [link](https://domaingeneralization.github.io/) or Hugging Face: [link](https://huggingface.co/datasets/flwrlabs/pacs)
+- **DomainNet**: Official website: [link](https://ai.bu.edu/DomainNet/) or TensorFlow Datasets: [link](https://www.tensorflow.org/datasets/catalog/domainnet)
 
 ## 💡 Running scripts
 
@@ -81,6 +96,6 @@ This repo is based on [CIL_Survey](https://github.com/zhoudw-zdw/CIL_Survey) and
 
 ## 💭 Correspondence
 
-If you have any questions, please  contact me via [email](mailto:zhoudw@lamda.nju.edu.cn) or open an [issue](https://github.com/RenaissCode/ENGINE/issues/new).
+If you have any questions, please  contact me via [email](mailto:zhoudw@lamda.nju.edu.cn).
 
 
