@@ -1,0 +1,1263 @@
+2025-06-27 15:55:40,033 [trainer.py] => config: ./exps/icarl.json
+2025-06-27 15:55:40,033 [trainer.py] => prefix: reproduce
+2025-06-27 15:55:40,033 [trainer.py] => dataset: officehome
+2025-06-27 15:55:40,033 [trainer.py] => device: [device(type='cuda', index=1)]
+2025-06-27 15:55:40,033 [trainer.py] => topk: 5
+2025-06-27 15:55:40,033 [trainer.py] => inter_refinement: True
+2025-06-27 15:55:40,033 [trainer.py] => intra_refinement: True
+2025-06-27 15:55:40,033 [trainer.py] => inter_ref_high: True
+2025-06-27 15:55:40,033 [trainer.py] => intra_ref_high: True
+2025-06-27 15:55:40,033 [trainer.py] => lamda_ref: 0.15
+2025-06-27 15:55:40,033 [trainer.py] => kernel: True
+2025-06-27 15:55:40,033 [trainer.py] => k_cosine: True
+2025-06-27 15:55:40,033 [trainer.py] => k_tstd: True
+2025-06-27 15:55:40,033 [trainer.py] => lamda_kernel: 0.01
+2025-06-27 15:55:40,033 [trainer.py] => EPSILON: 1e-08
+2025-06-27 15:55:40,033 [trainer.py] => batch_size: 64
+2025-06-27 15:55:40,033 [trainer.py] => init_epoch: 200
+2025-06-27 15:55:40,033 [trainer.py] => epochs: 200
+2025-06-27 15:55:40,034 [trainer.py] => memory_size: 1300
+2025-06-27 15:55:40,034 [trainer.py] => memory_per_class: 20
+2025-06-27 15:55:40,034 [trainer.py] => learning_rate: 0.1
+2025-06-27 15:55:40,034 [trainer.py] => init_weight_decay: 0.0005
+2025-06-27 15:55:40,034 [trainer.py] => weight_decay: 0.0002
+2025-06-27 15:55:40,034 [trainer.py] => T: 2
+2025-06-27 15:55:40,034 [trainer.py] => num_workers: 2
+2025-06-27 15:55:40,034 [trainer.py] => fixed_memory: False
+2025-06-27 15:55:40,034 [trainer.py] => shuffle: True
+2025-06-27 15:55:40,034 [trainer.py] => init_cls: 13
+2025-06-27 15:55:40,034 [trainer.py] => increment: 13
+2025-06-27 15:55:40,034 [trainer.py] => model_name: icarl
+2025-06-27 15:55:40,034 [trainer.py] => convnet_type: resnet34
+2025-06-27 15:55:40,034 [trainer.py] => seed: 1993
+2025-06-27 15:55:40,034 [trainer.py] => source_domain: ['Art', 'Clipart', 'Real World']
+2025-06-27 15:55:40,034 [trainer.py] => target_domain: Product
+2025-06-27 15:55:40,034 [trainer.py] => resume: False
+2025-06-27 15:55:40,080 [data_manager.py] => [22, 56, 44, 45, 13, 8, 23, 54, 35, 52, 34, 61, 16, 6, 55, 20, 14, 38, 17, 63, 42, 10, 59, 43, 24, 2, 62, 21, 1, 15, 0, 37, 53, 27, 18, 46, 12, 25, 40, 30, 19, 47, 26, 36, 7, 28, 11, 5, 32, 41, 50, 4, 51, 58, 9, 60, 39, 31, 48, 3, 29, 64, 49, 57, 33]
+2025-06-27 15:55:42,955 [trainer.py] => Training from scratch
+2025-06-27 15:55:42,956 [trainer.py] => All params: 21284672
+2025-06-27 15:55:42,956 [trainer.py] => Trainable params: 21284672
+2025-06-27 15:55:42,957 [icarl.py] => Learning on 0-13
+2025-06-27 15:56:06,491 [icarl.py] => Task 0, Epoch 1/200 => Loss 6.594, Loss_clf 6.594, Train_accy 7.52, Test_accy {'Art': 9.68, 'Clipart': 11.24, 'Real World': 8.15, 'Product': 9.62}
+2025-06-27 15:56:21,946 [icarl.py] => Task 0, Epoch 2/200 => Loss 3.982, Loss_clf 3.982, Train_accy 8.95
+2025-06-27 15:56:37,305 [icarl.py] => Task 0, Epoch 3/200 => Loss 3.239, Loss_clf 3.239, Train_accy 10.83
+2025-06-27 15:56:52,564 [icarl.py] => Task 0, Epoch 4/200 => Loss 3.082, Loss_clf 3.082, Train_accy 12.66
+2025-06-27 15:57:08,149 [icarl.py] => Task 0, Epoch 5/200 => Loss 3.014, Loss_clf 3.014, Train_accy 13.37
+2025-06-27 15:57:22,666 [icarl.py] => Task 0, Epoch 6/200 => Loss 2.945, Loss_clf 2.945, Train_accy 13.29
+2025-06-27 15:57:37,020 [icarl.py] => Task 0, Epoch 7/200 => Loss 2.933, Loss_clf 2.933, Train_accy 14.69
+2025-06-27 15:57:51,764 [icarl.py] => Task 0, Epoch 8/200 => Loss 2.886, Loss_clf 2.886, Train_accy 15.73
+2025-06-27 15:58:06,887 [icarl.py] => Task 0, Epoch 9/200 => Loss 2.946, Loss_clf 2.946, Train_accy 15.07
+2025-06-27 15:58:22,234 [icarl.py] => Task 0, Epoch 10/200 => Loss 2.844, Loss_clf 2.844, Train_accy 15.78
+2025-06-27 15:58:37,098 [icarl.py] => Task 0, Epoch 11/200 => Loss 2.803, Loss_clf 2.803, Train_accy 17.11
+2025-06-27 15:58:51,756 [icarl.py] => Task 0, Epoch 12/200 => Loss 2.795, Loss_clf 2.795, Train_accy 17.34
+2025-06-27 15:59:06,913 [icarl.py] => Task 0, Epoch 13/200 => Loss 2.828, Loss_clf 2.828, Train_accy 17.62
+2025-06-27 15:59:21,960 [icarl.py] => Task 0, Epoch 14/200 => Loss 2.794, Loss_clf 2.794, Train_accy 19.11
+2025-06-27 15:59:36,792 [icarl.py] => Task 0, Epoch 15/200 => Loss 2.773, Loss_clf 2.773, Train_accy 18.71
+2025-06-27 15:59:51,241 [icarl.py] => Task 0, Epoch 16/200 => Loss 2.749, Loss_clf 2.749, Train_accy 19.78
+2025-06-27 16:00:05,890 [icarl.py] => Task 0, Epoch 17/200 => Loss 2.675, Loss_clf 2.675, Train_accy 22.06
+2025-06-27 16:00:20,384 [icarl.py] => Task 0, Epoch 18/200 => Loss 2.655, Loss_clf 2.655, Train_accy 21.89
+2025-06-27 16:00:35,484 [icarl.py] => Task 0, Epoch 19/200 => Loss 2.644, Loss_clf 2.644, Train_accy 22.40
+2025-06-27 16:00:50,192 [icarl.py] => Task 0, Epoch 20/200 => Loss 2.648, Loss_clf 2.648, Train_accy 22.98
+2025-06-27 16:01:11,722 [icarl.py] => Task 0, Epoch 21/200 => Loss 2.684, Loss_clf 2.684, Train_accy 21.66, Test_accy {'Art': 21.51, 'Clipart': 28.65, 'Real World': 27.17, 'Product': 21.63}
+2025-06-27 16:01:27,069 [icarl.py] => Task 0, Epoch 22/200 => Loss 2.624, Loss_clf 2.624, Train_accy 23.26
+2025-06-27 16:01:42,105 [icarl.py] => Task 0, Epoch 23/200 => Loss 2.614, Loss_clf 2.614, Train_accy 23.85
+2025-06-27 16:01:56,829 [icarl.py] => Task 0, Epoch 24/200 => Loss 2.582, Loss_clf 2.582, Train_accy 23.70
+2025-06-27 16:02:11,797 [icarl.py] => Task 0, Epoch 25/200 => Loss 2.531, Loss_clf 2.531, Train_accy 24.82
+2025-06-27 16:02:26,321 [icarl.py] => Task 0, Epoch 26/200 => Loss 2.530, Loss_clf 2.530, Train_accy 25.17
+2025-06-27 16:02:40,764 [icarl.py] => Task 0, Epoch 27/200 => Loss 2.504, Loss_clf 2.504, Train_accy 26.26
+2025-06-27 16:02:55,637 [icarl.py] => Task 0, Epoch 28/200 => Loss 2.482, Loss_clf 2.482, Train_accy 25.79
+2025-06-27 16:03:10,373 [icarl.py] => Task 0, Epoch 29/200 => Loss 2.427, Loss_clf 2.427, Train_accy 27.86
+2025-06-27 16:03:24,893 [icarl.py] => Task 0, Epoch 30/200 => Loss 2.400, Loss_clf 2.400, Train_accy 28.65
+2025-06-27 16:03:40,239 [icarl.py] => Task 0, Epoch 31/200 => Loss 2.371, Loss_clf 2.371, Train_accy 29.26
+2025-06-27 16:03:54,730 [icarl.py] => Task 0, Epoch 32/200 => Loss 2.350, Loss_clf 2.350, Train_accy 29.55
+2025-06-27 16:04:10,411 [icarl.py] => Task 0, Epoch 33/200 => Loss 2.332, Loss_clf 2.332, Train_accy 29.79
+2025-06-27 16:04:25,638 [icarl.py] => Task 0, Epoch 34/200 => Loss 2.292, Loss_clf 2.292, Train_accy 30.37
+2025-06-27 16:04:41,172 [icarl.py] => Task 0, Epoch 35/200 => Loss 2.321, Loss_clf 2.321, Train_accy 29.14
+2025-06-27 16:04:56,810 [icarl.py] => Task 0, Epoch 36/200 => Loss 2.265, Loss_clf 2.265, Train_accy 32.07
+2025-06-27 16:05:12,246 [icarl.py] => Task 0, Epoch 37/200 => Loss 2.283, Loss_clf 2.283, Train_accy 31.37
+2025-06-27 16:05:27,179 [icarl.py] => Task 0, Epoch 38/200 => Loss 2.257, Loss_clf 2.257, Train_accy 31.82
+2025-06-27 16:05:42,588 [icarl.py] => Task 0, Epoch 39/200 => Loss 2.255, Loss_clf 2.255, Train_accy 33.41
+2025-06-27 16:05:57,524 [icarl.py] => Task 0, Epoch 40/200 => Loss 2.215, Loss_clf 2.215, Train_accy 35.25
+2025-06-27 16:06:18,880 [icarl.py] => Task 0, Epoch 41/200 => Loss 2.167, Loss_clf 2.167, Train_accy 35.76, Test_accy {'Art': 32.26, 'Clipart': 41.01, 'Real World': 32.07, 'Product': 37.5}
+2025-06-27 16:06:34,262 [icarl.py] => Task 0, Epoch 42/200 => Loss 2.174, Loss_clf 2.174, Train_accy 35.33
+2025-06-27 16:06:49,156 [icarl.py] => Task 0, Epoch 43/200 => Loss 2.157, Loss_clf 2.157, Train_accy 36.24
+2025-06-27 16:07:04,544 [icarl.py] => Task 0, Epoch 44/200 => Loss 2.140, Loss_clf 2.140, Train_accy 36.37
+2025-06-27 16:07:19,725 [icarl.py] => Task 0, Epoch 45/200 => Loss 2.077, Loss_clf 2.077, Train_accy 39.05
+2025-06-27 16:07:34,687 [icarl.py] => Task 0, Epoch 46/200 => Loss 2.113, Loss_clf 2.113, Train_accy 37.68
+2025-06-27 16:07:49,604 [icarl.py] => Task 0, Epoch 47/200 => Loss 2.029, Loss_clf 2.029, Train_accy 40.48
+2025-06-27 16:08:03,981 [icarl.py] => Task 0, Epoch 48/200 => Loss 2.009, Loss_clf 2.009, Train_accy 39.36
+2025-06-27 16:08:18,942 [icarl.py] => Task 0, Epoch 49/200 => Loss 2.043, Loss_clf 2.043, Train_accy 38.43
+2025-06-27 16:08:33,805 [icarl.py] => Task 0, Epoch 50/200 => Loss 2.016, Loss_clf 2.016, Train_accy 40.81
+2025-06-27 16:08:48,163 [icarl.py] => Task 0, Epoch 51/200 => Loss 1.989, Loss_clf 1.989, Train_accy 41.99
+2025-06-27 16:09:02,988 [icarl.py] => Task 0, Epoch 52/200 => Loss 1.932, Loss_clf 1.932, Train_accy 42.12
+2025-06-27 16:09:17,508 [icarl.py] => Task 0, Epoch 53/200 => Loss 1.891, Loss_clf 1.891, Train_accy 42.48
+2025-06-27 16:09:32,432 [icarl.py] => Task 0, Epoch 54/200 => Loss 1.897, Loss_clf 1.897, Train_accy 43.29
+2025-06-27 16:09:47,496 [icarl.py] => Task 0, Epoch 55/200 => Loss 1.887, Loss_clf 1.887, Train_accy 42.91
+2025-06-27 16:10:02,332 [icarl.py] => Task 0, Epoch 56/200 => Loss 1.849, Loss_clf 1.849, Train_accy 45.31
+2025-06-27 16:10:17,353 [icarl.py] => Task 0, Epoch 57/200 => Loss 1.850, Loss_clf 1.850, Train_accy 46.79
+2025-06-27 16:10:32,379 [icarl.py] => Task 0, Epoch 58/200 => Loss 1.887, Loss_clf 1.887, Train_accy 44.34
+2025-06-27 16:10:47,259 [icarl.py] => Task 0, Epoch 59/200 => Loss 1.820, Loss_clf 1.820, Train_accy 45.08
+2025-06-27 16:11:01,933 [icarl.py] => Task 0, Epoch 60/200 => Loss 1.827, Loss_clf 1.827, Train_accy 46.52
+2025-06-27 16:11:23,285 [icarl.py] => Task 0, Epoch 61/200 => Loss 1.770, Loss_clf 1.770, Train_accy 47.69, Test_accy {'Art': 32.26, 'Clipart': 56.18, 'Real World': 40.76, 'Product': 41.83}
+2025-06-27 16:11:38,286 [icarl.py] => Task 0, Epoch 62/200 => Loss 1.784, Loss_clf 1.784, Train_accy 47.90
+2025-06-27 16:11:52,753 [icarl.py] => Task 0, Epoch 63/200 => Loss 1.746, Loss_clf 1.746, Train_accy 47.71
+2025-06-27 16:12:07,434 [icarl.py] => Task 0, Epoch 64/200 => Loss 1.734, Loss_clf 1.734, Train_accy 49.39
+2025-06-27 16:12:22,108 [icarl.py] => Task 0, Epoch 65/200 => Loss 1.689, Loss_clf 1.689, Train_accy 49.54
+2025-06-27 16:12:37,174 [icarl.py] => Task 0, Epoch 66/200 => Loss 1.723, Loss_clf 1.723, Train_accy 49.22
+2025-06-27 16:12:51,985 [icarl.py] => Task 0, Epoch 67/200 => Loss 1.640, Loss_clf 1.640, Train_accy 52.53
+2025-06-27 16:13:07,676 [icarl.py] => Task 0, Epoch 68/200 => Loss 1.625, Loss_clf 1.625, Train_accy 51.82
+2025-06-27 16:13:22,441 [icarl.py] => Task 0, Epoch 69/200 => Loss 1.605, Loss_clf 1.605, Train_accy 53.26
+2025-06-27 16:13:36,816 [icarl.py] => Task 0, Epoch 70/200 => Loss 1.522, Loss_clf 1.522, Train_accy 54.72
+2025-06-27 16:13:51,190 [icarl.py] => Task 0, Epoch 71/200 => Loss 1.486, Loss_clf 1.486, Train_accy 53.82
+2025-06-27 16:14:05,964 [icarl.py] => Task 0, Epoch 72/200 => Loss 1.541, Loss_clf 1.541, Train_accy 54.20
+2025-06-27 16:14:20,331 [icarl.py] => Task 0, Epoch 73/200 => Loss 1.514, Loss_clf 1.514, Train_accy 55.19
+2025-06-27 16:14:35,104 [icarl.py] => Task 0, Epoch 74/200 => Loss 1.467, Loss_clf 1.467, Train_accy 56.25
+2025-06-27 16:14:49,683 [icarl.py] => Task 0, Epoch 75/200 => Loss 1.537, Loss_clf 1.537, Train_accy 55.00
+2025-06-27 16:15:04,249 [icarl.py] => Task 0, Epoch 76/200 => Loss 1.531, Loss_clf 1.531, Train_accy 54.76
+2025-06-27 16:15:18,926 [icarl.py] => Task 0, Epoch 77/200 => Loss 1.449, Loss_clf 1.449, Train_accy 56.90
+2025-06-27 16:15:33,720 [icarl.py] => Task 0, Epoch 78/200 => Loss 1.499, Loss_clf 1.499, Train_accy 56.43
+2025-06-27 16:15:47,910 [icarl.py] => Task 0, Epoch 79/200 => Loss 1.457, Loss_clf 1.457, Train_accy 56.99
+2025-06-27 16:16:02,532 [icarl.py] => Task 0, Epoch 80/200 => Loss 1.410, Loss_clf 1.410, Train_accy 58.54
+2025-06-27 16:16:23,209 [icarl.py] => Task 0, Epoch 81/200 => Loss 1.446, Loss_clf 1.446, Train_accy 56.53, Test_accy {'Art': 41.94, 'Clipart': 55.62, 'Real World': 53.8, 'Product': 49.52}
+2025-06-27 16:16:38,048 [icarl.py] => Task 0, Epoch 82/200 => Loss 1.385, Loss_clf 1.385, Train_accy 60.74
+2025-06-27 16:16:54,018 [icarl.py] => Task 0, Epoch 83/200 => Loss 1.355, Loss_clf 1.355, Train_accy 57.94
+2025-06-27 16:17:09,263 [icarl.py] => Task 0, Epoch 84/200 => Loss 1.353, Loss_clf 1.353, Train_accy 59.37
+2025-06-27 16:17:24,244 [icarl.py] => Task 0, Epoch 85/200 => Loss 1.291, Loss_clf 1.291, Train_accy 62.15
+2025-06-27 16:17:38,607 [icarl.py] => Task 0, Epoch 86/200 => Loss 1.383, Loss_clf 1.383, Train_accy 58.44
+2025-06-27 16:17:53,156 [icarl.py] => Task 0, Epoch 87/200 => Loss 1.318, Loss_clf 1.318, Train_accy 61.35
+2025-06-27 16:18:07,464 [icarl.py] => Task 0, Epoch 88/200 => Loss 1.379, Loss_clf 1.379, Train_accy 59.27
+2025-06-27 16:18:22,042 [icarl.py] => Task 0, Epoch 89/200 => Loss 1.288, Loss_clf 1.288, Train_accy 62.33
+2025-06-27 16:18:36,530 [icarl.py] => Task 0, Epoch 90/200 => Loss 1.249, Loss_clf 1.249, Train_accy 63.33
+2025-06-27 16:18:50,908 [icarl.py] => Task 0, Epoch 91/200 => Loss 1.245, Loss_clf 1.245, Train_accy 62.89
+2025-06-27 16:19:05,403 [icarl.py] => Task 0, Epoch 92/200 => Loss 1.297, Loss_clf 1.297, Train_accy 61.49
+2025-06-27 16:19:20,160 [icarl.py] => Task 0, Epoch 93/200 => Loss 1.213, Loss_clf 1.213, Train_accy 64.00
+2025-06-27 16:19:34,368 [icarl.py] => Task 0, Epoch 94/200 => Loss 1.175, Loss_clf 1.175, Train_accy 64.85
+2025-06-27 16:19:49,101 [icarl.py] => Task 0, Epoch 95/200 => Loss 1.217, Loss_clf 1.217, Train_accy 64.97
+2025-06-27 16:20:03,911 [icarl.py] => Task 0, Epoch 96/200 => Loss 1.119, Loss_clf 1.119, Train_accy 67.35
+2025-06-27 16:20:18,459 [icarl.py] => Task 0, Epoch 97/200 => Loss 1.161, Loss_clf 1.161, Train_accy 65.76
+2025-06-27 16:20:33,256 [icarl.py] => Task 0, Epoch 98/200 => Loss 1.158, Loss_clf 1.158, Train_accy 65.80
+2025-06-27 16:20:47,921 [icarl.py] => Task 0, Epoch 99/200 => Loss 1.133, Loss_clf 1.133, Train_accy 67.26
+2025-06-27 16:21:03,540 [icarl.py] => Task 0, Epoch 100/200 => Loss 1.120, Loss_clf 1.120, Train_accy 68.60
+2025-06-27 16:21:24,337 [icarl.py] => Task 0, Epoch 101/200 => Loss 1.107, Loss_clf 1.107, Train_accy 67.71, Test_accy {'Art': 41.94, 'Clipart': 57.3, 'Real World': 60.87, 'Product': 55.29}
+2025-06-27 16:21:38,900 [icarl.py] => Task 0, Epoch 102/200 => Loss 1.150, Loss_clf 1.150, Train_accy 66.47
+2025-06-27 16:21:53,451 [icarl.py] => Task 0, Epoch 103/200 => Loss 1.103, Loss_clf 1.103, Train_accy 66.95
+2025-06-27 16:22:07,672 [icarl.py] => Task 0, Epoch 104/200 => Loss 1.082, Loss_clf 1.082, Train_accy 68.18
+2025-06-27 16:22:22,629 [icarl.py] => Task 0, Epoch 105/200 => Loss 1.065, Loss_clf 1.065, Train_accy 69.17
+2025-06-27 16:22:36,894 [icarl.py] => Task 0, Epoch 106/200 => Loss 1.020, Loss_clf 1.020, Train_accy 70.56
+2025-06-27 16:22:51,463 [icarl.py] => Task 0, Epoch 107/200 => Loss 1.043, Loss_clf 1.043, Train_accy 70.60
+2025-06-27 16:23:06,205 [icarl.py] => Task 0, Epoch 108/200 => Loss 1.079, Loss_clf 1.079, Train_accy 70.34
+2025-06-27 16:23:21,048 [icarl.py] => Task 0, Epoch 109/200 => Loss 1.014, Loss_clf 1.014, Train_accy 71.19
+2025-06-27 16:23:35,724 [icarl.py] => Task 0, Epoch 110/200 => Loss 1.014, Loss_clf 1.014, Train_accy 71.89
+2025-06-27 16:23:49,979 [icarl.py] => Task 0, Epoch 111/200 => Loss 0.978, Loss_clf 0.978, Train_accy 71.86
+2025-06-27 16:24:04,584 [icarl.py] => Task 0, Epoch 112/200 => Loss 0.981, Loss_clf 0.981, Train_accy 71.72
+2025-06-27 16:24:19,161 [icarl.py] => Task 0, Epoch 113/200 => Loss 1.020, Loss_clf 1.020, Train_accy 71.08
+2025-06-27 16:24:33,926 [icarl.py] => Task 0, Epoch 114/200 => Loss 0.878, Loss_clf 0.878, Train_accy 73.94
+2025-06-27 16:24:48,470 [icarl.py] => Task 0, Epoch 115/200 => Loss 0.883, Loss_clf 0.883, Train_accy 74.62
+2025-06-27 16:25:03,298 [icarl.py] => Task 0, Epoch 116/200 => Loss 0.914, Loss_clf 0.914, Train_accy 74.30
+2025-06-27 16:25:18,024 [icarl.py] => Task 0, Epoch 117/200 => Loss 0.880, Loss_clf 0.880, Train_accy 74.62
+2025-06-27 16:25:32,593 [icarl.py] => Task 0, Epoch 118/200 => Loss 0.833, Loss_clf 0.833, Train_accy 76.72
+2025-06-27 16:25:47,187 [icarl.py] => Task 0, Epoch 119/200 => Loss 0.869, Loss_clf 0.869, Train_accy 75.25
+2025-06-27 16:26:01,451 [icarl.py] => Task 0, Epoch 120/200 => Loss 0.858, Loss_clf 0.858, Train_accy 74.89
+2025-06-27 16:26:22,211 [icarl.py] => Task 0, Epoch 121/200 => Loss 0.787, Loss_clf 0.787, Train_accy 77.37, Test_accy {'Art': 51.61, 'Clipart': 65.17, 'Real World': 52.72, 'Product': 53.85}
+2025-06-27 16:26:36,859 [icarl.py] => Task 0, Epoch 122/200 => Loss 0.814, Loss_clf 0.814, Train_accy 77.18
+2025-06-27 16:26:51,375 [icarl.py] => Task 0, Epoch 123/200 => Loss 0.783, Loss_clf 0.783, Train_accy 78.38
+2025-06-27 16:27:06,078 [icarl.py] => Task 0, Epoch 124/200 => Loss 0.801, Loss_clf 0.801, Train_accy 77.89
+2025-06-27 16:27:20,547 [icarl.py] => Task 0, Epoch 125/200 => Loss 0.763, Loss_clf 0.763, Train_accy 78.58
+2025-06-27 16:27:35,133 [icarl.py] => Task 0, Epoch 126/200 => Loss 0.726, Loss_clf 0.726, Train_accy 79.35
+2025-06-27 16:27:49,479 [icarl.py] => Task 0, Epoch 127/200 => Loss 0.813, Loss_clf 0.813, Train_accy 77.26
+2025-06-27 16:28:04,213 [icarl.py] => Task 0, Epoch 128/200 => Loss 0.745, Loss_clf 0.745, Train_accy 78.76
+2025-06-27 16:28:18,822 [icarl.py] => Task 0, Epoch 129/200 => Loss 0.727, Loss_clf 0.727, Train_accy 78.95
+2025-06-27 16:28:33,711 [icarl.py] => Task 0, Epoch 130/200 => Loss 0.741, Loss_clf 0.741, Train_accy 78.93
+2025-06-27 16:28:49,062 [icarl.py] => Task 0, Epoch 131/200 => Loss 0.685, Loss_clf 0.685, Train_accy 81.66
+2025-06-27 16:29:03,808 [icarl.py] => Task 0, Epoch 132/200 => Loss 0.728, Loss_clf 0.728, Train_accy 79.92
+2025-06-27 16:29:18,640 [icarl.py] => Task 0, Epoch 133/200 => Loss 0.694, Loss_clf 0.694, Train_accy 81.56
+2025-06-27 16:29:32,737 [icarl.py] => Task 0, Epoch 134/200 => Loss 0.678, Loss_clf 0.678, Train_accy 80.84
+2025-06-27 16:29:47,077 [icarl.py] => Task 0, Epoch 135/200 => Loss 0.701, Loss_clf 0.701, Train_accy 80.91
+2025-06-27 16:30:01,907 [icarl.py] => Task 0, Epoch 136/200 => Loss 0.695, Loss_clf 0.695, Train_accy 81.08
+2025-06-27 16:30:16,312 [icarl.py] => Task 0, Epoch 137/200 => Loss 0.657, Loss_clf 0.657, Train_accy 80.60
+2025-06-27 16:30:31,113 [icarl.py] => Task 0, Epoch 138/200 => Loss 0.675, Loss_clf 0.675, Train_accy 81.42
+2025-06-27 16:30:45,827 [icarl.py] => Task 0, Epoch 139/200 => Loss 0.598, Loss_clf 0.598, Train_accy 83.50
+2025-06-27 16:31:00,238 [icarl.py] => Task 0, Epoch 140/200 => Loss 0.616, Loss_clf 0.616, Train_accy 82.21
+2025-06-27 16:31:21,400 [icarl.py] => Task 0, Epoch 141/200 => Loss 0.634, Loss_clf 0.634, Train_accy 82.72, Test_accy {'Art': 53.76, 'Clipart': 67.42, 'Real World': 55.98, 'Product': 54.33}
+2025-06-27 16:31:35,639 [icarl.py] => Task 0, Epoch 142/200 => Loss 0.603, Loss_clf 0.603, Train_accy 82.83
+2025-06-27 16:31:49,968 [icarl.py] => Task 0, Epoch 143/200 => Loss 0.590, Loss_clf 0.590, Train_accy 83.94
+2025-06-27 16:32:04,939 [icarl.py] => Task 0, Epoch 144/200 => Loss 0.641, Loss_clf 0.641, Train_accy 83.28
+2025-06-27 16:32:19,913 [icarl.py] => Task 0, Epoch 145/200 => Loss 0.621, Loss_clf 0.621, Train_accy 83.30
+2025-06-27 16:32:34,340 [icarl.py] => Task 0, Epoch 146/200 => Loss 0.578, Loss_clf 0.578, Train_accy 83.51
+2025-06-27 16:32:48,680 [icarl.py] => Task 0, Epoch 147/200 => Loss 0.589, Loss_clf 0.589, Train_accy 83.66
+2025-06-27 16:33:03,048 [icarl.py] => Task 0, Epoch 148/200 => Loss 0.581, Loss_clf 0.581, Train_accy 84.84
+2025-06-27 16:33:17,628 [icarl.py] => Task 0, Epoch 149/200 => Loss 0.597, Loss_clf 0.597, Train_accy 83.79
+2025-06-27 16:33:32,294 [icarl.py] => Task 0, Epoch 150/200 => Loss 0.548, Loss_clf 0.548, Train_accy 85.32
+2025-06-27 16:33:46,661 [icarl.py] => Task 0, Epoch 151/200 => Loss 0.551, Loss_clf 0.551, Train_accy 85.02
+2025-06-27 16:34:02,466 [icarl.py] => Task 0, Epoch 152/200 => Loss 0.559, Loss_clf 0.559, Train_accy 84.91
+2025-06-27 16:34:17,357 [icarl.py] => Task 0, Epoch 153/200 => Loss 0.542, Loss_clf 0.542, Train_accy 86.44
+2025-06-27 16:34:31,910 [icarl.py] => Task 0, Epoch 154/200 => Loss 0.494, Loss_clf 0.494, Train_accy 86.59
+2025-06-27 16:34:46,998 [icarl.py] => Task 0, Epoch 155/200 => Loss 0.519, Loss_clf 0.519, Train_accy 85.60
+2025-06-27 16:35:01,715 [icarl.py] => Task 0, Epoch 156/200 => Loss 0.505, Loss_clf 0.505, Train_accy 86.38
+2025-06-27 16:35:16,103 [icarl.py] => Task 0, Epoch 157/200 => Loss 0.482, Loss_clf 0.482, Train_accy 87.31
+2025-06-27 16:35:30,468 [icarl.py] => Task 0, Epoch 158/200 => Loss 0.484, Loss_clf 0.484, Train_accy 86.51
+2025-06-27 16:35:44,867 [icarl.py] => Task 0, Epoch 159/200 => Loss 0.465, Loss_clf 0.465, Train_accy 87.25
+2025-06-27 16:35:59,434 [icarl.py] => Task 0, Epoch 160/200 => Loss 0.433, Loss_clf 0.433, Train_accy 87.98
+2025-06-27 16:36:20,520 [icarl.py] => Task 0, Epoch 161/200 => Loss 0.481, Loss_clf 0.481, Train_accy 87.41, Test_accy {'Art': 51.61, 'Clipart': 66.85, 'Real World': 60.33, 'Product': 56.25}
+2025-06-27 16:36:35,014 [icarl.py] => Task 0, Epoch 162/200 => Loss 0.471, Loss_clf 0.471, Train_accy 87.46
+2025-06-27 16:36:49,528 [icarl.py] => Task 0, Epoch 163/200 => Loss 0.510, Loss_clf 0.510, Train_accy 86.30
+2025-06-27 16:37:03,971 [icarl.py] => Task 0, Epoch 164/200 => Loss 0.465, Loss_clf 0.465, Train_accy 87.12
+2025-06-27 16:37:18,319 [icarl.py] => Task 0, Epoch 165/200 => Loss 0.445, Loss_clf 0.445, Train_accy 88.00
+2025-06-27 16:37:32,703 [icarl.py] => Task 0, Epoch 166/200 => Loss 0.483, Loss_clf 0.483, Train_accy 86.68
+2025-06-27 16:37:47,009 [icarl.py] => Task 0, Epoch 167/200 => Loss 0.479, Loss_clf 0.479, Train_accy 86.47
+2025-06-27 16:38:01,458 [icarl.py] => Task 0, Epoch 168/200 => Loss 0.451, Loss_clf 0.451, Train_accy 87.62
+2025-06-27 16:38:15,950 [icarl.py] => Task 0, Epoch 169/200 => Loss 0.445, Loss_clf 0.445, Train_accy 87.97
+2025-06-27 16:38:30,648 [icarl.py] => Task 0, Epoch 170/200 => Loss 0.506, Loss_clf 0.506, Train_accy 87.15
+2025-06-27 16:38:45,170 [icarl.py] => Task 0, Epoch 171/200 => Loss 0.461, Loss_clf 0.461, Train_accy 87.43
+2025-06-27 16:38:59,799 [icarl.py] => Task 0, Epoch 172/200 => Loss 0.419, Loss_clf 0.419, Train_accy 88.71
+2025-06-27 16:39:14,968 [icarl.py] => Task 0, Epoch 173/200 => Loss 0.432, Loss_clf 0.432, Train_accy 88.49
+2025-06-27 16:39:29,661 [icarl.py] => Task 0, Epoch 174/200 => Loss 0.383, Loss_clf 0.383, Train_accy 89.51
+2025-06-27 16:39:44,306 [icarl.py] => Task 0, Epoch 175/200 => Loss 0.398, Loss_clf 0.398, Train_accy 88.73
+2025-06-27 16:39:59,062 [icarl.py] => Task 0, Epoch 176/200 => Loss 0.407, Loss_clf 0.407, Train_accy 89.39
+2025-06-27 16:40:13,658 [icarl.py] => Task 0, Epoch 177/200 => Loss 0.422, Loss_clf 0.422, Train_accy 88.24
+2025-06-27 16:40:28,352 [icarl.py] => Task 0, Epoch 178/200 => Loss 0.420, Loss_clf 0.420, Train_accy 88.78
+2025-06-27 16:40:42,842 [icarl.py] => Task 0, Epoch 179/200 => Loss 0.423, Loss_clf 0.423, Train_accy 88.34
+2025-06-27 16:40:57,719 [icarl.py] => Task 0, Epoch 180/200 => Loss 0.386, Loss_clf 0.386, Train_accy 89.41
+2025-06-27 16:41:18,818 [icarl.py] => Task 0, Epoch 181/200 => Loss 0.377, Loss_clf 0.377, Train_accy 89.05, Test_accy {'Art': 54.84, 'Clipart': 69.66, 'Real World': 60.87, 'Product': 57.21}
+2025-06-27 16:41:33,028 [icarl.py] => Task 0, Epoch 182/200 => Loss 0.418, Loss_clf 0.418, Train_accy 88.11
+2025-06-27 16:41:47,692 [icarl.py] => Task 0, Epoch 183/200 => Loss 0.397, Loss_clf 0.397, Train_accy 89.44
+2025-06-27 16:42:01,968 [icarl.py] => Task 0, Epoch 184/200 => Loss 0.361, Loss_clf 0.361, Train_accy 90.42
+2025-06-27 16:42:16,273 [icarl.py] => Task 0, Epoch 185/200 => Loss 0.381, Loss_clf 0.381, Train_accy 89.30
+2025-06-27 16:42:30,991 [icarl.py] => Task 0, Epoch 186/200 => Loss 0.418, Loss_clf 0.418, Train_accy 89.06
+2025-06-27 16:42:46,079 [icarl.py] => Task 0, Epoch 187/200 => Loss 0.376, Loss_clf 0.376, Train_accy 90.31
+2025-06-27 16:43:00,720 [icarl.py] => Task 0, Epoch 188/200 => Loss 0.394, Loss_clf 0.394, Train_accy 89.63
+2025-06-27 16:43:15,340 [icarl.py] => Task 0, Epoch 189/200 => Loss 0.350, Loss_clf 0.350, Train_accy 90.14
+2025-06-27 16:43:30,455 [icarl.py] => Task 0, Epoch 190/200 => Loss 0.391, Loss_clf 0.391, Train_accy 89.24
+2025-06-27 16:43:45,099 [icarl.py] => Task 0, Epoch 191/200 => Loss 0.379, Loss_clf 0.379, Train_accy 90.19
+2025-06-27 16:43:59,838 [icarl.py] => Task 0, Epoch 192/200 => Loss 0.364, Loss_clf 0.364, Train_accy 90.44
+2025-06-27 16:44:14,455 [icarl.py] => Task 0, Epoch 193/200 => Loss 0.347, Loss_clf 0.347, Train_accy 91.05
+2025-06-27 16:44:29,063 [icarl.py] => Task 0, Epoch 194/200 => Loss 0.357, Loss_clf 0.357, Train_accy 90.72
+2025-06-27 16:44:43,663 [icarl.py] => Task 0, Epoch 195/200 => Loss 0.326, Loss_clf 0.326, Train_accy 91.16
+2025-06-27 16:44:58,754 [icarl.py] => Task 0, Epoch 196/200 => Loss 0.359, Loss_clf 0.359, Train_accy 90.32
+2025-06-27 16:45:13,637 [icarl.py] => Task 0, Epoch 197/200 => Loss 0.341, Loss_clf 0.341, Train_accy 90.55
+2025-06-27 16:45:27,893 [icarl.py] => Task 0, Epoch 198/200 => Loss 0.343, Loss_clf 0.343, Train_accy 90.65
+2025-06-27 16:45:43,002 [icarl.py] => Task 0, Epoch 199/200 => Loss 0.330, Loss_clf 0.330, Train_accy 90.88
+2025-06-27 16:45:57,756 [icarl.py] => Task 0, Epoch 200/200 => Loss 0.328, Loss_clf 0.328, Train_accy 91.29
+2025-06-27 16:45:57,757 [base.py] => Reducing exemplars...(100 per classes)
+2025-06-27 16:45:57,757 [base.py] => Constructing exemplars...(100 per classes)
+2025-06-27 16:46:42,151 [icarl.py] => Exemplar size: 1300
+2025-06-27 16:46:42,522 [trainer.py] => CNN [Art]: {'total': 52.69, '00-12': 52.69, 'old': 0, 'new': 52.69}
+2025-06-27 16:46:42,523 [trainer.py] => NME [Art]: {'total': 55.91, '00-12': 55.91, 'old': 0, 'new': 55.91}
+2025-06-27 16:46:42,523 [trainer.py] => CNN [Art] top1 curve: [52.69]
+2025-06-27 16:46:42,523 [trainer.py] => CNN [Art] top5 curve: [77.42]
+2025-06-27 16:46:42,523 [trainer.py] => NME [Art] top1 curve: [55.91]
+2025-06-27 16:46:42,523 [trainer.py] => NME [Art] top5 curve: [84.95]
+2025-06-27 16:46:42,523 [trainer.py] => Average Accuracy [Art] (CNN): 52.69
+2025-06-27 16:46:42,523 [trainer.py] => Average Accuracy [Art] (NME): 55.91
+2025-06-27 16:46:42,523 [trainer.py] => CNN [Clipart]: {'total': 70.79, '00-12': 70.79, 'old': 0, 'new': 70.79}
+2025-06-27 16:46:42,523 [trainer.py] => NME [Clipart]: {'total': 70.22, '00-12': 70.22, 'old': 0, 'new': 70.22}
+2025-06-27 16:46:42,523 [trainer.py] => CNN [Clipart] top1 curve: [70.79]
+2025-06-27 16:46:42,523 [trainer.py] => CNN [Clipart] top5 curve: [92.13]
+2025-06-27 16:46:42,523 [trainer.py] => NME [Clipart] top1 curve: [70.22]
+2025-06-27 16:46:42,523 [trainer.py] => NME [Clipart] top5 curve: [94.94]
+2025-06-27 16:46:42,523 [trainer.py] => Average Accuracy [Clipart] (CNN): 70.79
+2025-06-27 16:46:42,523 [trainer.py] => Average Accuracy [Clipart] (NME): 70.22
+2025-06-27 16:46:42,523 [trainer.py] => CNN [Product]: {'total': 59.62, '00-12': 59.62, 'old': 0, 'new': 59.62}
+2025-06-27 16:46:42,523 [trainer.py] => NME [Product]: {'total': 58.17, '00-12': 58.17, 'old': 0, 'new': 58.17}
+2025-06-27 16:46:42,523 [trainer.py] => CNN [Product] top1 curve: [59.62]
+2025-06-27 16:46:42,523 [trainer.py] => CNN [Product] top5 curve: [88.94]
+2025-06-27 16:46:42,523 [trainer.py] => NME [Product] top1 curve: [58.17]
+2025-06-27 16:46:42,523 [trainer.py] => NME [Product] top5 curve: [89.9]
+2025-06-27 16:46:42,524 [trainer.py] => Average Accuracy [Product] (CNN): 59.62
+2025-06-27 16:46:42,524 [trainer.py] => Average Accuracy [Product] (NME): 58.17
+2025-06-27 16:46:42,524 [trainer.py] => CNN [Real World]: {'total': 63.59, '00-12': 63.59, 'old': 0, 'new': 63.59}
+2025-06-27 16:46:42,524 [trainer.py] => NME [Real World]: {'total': 63.04, '00-12': 63.04, 'old': 0, 'new': 63.04}
+2025-06-27 16:46:42,524 [trainer.py] => CNN [Real World] top1 curve: [63.59]
+2025-06-27 16:46:42,524 [trainer.py] => CNN [Real World] top5 curve: [89.67]
+2025-06-27 16:46:42,524 [trainer.py] => NME [Real World] top1 curve: [63.04]
+2025-06-27 16:46:42,524 [trainer.py] => NME [Real World] top5 curve: [94.57]
+2025-06-27 16:46:42,524 [trainer.py] => Average Accuracy [Real World] (CNN): 63.59
+2025-06-27 16:46:42,524 [trainer.py] => Average Accuracy [Real World] (NME): 63.04
+2025-06-27 16:46:42,524 [trainer.py] => NME Harmonic Mean : 60.5148
+2025-06-27 16:46:42,524 [trainer.py] => NME Macro Mean : 61.8350
+2025-06-27 16:46:42,524 [trainer.py] => CNN Harmonic Mean : 60.9576
+2025-06-27 16:46:42,524 [trainer.py] => CNN Macro Mean : 61.6725
+2025-06-27 16:46:42,525 [trainer.py] => All params: 21331355
+2025-06-27 16:46:42,525 [trainer.py] => Trainable params: 21331355
+2025-06-27 16:46:42,526 [icarl.py] => Learning on 13-26
+2025-06-27 16:47:18,746 [icarl.py] => Task 1, Epoch 1/200 => Loss 5.903, Loss_clf 3.645, Loss_kd 2.243, Loss_kernel 0.015, Train_accy 16.74, Test_accy {'Art': 22.22, 'Clipart': 26.87, 'Real World': 31.01, 'Product': 27.25}
+2025-06-27 16:47:44,214 [icarl.py] => Task 1, Epoch 2/200 => Loss 5.043, Loss_clf 2.920, Loss_kd 2.111, Loss_kernel 0.012, Train_accy 23.27
+2025-06-27 16:48:09,424 [icarl.py] => Task 1, Epoch 3/200 => Loss 4.779, Loss_clf 2.726, Loss_kd 2.044, Loss_kernel 0.009, Train_accy 27.80
+2025-06-27 16:48:35,121 [icarl.py] => Task 1, Epoch 4/200 => Loss 4.585, Loss_clf 2.599, Loss_kd 1.978, Loss_kernel 0.008, Train_accy 30.45
+2025-06-27 16:49:00,670 [icarl.py] => Task 1, Epoch 5/200 => Loss 4.450, Loss_clf 2.488, Loss_kd 1.955, Loss_kernel 0.008, Train_accy 32.83
+2025-06-27 16:49:37,051 [icarl.py] => Task 1, Epoch 6/200 => Loss 4.315, Loss_clf 2.378, Loss_kd 1.930, Loss_kernel 0.008, Train_accy 33.61, Test_accy {'Art': 20.0, 'Clipart': 28.53, 'Real World': 27.37, 'Product': 25.66}
+2025-06-27 16:50:02,362 [icarl.py] => Task 1, Epoch 7/200 => Loss 4.299, Loss_clf 2.374, Loss_kd 1.919, Loss_kernel 0.007, Train_accy 35.68
+2025-06-27 16:50:27,804 [icarl.py] => Task 1, Epoch 8/200 => Loss 4.209, Loss_clf 2.299, Loss_kd 1.902, Loss_kernel 0.008, Train_accy 36.29
+2025-06-27 16:50:53,002 [icarl.py] => Task 1, Epoch 9/200 => Loss 4.157, Loss_clf 2.251, Loss_kd 1.899, Loss_kernel 0.007, Train_accy 38.97
+2025-06-27 16:51:18,088 [icarl.py] => Task 1, Epoch 10/200 => Loss 4.052, Loss_clf 2.171, Loss_kd 1.873, Loss_kernel 0.007, Train_accy 39.64
+2025-06-27 16:51:52,228 [icarl.py] => Task 1, Epoch 11/200 => Loss 3.937, Loss_clf 2.077, Loss_kd 1.852, Loss_kernel 0.007, Train_accy 42.17, Test_accy {'Art': 27.22, 'Clipart': 47.09, 'Real World': 36.59, 'Product': 33.6}
+2025-06-27 16:52:16,890 [icarl.py] => Task 1, Epoch 12/200 => Loss 3.955, Loss_clf 2.082, Loss_kd 1.866, Loss_kernel 0.007, Train_accy 40.85
+2025-06-27 16:52:41,884 [icarl.py] => Task 1, Epoch 13/200 => Loss 3.956, Loss_clf 2.081, Loss_kd 1.868, Loss_kernel 0.007, Train_accy 42.27
+2025-06-27 16:53:06,988 [icarl.py] => Task 1, Epoch 14/200 => Loss 3.872, Loss_clf 2.016, Loss_kd 1.849, Loss_kernel 0.007, Train_accy 43.83
+2025-06-27 16:53:31,613 [icarl.py] => Task 1, Epoch 15/200 => Loss 3.807, Loss_clf 1.955, Loss_kd 1.845, Loss_kernel 0.007, Train_accy 45.50
+2025-06-27 16:54:05,921 [icarl.py] => Task 1, Epoch 16/200 => Loss 3.765, Loss_clf 1.930, Loss_kd 1.829, Loss_kernel 0.007, Train_accy 46.38, Test_accy {'Art': 30.0, 'Clipart': 45.15, 'Real World': 36.87, 'Product': 34.39}
+2025-06-27 16:54:31,252 [icarl.py] => Task 1, Epoch 17/200 => Loss 3.780, Loss_clf 1.944, Loss_kd 1.830, Loss_kernel 0.007, Train_accy 46.33
+2025-06-27 16:54:56,322 [icarl.py] => Task 1, Epoch 18/200 => Loss 3.678, Loss_clf 1.853, Loss_kd 1.818, Loss_kernel 0.007, Train_accy 48.31
+2025-06-27 16:55:21,635 [icarl.py] => Task 1, Epoch 19/200 => Loss 3.688, Loss_clf 1.858, Loss_kd 1.823, Loss_kernel 0.007, Train_accy 48.73
+2025-06-27 16:55:46,623 [icarl.py] => Task 1, Epoch 20/200 => Loss 3.615, Loss_clf 1.787, Loss_kd 1.820, Loss_kernel 0.007, Train_accy 50.38
+2025-06-27 16:56:21,111 [icarl.py] => Task 1, Epoch 21/200 => Loss 3.594, Loss_clf 1.778, Loss_kd 1.809, Loss_kernel 0.007, Train_accy 50.51, Test_accy {'Art': 32.22, 'Clipart': 48.48, 'Real World': 41.34, 'Product': 36.77}
+2025-06-27 16:56:46,224 [icarl.py] => Task 1, Epoch 22/200 => Loss 3.565, Loss_clf 1.752, Loss_kd 1.805, Loss_kernel 0.007, Train_accy 50.79
+2025-06-27 16:57:11,037 [icarl.py] => Task 1, Epoch 23/200 => Loss 3.512, Loss_clf 1.711, Loss_kd 1.795, Loss_kernel 0.006, Train_accy 52.42
+2025-06-27 16:57:36,545 [icarl.py] => Task 1, Epoch 24/200 => Loss 3.504, Loss_clf 1.698, Loss_kd 1.799, Loss_kernel 0.007, Train_accy 51.39
+2025-06-27 16:58:01,966 [icarl.py] => Task 1, Epoch 25/200 => Loss 3.435, Loss_clf 1.640, Loss_kd 1.788, Loss_kernel 0.007, Train_accy 54.12
+2025-06-27 16:58:35,902 [icarl.py] => Task 1, Epoch 26/200 => Loss 3.380, Loss_clf 1.578, Loss_kd 1.796, Loss_kernel 0.007, Train_accy 56.06, Test_accy {'Art': 28.89, 'Clipart': 50.14, 'Real World': 42.18, 'Product': 39.68}
+2025-06-27 16:59:00,994 [icarl.py] => Task 1, Epoch 27/200 => Loss 3.475, Loss_clf 1.673, Loss_kd 1.794, Loss_kernel 0.007, Train_accy 54.09
+2025-06-27 16:59:26,142 [icarl.py] => Task 1, Epoch 28/200 => Loss 3.367, Loss_clf 1.582, Loss_kd 1.778, Loss_kernel 0.007, Train_accy 56.06
+2025-06-27 16:59:51,477 [icarl.py] => Task 1, Epoch 29/200 => Loss 3.377, Loss_clf 1.578, Loss_kd 1.792, Loss_kernel 0.007, Train_accy 56.01
+2025-06-27 17:00:16,499 [icarl.py] => Task 1, Epoch 30/200 => Loss 3.335, Loss_clf 1.544, Loss_kd 1.784, Loss_kernel 0.007, Train_accy 56.93
+2025-06-27 17:00:50,575 [icarl.py] => Task 1, Epoch 31/200 => Loss 3.288, Loss_clf 1.508, Loss_kd 1.773, Loss_kernel 0.007, Train_accy 58.42, Test_accy {'Art': 33.89, 'Clipart': 55.96, 'Real World': 44.97, 'Product': 44.44}
+2025-06-27 17:01:15,710 [icarl.py] => Task 1, Epoch 32/200 => Loss 3.211, Loss_clf 1.452, Loss_kd 1.752, Loss_kernel 0.007, Train_accy 60.48
+2025-06-27 17:01:40,662 [icarl.py] => Task 1, Epoch 33/200 => Loss 3.255, Loss_clf 1.472, Loss_kd 1.777, Loss_kernel 0.007, Train_accy 58.98
+2025-06-27 17:02:05,828 [icarl.py] => Task 1, Epoch 34/200 => Loss 3.258, Loss_clf 1.464, Loss_kd 1.787, Loss_kernel 0.007, Train_accy 58.80
+2025-06-27 17:02:30,581 [icarl.py] => Task 1, Epoch 35/200 => Loss 3.176, Loss_clf 1.403, Loss_kd 1.767, Loss_kernel 0.007, Train_accy 61.59
+2025-06-27 17:03:04,349 [icarl.py] => Task 1, Epoch 36/200 => Loss 3.142, Loss_clf 1.380, Loss_kd 1.755, Loss_kernel 0.007, Train_accy 61.96, Test_accy {'Art': 31.67, 'Clipart': 55.96, 'Real World': 42.46, 'Product': 38.89}
+2025-06-27 17:03:28,919 [icarl.py] => Task 1, Epoch 37/200 => Loss 3.168, Loss_clf 1.399, Loss_kd 1.762, Loss_kernel 0.007, Train_accy 61.03
+2025-06-27 17:03:54,073 [icarl.py] => Task 1, Epoch 38/200 => Loss 3.108, Loss_clf 1.351, Loss_kd 1.750, Loss_kernel 0.007, Train_accy 63.09
+2025-06-27 17:04:19,106 [icarl.py] => Task 1, Epoch 39/200 => Loss 3.075, Loss_clf 1.327, Loss_kd 1.742, Loss_kernel 0.007, Train_accy 62.71
+2025-06-27 17:04:44,094 [icarl.py] => Task 1, Epoch 40/200 => Loss 3.113, Loss_clf 1.346, Loss_kd 1.760, Loss_kernel 0.007, Train_accy 62.99
+2025-06-27 17:05:17,818 [icarl.py] => Task 1, Epoch 41/200 => Loss 3.068, Loss_clf 1.309, Loss_kd 1.752, Loss_kernel 0.007, Train_accy 64.42, Test_accy {'Art': 35.56, 'Clipart': 58.73, 'Real World': 44.41, 'Product': 41.01}
+2025-06-27 17:05:42,743 [icarl.py] => Task 1, Epoch 42/200 => Loss 2.984, Loss_clf 1.230, Loss_kd 1.748, Loss_kernel 0.007, Train_accy 66.19
+2025-06-27 17:06:07,674 [icarl.py] => Task 1, Epoch 43/200 => Loss 3.004, Loss_clf 1.248, Loss_kd 1.749, Loss_kernel 0.007, Train_accy 66.48
+2025-06-27 17:06:32,678 [icarl.py] => Task 1, Epoch 44/200 => Loss 3.013, Loss_clf 1.254, Loss_kd 1.753, Loss_kernel 0.007, Train_accy 64.80
+2025-06-27 17:06:57,713 [icarl.py] => Task 1, Epoch 45/200 => Loss 2.964, Loss_clf 1.216, Loss_kd 1.741, Loss_kernel 0.007, Train_accy 66.08
+2025-06-27 17:07:31,853 [icarl.py] => Task 1, Epoch 46/200 => Loss 2.996, Loss_clf 1.241, Loss_kd 1.748, Loss_kernel 0.007, Train_accy 65.18, Test_accy {'Art': 35.56, 'Clipart': 57.34, 'Real World': 41.62, 'Product': 40.21}
+2025-06-27 17:07:56,629 [icarl.py] => Task 1, Epoch 47/200 => Loss 2.940, Loss_clf 1.200, Loss_kd 1.733, Loss_kernel 0.006, Train_accy 67.16
+2025-06-27 17:08:21,519 [icarl.py] => Task 1, Epoch 48/200 => Loss 2.907, Loss_clf 1.177, Loss_kd 1.724, Loss_kernel 0.007, Train_accy 66.82
+2025-06-27 17:08:46,554 [icarl.py] => Task 1, Epoch 49/200 => Loss 2.913, Loss_clf 1.185, Loss_kd 1.722, Loss_kernel 0.006, Train_accy 67.71
+2025-06-27 17:09:11,517 [icarl.py] => Task 1, Epoch 50/200 => Loss 2.871, Loss_clf 1.145, Loss_kd 1.718, Loss_kernel 0.007, Train_accy 69.13
+2025-06-27 17:09:46,118 [icarl.py] => Task 1, Epoch 51/200 => Loss 2.844, Loss_clf 1.122, Loss_kd 1.715, Loss_kernel 0.006, Train_accy 68.96, Test_accy {'Art': 36.11, 'Clipart': 58.17, 'Real World': 45.25, 'Product': 47.88}
+2025-06-27 17:10:10,783 [icarl.py] => Task 1, Epoch 52/200 => Loss 2.867, Loss_clf 1.124, Loss_kd 1.736, Loss_kernel 0.007, Train_accy 68.93
+2025-06-27 17:10:35,842 [icarl.py] => Task 1, Epoch 53/200 => Loss 2.830, Loss_clf 1.108, Loss_kd 1.715, Loss_kernel 0.007, Train_accy 70.39
+2025-06-27 17:11:00,452 [icarl.py] => Task 1, Epoch 54/200 => Loss 2.838, Loss_clf 1.098, Loss_kd 1.733, Loss_kernel 0.007, Train_accy 70.20
+2025-06-27 17:11:25,479 [icarl.py] => Task 1, Epoch 55/200 => Loss 2.857, Loss_clf 1.132, Loss_kd 1.718, Loss_kernel 0.007, Train_accy 68.32
+2025-06-27 17:11:59,736 [icarl.py] => Task 1, Epoch 56/200 => Loss 2.803, Loss_clf 1.087, Loss_kd 1.710, Loss_kernel 0.007, Train_accy 70.16, Test_accy {'Art': 35.56, 'Clipart': 60.11, 'Real World': 48.88, 'Product': 44.44}
+2025-06-27 17:12:24,692 [icarl.py] => Task 1, Epoch 57/200 => Loss 2.772, Loss_clf 1.055, Loss_kd 1.710, Loss_kernel 0.007, Train_accy 70.92
+2025-06-27 17:12:49,782 [icarl.py] => Task 1, Epoch 58/200 => Loss 2.773, Loss_clf 1.057, Loss_kd 1.710, Loss_kernel 0.007, Train_accy 71.25
+2025-06-27 17:13:14,961 [icarl.py] => Task 1, Epoch 59/200 => Loss 2.716, Loss_clf 1.019, Loss_kd 1.691, Loss_kernel 0.007, Train_accy 72.29
+2025-06-27 17:13:40,017 [icarl.py] => Task 1, Epoch 60/200 => Loss 2.740, Loss_clf 1.022, Loss_kd 1.711, Loss_kernel 0.007, Train_accy 72.21
+2025-06-27 17:14:13,912 [icarl.py] => Task 1, Epoch 61/200 => Loss 2.708, Loss_clf 0.992, Loss_kd 1.709, Loss_kernel 0.007, Train_accy 72.52, Test_accy {'Art': 37.22, 'Clipart': 60.94, 'Real World': 42.18, 'Product': 43.65}
+2025-06-27 17:14:39,257 [icarl.py] => Task 1, Epoch 62/200 => Loss 2.749, Loss_clf 1.054, Loss_kd 1.689, Loss_kernel 0.007, Train_accy 71.76
+2025-06-27 17:15:04,327 [icarl.py] => Task 1, Epoch 63/200 => Loss 2.706, Loss_clf 1.002, Loss_kd 1.698, Loss_kernel 0.007, Train_accy 72.96
+2025-06-27 17:15:28,990 [icarl.py] => Task 1, Epoch 64/200 => Loss 2.712, Loss_clf 1.005, Loss_kd 1.701, Loss_kernel 0.006, Train_accy 72.77
+2025-06-27 17:15:53,495 [icarl.py] => Task 1, Epoch 65/200 => Loss 2.697, Loss_clf 0.993, Loss_kd 1.697, Loss_kernel 0.007, Train_accy 72.70
+2025-06-27 17:16:27,143 [icarl.py] => Task 1, Epoch 66/200 => Loss 2.602, Loss_clf 0.912, Loss_kd 1.684, Loss_kernel 0.006, Train_accy 75.62, Test_accy {'Art': 37.78, 'Clipart': 59.28, 'Real World': 45.53, 'Product': 47.35}
+2025-06-27 17:16:51,916 [icarl.py] => Task 1, Epoch 67/200 => Loss 2.605, Loss_clf 0.918, Loss_kd 1.680, Loss_kernel 0.006, Train_accy 75.34
+2025-06-27 17:17:16,693 [icarl.py] => Task 1, Epoch 68/200 => Loss 2.690, Loss_clf 0.971, Loss_kd 1.713, Loss_kernel 0.006, Train_accy 73.70
+2025-06-27 17:17:42,619 [icarl.py] => Task 1, Epoch 69/200 => Loss 2.686, Loss_clf 0.973, Loss_kd 1.706, Loss_kernel 0.007, Train_accy 73.59
+2025-06-27 17:18:06,945 [icarl.py] => Task 1, Epoch 70/200 => Loss 2.621, Loss_clf 0.928, Loss_kd 1.687, Loss_kernel 0.006, Train_accy 75.18
+2025-06-27 17:18:41,355 [icarl.py] => Task 1, Epoch 71/200 => Loss 2.614, Loss_clf 0.926, Loss_kd 1.681, Loss_kernel 0.007, Train_accy 74.71, Test_accy {'Art': 36.11, 'Clipart': 58.45, 'Real World': 40.78, 'Product': 42.06}
+2025-06-27 17:19:06,781 [icarl.py] => Task 1, Epoch 72/200 => Loss 2.597, Loss_clf 0.896, Loss_kd 1.694, Loss_kernel 0.007, Train_accy 75.75
+2025-06-27 17:19:31,780 [icarl.py] => Task 1, Epoch 73/200 => Loss 2.590, Loss_clf 0.896, Loss_kd 1.687, Loss_kernel 0.006, Train_accy 76.53
+2025-06-27 17:19:56,822 [icarl.py] => Task 1, Epoch 74/200 => Loss 2.537, Loss_clf 0.858, Loss_kd 1.672, Loss_kernel 0.006, Train_accy 76.78
+2025-06-27 17:20:21,831 [icarl.py] => Task 1, Epoch 75/200 => Loss 2.563, Loss_clf 0.875, Loss_kd 1.682, Loss_kernel 0.007, Train_accy 76.36
+2025-06-27 17:20:55,363 [icarl.py] => Task 1, Epoch 76/200 => Loss 2.510, Loss_clf 0.824, Loss_kd 1.679, Loss_kernel 0.006, Train_accy 77.60, Test_accy {'Art': 43.89, 'Clipart': 62.88, 'Real World': 46.93, 'Product': 51.06}
+2025-06-27 17:21:20,057 [icarl.py] => Task 1, Epoch 77/200 => Loss 2.515, Loss_clf 0.838, Loss_kd 1.671, Loss_kernel 0.006, Train_accy 77.30
+2025-06-27 17:21:44,470 [icarl.py] => Task 1, Epoch 78/200 => Loss 2.473, Loss_clf 0.802, Loss_kd 1.664, Loss_kernel 0.006, Train_accy 78.13
+2025-06-27 17:22:09,260 [icarl.py] => Task 1, Epoch 79/200 => Loss 2.515, Loss_clf 0.826, Loss_kd 1.683, Loss_kernel 0.007, Train_accy 78.04
+2025-06-27 17:22:34,072 [icarl.py] => Task 1, Epoch 80/200 => Loss 2.478, Loss_clf 0.806, Loss_kd 1.665, Loss_kernel 0.007, Train_accy 78.57
+2025-06-27 17:23:07,552 [icarl.py] => Task 1, Epoch 81/200 => Loss 2.508, Loss_clf 0.829, Loss_kd 1.673, Loss_kernel 0.007, Train_accy 78.40, Test_accy {'Art': 38.33, 'Clipart': 61.22, 'Real World': 45.25, 'Product': 49.21}
+2025-06-27 17:23:32,225 [icarl.py] => Task 1, Epoch 82/200 => Loss 2.471, Loss_clf 0.794, Loss_kd 1.670, Loss_kernel 0.006, Train_accy 77.79
+2025-06-27 17:23:57,241 [icarl.py] => Task 1, Epoch 83/200 => Loss 2.430, Loss_clf 0.757, Loss_kd 1.667, Loss_kernel 0.006, Train_accy 79.72
+2025-06-27 17:24:22,122 [icarl.py] => Task 1, Epoch 84/200 => Loss 2.402, Loss_clf 0.734, Loss_kd 1.662, Loss_kernel 0.006, Train_accy 80.66
+2025-06-27 17:24:46,786 [icarl.py] => Task 1, Epoch 85/200 => Loss 2.449, Loss_clf 0.781, Loss_kd 1.662, Loss_kernel 0.006, Train_accy 79.16
+2025-06-27 17:25:20,284 [icarl.py] => Task 1, Epoch 86/200 => Loss 2.415, Loss_clf 0.747, Loss_kd 1.661, Loss_kernel 0.006, Train_accy 79.72, Test_accy {'Art': 33.89, 'Clipart': 61.77, 'Real World': 46.09, 'Product': 47.88}
+2025-06-27 17:25:45,255 [icarl.py] => Task 1, Epoch 87/200 => Loss 2.413, Loss_clf 0.741, Loss_kd 1.665, Loss_kernel 0.006, Train_accy 80.22
+2025-06-27 17:26:10,194 [icarl.py] => Task 1, Epoch 88/200 => Loss 2.416, Loss_clf 0.751, Loss_kd 1.659, Loss_kernel 0.006, Train_accy 80.48
+2025-06-27 17:26:35,017 [icarl.py] => Task 1, Epoch 89/200 => Loss 2.391, Loss_clf 0.734, Loss_kd 1.651, Loss_kernel 0.006, Train_accy 79.53
+2025-06-27 17:26:59,491 [icarl.py] => Task 1, Epoch 90/200 => Loss 2.382, Loss_clf 0.715, Loss_kd 1.660, Loss_kernel 0.006, Train_accy 81.12
+2025-06-27 17:27:33,436 [icarl.py] => Task 1, Epoch 91/200 => Loss 2.380, Loss_clf 0.720, Loss_kd 1.653, Loss_kernel 0.006, Train_accy 80.46, Test_accy {'Art': 40.0, 'Clipart': 64.27, 'Real World': 46.09, 'Product': 45.77}
+2025-06-27 17:27:58,488 [icarl.py] => Task 1, Epoch 92/200 => Loss 2.386, Loss_clf 0.714, Loss_kd 1.666, Loss_kernel 0.006, Train_accy 80.64
+2025-06-27 17:28:22,972 [icarl.py] => Task 1, Epoch 93/200 => Loss 2.350, Loss_clf 0.690, Loss_kd 1.654, Loss_kernel 0.006, Train_accy 81.27
+2025-06-27 17:28:46,908 [icarl.py] => Task 1, Epoch 94/200 => Loss 2.381, Loss_clf 0.712, Loss_kd 1.664, Loss_kernel 0.006, Train_accy 80.64
+2025-06-27 17:29:11,742 [icarl.py] => Task 1, Epoch 95/200 => Loss 2.392, Loss_clf 0.740, Loss_kd 1.646, Loss_kernel 0.006, Train_accy 80.23
+2025-06-27 17:29:45,530 [icarl.py] => Task 1, Epoch 96/200 => Loss 2.420, Loss_clf 0.763, Loss_kd 1.650, Loss_kernel 0.007, Train_accy 79.88, Test_accy {'Art': 37.78, 'Clipart': 64.54, 'Real World': 50.0, 'Product': 49.47}
+2025-06-27 17:30:10,557 [icarl.py] => Task 1, Epoch 97/200 => Loss 2.381, Loss_clf 0.717, Loss_kd 1.657, Loss_kernel 0.006, Train_accy 81.57
+2025-06-27 17:30:34,904 [icarl.py] => Task 1, Epoch 98/200 => Loss 2.357, Loss_clf 0.699, Loss_kd 1.651, Loss_kernel 0.006, Train_accy 81.21
+2025-06-27 17:30:59,561 [icarl.py] => Task 1, Epoch 99/200 => Loss 2.341, Loss_clf 0.679, Loss_kd 1.656, Loss_kernel 0.006, Train_accy 82.10
+2025-06-27 17:31:24,036 [icarl.py] => Task 1, Epoch 100/200 => Loss 2.342, Loss_clf 0.686, Loss_kd 1.651, Loss_kernel 0.006, Train_accy 82.29
+2025-06-27 17:31:58,129 [icarl.py] => Task 1, Epoch 101/200 => Loss 2.259, Loss_clf 0.630, Loss_kd 1.623, Loss_kernel 0.006, Train_accy 83.11, Test_accy {'Art': 40.0, 'Clipart': 59.56, 'Real World': 44.13, 'Product': 46.56}
+2025-06-27 17:32:23,190 [icarl.py] => Task 1, Epoch 102/200 => Loss 2.299, Loss_clf 0.650, Loss_kd 1.643, Loss_kernel 0.006, Train_accy 82.47
+2025-06-27 17:32:48,144 [icarl.py] => Task 1, Epoch 103/200 => Loss 2.327, Loss_clf 0.678, Loss_kd 1.642, Loss_kernel 0.006, Train_accy 81.96
+2025-06-27 17:33:11,846 [icarl.py] => Task 1, Epoch 104/200 => Loss 2.271, Loss_clf 0.635, Loss_kd 1.630, Loss_kernel 0.006, Train_accy 83.09
+2025-06-27 17:33:36,423 [icarl.py] => Task 1, Epoch 105/200 => Loss 2.239, Loss_clf 0.611, Loss_kd 1.622, Loss_kernel 0.006, Train_accy 83.56
+2025-06-27 17:34:10,005 [icarl.py] => Task 1, Epoch 106/200 => Loss 2.291, Loss_clf 0.653, Loss_kd 1.632, Loss_kernel 0.006, Train_accy 82.61, Test_accy {'Art': 41.11, 'Clipart': 65.37, 'Real World': 47.49, 'Product': 46.3}
+2025-06-27 17:34:35,048 [icarl.py] => Task 1, Epoch 107/200 => Loss 2.244, Loss_clf 0.610, Loss_kd 1.628, Loss_kernel 0.006, Train_accy 83.49
+2025-06-27 17:34:59,403 [icarl.py] => Task 1, Epoch 108/200 => Loss 2.175, Loss_clf 0.550, Loss_kd 1.619, Loss_kernel 0.006, Train_accy 86.33
+2025-06-27 17:35:23,872 [icarl.py] => Task 1, Epoch 109/200 => Loss 2.229, Loss_clf 0.607, Loss_kd 1.616, Loss_kernel 0.006, Train_accy 83.81
+2025-06-27 17:35:48,497 [icarl.py] => Task 1, Epoch 110/200 => Loss 2.177, Loss_clf 0.555, Loss_kd 1.616, Loss_kernel 0.006, Train_accy 84.92
+2025-06-27 17:36:22,239 [icarl.py] => Task 1, Epoch 111/200 => Loss 2.219, Loss_clf 0.590, Loss_kd 1.622, Loss_kernel 0.006, Train_accy 84.84, Test_accy {'Art': 40.56, 'Clipart': 66.48, 'Real World': 46.37, 'Product': 51.59}
+2025-06-27 17:36:46,888 [icarl.py] => Task 1, Epoch 112/200 => Loss 2.206, Loss_clf 0.586, Loss_kd 1.614, Loss_kernel 0.006, Train_accy 84.94
+2025-06-27 17:37:11,494 [icarl.py] => Task 1, Epoch 113/200 => Loss 2.200, Loss_clf 0.573, Loss_kd 1.621, Loss_kernel 0.006, Train_accy 84.56
+2025-06-27 17:37:35,466 [icarl.py] => Task 1, Epoch 114/200 => Loss 2.178, Loss_clf 0.561, Loss_kd 1.611, Loss_kernel 0.006, Train_accy 85.51
+2025-06-27 17:37:59,419 [icarl.py] => Task 1, Epoch 115/200 => Loss 2.156, Loss_clf 0.533, Loss_kd 1.617, Loss_kernel 0.006, Train_accy 85.93
+2025-06-27 17:38:32,839 [icarl.py] => Task 1, Epoch 116/200 => Loss 2.198, Loss_clf 0.565, Loss_kd 1.627, Loss_kernel 0.006, Train_accy 85.16, Test_accy {'Art': 41.11, 'Clipart': 64.54, 'Real World': 46.09, 'Product': 49.74}
+2025-06-27 17:38:57,417 [icarl.py] => Task 1, Epoch 117/200 => Loss 2.170, Loss_clf 0.551, Loss_kd 1.612, Loss_kernel 0.006, Train_accy 85.28
+2025-06-27 17:39:21,807 [icarl.py] => Task 1, Epoch 118/200 => Loss 2.203, Loss_clf 0.571, Loss_kd 1.626, Loss_kernel 0.006, Train_accy 85.17
+2025-06-27 17:39:46,153 [icarl.py] => Task 1, Epoch 119/200 => Loss 2.135, Loss_clf 0.520, Loss_kd 1.609, Loss_kernel 0.006, Train_accy 86.30
+2025-06-27 17:40:11,035 [icarl.py] => Task 1, Epoch 120/200 => Loss 2.165, Loss_clf 0.544, Loss_kd 1.615, Loss_kernel 0.006, Train_accy 85.86
+2025-06-27 17:40:44,214 [icarl.py] => Task 1, Epoch 121/200 => Loss 2.084, Loss_clf 0.483, Loss_kd 1.595, Loss_kernel 0.006, Train_accy 87.73, Test_accy {'Art': 44.44, 'Clipart': 66.48, 'Real World': 47.77, 'Product': 48.94}
+2025-06-27 17:41:09,082 [icarl.py] => Task 1, Epoch 122/200 => Loss 2.100, Loss_clf 0.494, Loss_kd 1.600, Loss_kernel 0.006, Train_accy 87.28
+2025-06-27 17:41:33,916 [icarl.py] => Task 1, Epoch 123/200 => Loss 2.109, Loss_clf 0.505, Loss_kd 1.599, Loss_kernel 0.006, Train_accy 86.48
+2025-06-27 17:41:57,998 [icarl.py] => Task 1, Epoch 124/200 => Loss 2.089, Loss_clf 0.489, Loss_kd 1.595, Loss_kernel 0.006, Train_accy 87.22
+2025-06-27 17:42:24,289 [icarl.py] => Task 1, Epoch 125/200 => Loss 2.124, Loss_clf 0.503, Loss_kd 1.614, Loss_kernel 0.006, Train_accy 86.83
+2025-06-27 17:42:57,730 [icarl.py] => Task 1, Epoch 126/200 => Loss 2.076, Loss_clf 0.480, Loss_kd 1.591, Loss_kernel 0.006, Train_accy 87.55, Test_accy {'Art': 43.33, 'Clipart': 62.6, 'Real World': 46.65, 'Product': 47.62}
+2025-06-27 17:43:22,275 [icarl.py] => Task 1, Epoch 127/200 => Loss 2.053, Loss_clf 0.458, Loss_kd 1.589, Loss_kernel 0.006, Train_accy 88.30
+2025-06-27 17:43:45,689 [icarl.py] => Task 1, Epoch 128/200 => Loss 2.061, Loss_clf 0.454, Loss_kd 1.601, Loss_kernel 0.006, Train_accy 88.01
+2025-06-27 17:44:09,585 [icarl.py] => Task 1, Epoch 129/200 => Loss 2.043, Loss_clf 0.459, Loss_kd 1.578, Loss_kernel 0.006, Train_accy 88.05
+2025-06-27 17:44:33,918 [icarl.py] => Task 1, Epoch 130/200 => Loss 2.072, Loss_clf 0.478, Loss_kd 1.588, Loss_kernel 0.006, Train_accy 87.73
+2025-06-27 17:45:07,484 [icarl.py] => Task 1, Epoch 131/200 => Loss 2.028, Loss_clf 0.437, Loss_kd 1.585, Loss_kernel 0.006, Train_accy 89.26, Test_accy {'Art': 39.44, 'Clipart': 65.1, 'Real World': 48.6, 'Product': 51.06}
+2025-06-27 17:45:32,091 [icarl.py] => Task 1, Epoch 132/200 => Loss 1.997, Loss_clf 0.419, Loss_kd 1.573, Loss_kernel 0.006, Train_accy 89.43
+2025-06-27 17:45:55,691 [icarl.py] => Task 1, Epoch 133/200 => Loss 2.005, Loss_clf 0.429, Loss_kd 1.570, Loss_kernel 0.006, Train_accy 88.60
+2025-06-27 17:46:20,092 [icarl.py] => Task 1, Epoch 134/200 => Loss 2.039, Loss_clf 0.447, Loss_kd 1.586, Loss_kernel 0.006, Train_accy 88.94
+2025-06-27 17:46:44,091 [icarl.py] => Task 1, Epoch 135/200 => Loss 1.981, Loss_clf 0.411, Loss_kd 1.564, Loss_kernel 0.006, Train_accy 89.56
+2025-06-27 17:47:18,356 [icarl.py] => Task 1, Epoch 136/200 => Loss 2.037, Loss_clf 0.450, Loss_kd 1.582, Loss_kernel 0.006, Train_accy 88.40, Test_accy {'Art': 42.22, 'Clipart': 66.2, 'Real World': 47.49, 'Product': 49.47}
+2025-06-27 17:47:42,735 [icarl.py] => Task 1, Epoch 137/200 => Loss 1.967, Loss_clf 0.402, Loss_kd 1.559, Loss_kernel 0.006, Train_accy 89.85
+2025-06-27 17:48:06,746 [icarl.py] => Task 1, Epoch 138/200 => Loss 1.998, Loss_clf 0.411, Loss_kd 1.581, Loss_kernel 0.006, Train_accy 89.69
+2025-06-27 17:48:31,591 [icarl.py] => Task 1, Epoch 139/200 => Loss 2.032, Loss_clf 0.444, Loss_kd 1.582, Loss_kernel 0.006, Train_accy 88.12
+2025-06-27 17:48:58,065 [icarl.py] => Task 1, Epoch 140/200 => Loss 1.956, Loss_clf 0.386, Loss_kd 1.564, Loss_kernel 0.006, Train_accy 90.40
+2025-06-27 17:49:30,075 [icarl.py] => Task 1, Epoch 141/200 => Loss 1.953, Loss_clf 0.389, Loss_kd 1.559, Loss_kernel 0.006, Train_accy 90.09, Test_accy {'Art': 45.0, 'Clipart': 65.93, 'Real World': 48.04, 'Product': 51.85}
+2025-06-27 17:49:53,069 [icarl.py] => Task 1, Epoch 142/200 => Loss 1.953, Loss_clf 0.376, Loss_kd 1.572, Loss_kernel 0.005, Train_accy 90.21
+2025-06-27 17:50:17,730 [icarl.py] => Task 1, Epoch 143/200 => Loss 1.934, Loss_clf 0.367, Loss_kd 1.561, Loss_kernel 0.005, Train_accy 90.47
+2025-06-27 17:50:42,831 [icarl.py] => Task 1, Epoch 144/200 => Loss 1.930, Loss_clf 0.367, Loss_kd 1.558, Loss_kernel 0.006, Train_accy 90.52
+2025-06-27 17:51:04,906 [icarl.py] => Task 1, Epoch 145/200 => Loss 1.897, Loss_clf 0.334, Loss_kd 1.557, Loss_kernel 0.005, Train_accy 91.25
+2025-06-27 17:51:38,216 [icarl.py] => Task 1, Epoch 146/200 => Loss 1.928, Loss_clf 0.363, Loss_kd 1.559, Loss_kernel 0.006, Train_accy 90.99, Test_accy {'Art': 42.22, 'Clipart': 67.87, 'Real World': 50.28, 'Product': 51.06}
+2025-06-27 17:52:01,435 [icarl.py] => Task 1, Epoch 147/200 => Loss 1.895, Loss_clf 0.322, Loss_kd 1.567, Loss_kernel 0.005, Train_accy 91.92
+2025-06-27 17:52:25,845 [icarl.py] => Task 1, Epoch 148/200 => Loss 1.937, Loss_clf 0.373, Loss_kd 1.559, Loss_kernel 0.006, Train_accy 90.37
+2025-06-27 17:52:49,871 [icarl.py] => Task 1, Epoch 149/200 => Loss 1.859, Loss_clf 0.314, Loss_kd 1.540, Loss_kernel 0.005, Train_accy 92.66
+2025-06-27 17:53:14,230 [icarl.py] => Task 1, Epoch 150/200 => Loss 1.865, Loss_clf 0.318, Loss_kd 1.542, Loss_kernel 0.005, Train_accy 92.36
+2025-06-27 17:53:46,670 [icarl.py] => Task 1, Epoch 151/200 => Loss 1.882, Loss_clf 0.319, Loss_kd 1.558, Loss_kernel 0.005, Train_accy 91.46, Test_accy {'Art': 41.11, 'Clipart': 67.59, 'Real World': 47.49, 'Product': 51.85}
+2025-06-27 17:54:09,908 [icarl.py] => Task 1, Epoch 152/200 => Loss 1.893, Loss_clf 0.341, Loss_kd 1.546, Loss_kernel 0.006, Train_accy 91.62
+2025-06-27 17:54:33,634 [icarl.py] => Task 1, Epoch 153/200 => Loss 1.856, Loss_clf 0.322, Loss_kd 1.529, Loss_kernel 0.005, Train_accy 92.18
+2025-06-27 17:54:57,855 [icarl.py] => Task 1, Epoch 154/200 => Loss 1.861, Loss_clf 0.324, Loss_kd 1.532, Loss_kernel 0.005, Train_accy 91.70
+2025-06-27 17:55:19,831 [icarl.py] => Task 1, Epoch 155/200 => Loss 1.847, Loss_clf 0.306, Loss_kd 1.536, Loss_kernel 0.005, Train_accy 92.26
+2025-06-27 17:55:53,049 [icarl.py] => Task 1, Epoch 156/200 => Loss 1.868, Loss_clf 0.327, Loss_kd 1.535, Loss_kernel 0.005, Train_accy 91.77, Test_accy {'Art': 45.0, 'Clipart': 67.04, 'Real World': 51.4, 'Product': 48.94}
+2025-06-27 17:56:16,220 [icarl.py] => Task 1, Epoch 157/200 => Loss 1.851, Loss_clf 0.310, Loss_kd 1.536, Loss_kernel 0.005, Train_accy 92.55
+2025-06-27 17:56:39,859 [icarl.py] => Task 1, Epoch 158/200 => Loss 1.842, Loss_clf 0.293, Loss_kd 1.543, Loss_kernel 0.005, Train_accy 92.79
+2025-06-27 17:57:03,082 [icarl.py] => Task 1, Epoch 159/200 => Loss 1.865, Loss_clf 0.311, Loss_kd 1.548, Loss_kernel 0.005, Train_accy 92.36
+2025-06-27 17:57:26,891 [icarl.py] => Task 1, Epoch 160/200 => Loss 1.851, Loss_clf 0.305, Loss_kd 1.541, Loss_kernel 0.005, Train_accy 92.38
+2025-06-27 17:57:59,367 [icarl.py] => Task 1, Epoch 161/200 => Loss 1.854, Loss_clf 0.310, Loss_kd 1.539, Loss_kernel 0.005, Train_accy 92.31, Test_accy {'Art': 45.0, 'Clipart': 68.42, 'Real World': 50.56, 'Product': 52.38}
+2025-06-27 17:58:22,813 [icarl.py] => Task 1, Epoch 162/200 => Loss 1.830, Loss_clf 0.282, Loss_kd 1.543, Loss_kernel 0.005, Train_accy 93.62
+2025-06-27 17:58:46,692 [icarl.py] => Task 1, Epoch 163/200 => Loss 1.832, Loss_clf 0.289, Loss_kd 1.537, Loss_kernel 0.005, Train_accy 92.87
+2025-06-27 17:59:09,742 [icarl.py] => Task 1, Epoch 164/200 => Loss 1.821, Loss_clf 0.287, Loss_kd 1.528, Loss_kernel 0.005, Train_accy 92.49
+2025-06-27 17:59:35,354 [icarl.py] => Task 1, Epoch 165/200 => Loss 1.826, Loss_clf 0.295, Loss_kd 1.526, Loss_kernel 0.005, Train_accy 92.55
+2025-06-27 18:00:08,093 [icarl.py] => Task 1, Epoch 166/200 => Loss 1.802, Loss_clf 0.267, Loss_kd 1.530, Loss_kernel 0.005, Train_accy 93.23, Test_accy {'Art': 43.89, 'Clipart': 66.48, 'Real World': 50.84, 'Product': 51.85}
+2025-06-27 18:00:32,700 [icarl.py] => Task 1, Epoch 167/200 => Loss 1.830, Loss_clf 0.292, Loss_kd 1.533, Loss_kernel 0.005, Train_accy 92.93
+2025-06-27 18:00:56,756 [icarl.py] => Task 1, Epoch 168/200 => Loss 1.799, Loss_clf 0.262, Loss_kd 1.532, Loss_kernel 0.005, Train_accy 93.39
+2025-06-27 18:01:20,021 [icarl.py] => Task 1, Epoch 169/200 => Loss 1.777, Loss_clf 0.253, Loss_kd 1.519, Loss_kernel 0.005, Train_accy 93.64
+2025-06-27 18:01:44,383 [icarl.py] => Task 1, Epoch 170/200 => Loss 1.807, Loss_clf 0.276, Loss_kd 1.526, Loss_kernel 0.005, Train_accy 93.00
+2025-06-27 18:02:15,851 [icarl.py] => Task 1, Epoch 171/200 => Loss 1.784, Loss_clf 0.255, Loss_kd 1.524, Loss_kernel 0.005, Train_accy 93.70, Test_accy {'Art': 43.89, 'Clipart': 68.98, 'Real World': 50.28, 'Product': 50.26}
+2025-06-27 18:02:39,306 [icarl.py] => Task 1, Epoch 172/200 => Loss 1.808, Loss_clf 0.276, Loss_kd 1.527, Loss_kernel 0.005, Train_accy 93.67
+2025-06-27 18:03:01,640 [icarl.py] => Task 1, Epoch 173/200 => Loss 1.767, Loss_clf 0.237, Loss_kd 1.526, Loss_kernel 0.005, Train_accy 94.12
+2025-06-27 18:03:23,294 [icarl.py] => Task 1, Epoch 174/200 => Loss 1.776, Loss_clf 0.246, Loss_kd 1.525, Loss_kernel 0.005, Train_accy 94.12
+2025-06-27 18:03:46,059 [icarl.py] => Task 1, Epoch 175/200 => Loss 1.777, Loss_clf 0.241, Loss_kd 1.530, Loss_kernel 0.005, Train_accy 94.17
+2025-06-27 18:04:19,340 [icarl.py] => Task 1, Epoch 176/200 => Loss 1.774, Loss_clf 0.246, Loss_kd 1.524, Loss_kernel 0.005, Train_accy 93.66, Test_accy {'Art': 43.89, 'Clipart': 68.14, 'Real World': 50.84, 'Product': 51.06}
+2025-06-27 18:04:42,436 [icarl.py] => Task 1, Epoch 177/200 => Loss 1.765, Loss_clf 0.238, Loss_kd 1.521, Loss_kernel 0.005, Train_accy 94.02
+2025-06-27 18:05:07,546 [icarl.py] => Task 1, Epoch 178/200 => Loss 1.771, Loss_clf 0.236, Loss_kd 1.529, Loss_kernel 0.005, Train_accy 94.48
+2025-06-27 18:05:31,127 [icarl.py] => Task 1, Epoch 179/200 => Loss 1.758, Loss_clf 0.237, Loss_kd 1.516, Loss_kernel 0.005, Train_accy 94.12
+2025-06-27 18:05:53,931 [icarl.py] => Task 1, Epoch 180/200 => Loss 1.765, Loss_clf 0.240, Loss_kd 1.521, Loss_kernel 0.005, Train_accy 94.00
+2025-06-27 18:06:25,455 [icarl.py] => Task 1, Epoch 181/200 => Loss 1.765, Loss_clf 0.244, Loss_kd 1.516, Loss_kernel 0.005, Train_accy 93.76, Test_accy {'Art': 44.44, 'Clipart': 68.42, 'Real World': 50.0, 'Product': 50.0}
+2025-06-27 18:06:47,606 [icarl.py] => Task 1, Epoch 182/200 => Loss 1.754, Loss_clf 0.228, Loss_kd 1.521, Loss_kernel 0.005, Train_accy 93.92
+2025-06-27 18:07:10,151 [icarl.py] => Task 1, Epoch 183/200 => Loss 1.760, Loss_clf 0.228, Loss_kd 1.527, Loss_kernel 0.005, Train_accy 94.25
+2025-06-27 18:07:32,985 [icarl.py] => Task 1, Epoch 184/200 => Loss 1.736, Loss_clf 0.216, Loss_kd 1.516, Loss_kernel 0.005, Train_accy 95.08
+2025-06-27 18:07:55,179 [icarl.py] => Task 1, Epoch 185/200 => Loss 1.716, Loss_clf 0.211, Loss_kd 1.501, Loss_kernel 0.005, Train_accy 94.79
+2025-06-27 18:08:27,425 [icarl.py] => Task 1, Epoch 186/200 => Loss 1.756, Loss_clf 0.237, Loss_kd 1.514, Loss_kernel 0.005, Train_accy 94.12, Test_accy {'Art': 45.0, 'Clipart': 68.98, 'Real World': 50.28, 'Product': 48.94}
+2025-06-27 18:08:49,715 [icarl.py] => Task 1, Epoch 187/200 => Loss 1.723, Loss_clf 0.199, Loss_kd 1.520, Loss_kernel 0.005, Train_accy 95.04
+2025-06-27 18:09:13,936 [icarl.py] => Task 1, Epoch 188/200 => Loss 1.742, Loss_clf 0.233, Loss_kd 1.504, Loss_kernel 0.005, Train_accy 94.21
+2025-06-27 18:09:37,268 [icarl.py] => Task 1, Epoch 189/200 => Loss 1.733, Loss_clf 0.213, Loss_kd 1.516, Loss_kernel 0.005, Train_accy 95.10
+2025-06-27 18:10:00,154 [icarl.py] => Task 1, Epoch 190/200 => Loss 1.752, Loss_clf 0.233, Loss_kd 1.514, Loss_kernel 0.005, Train_accy 94.25
+2025-06-27 18:10:32,138 [icarl.py] => Task 1, Epoch 191/200 => Loss 1.727, Loss_clf 0.206, Loss_kd 1.516, Loss_kernel 0.005, Train_accy 94.87, Test_accy {'Art': 44.44, 'Clipart': 68.98, 'Real World': 50.84, 'Product': 50.53}
+2025-06-27 18:10:55,129 [icarl.py] => Task 1, Epoch 192/200 => Loss 1.729, Loss_clf 0.213, Loss_kd 1.511, Loss_kernel 0.005, Train_accy 94.55
+2025-06-27 18:11:16,219 [icarl.py] => Task 1, Epoch 193/200 => Loss 1.699, Loss_clf 0.191, Loss_kd 1.504, Loss_kernel 0.005, Train_accy 95.53
+2025-06-27 18:11:38,359 [icarl.py] => Task 1, Epoch 194/200 => Loss 1.745, Loss_clf 0.229, Loss_kd 1.511, Loss_kernel 0.005, Train_accy 94.47
+2025-06-27 18:12:01,196 [icarl.py] => Task 1, Epoch 195/200 => Loss 1.728, Loss_clf 0.218, Loss_kd 1.505, Loss_kernel 0.005, Train_accy 94.86
+2025-06-27 18:12:31,222 [icarl.py] => Task 1, Epoch 196/200 => Loss 1.726, Loss_clf 0.213, Loss_kd 1.508, Loss_kernel 0.005, Train_accy 94.86, Test_accy {'Art': 45.0, 'Clipart': 68.14, 'Real World': 49.72, 'Product': 49.74}
+2025-06-27 18:12:54,325 [icarl.py] => Task 1, Epoch 197/200 => Loss 1.752, Loss_clf 0.231, Loss_kd 1.516, Loss_kernel 0.005, Train_accy 94.21
+2025-06-27 18:13:18,286 [icarl.py] => Task 1, Epoch 198/200 => Loss 1.735, Loss_clf 0.221, Loss_kd 1.510, Loss_kernel 0.005, Train_accy 94.51
+2025-06-27 18:13:39,943 [icarl.py] => Task 1, Epoch 199/200 => Loss 1.730, Loss_clf 0.212, Loss_kd 1.514, Loss_kernel 0.005, Train_accy 94.93
+2025-06-27 18:14:01,145 [icarl.py] => Task 1, Epoch 200/200 => Loss 1.717, Loss_clf 0.208, Loss_kd 1.505, Loss_kernel 0.005, Train_accy 95.04
+2025-06-27 18:14:01,146 [base.py] => Reducing exemplars...(50 per classes)
+2025-06-27 18:14:13,093 [base.py] => Constructing exemplars...(50 per classes)
+2025-06-27 18:15:03,152 [icarl.py] => Exemplar size: 1300
+2025-06-27 18:15:04,279 [trainer.py] => CNN [Art]: {'total': 45.0, '00-12': 50.54, '13-25': 39.08, 'old': 50.54, 'new': 39.08}
+2025-06-27 18:15:04,280 [trainer.py] => NME [Art]: {'total': 47.22, '00-12': 48.39, '13-25': 45.98, 'old': 48.39, 'new': 45.98}
+2025-06-27 18:15:04,280 [trainer.py] => CNN [Art] top1 curve: [52.69, 45.0]
+2025-06-27 18:15:04,280 [trainer.py] => CNN [Art] top5 curve: [77.42, 65.0]
+2025-06-27 18:15:04,280 [trainer.py] => NME [Art] top1 curve: [55.91, 47.22]
+2025-06-27 18:15:04,280 [trainer.py] => NME [Art] top5 curve: [84.95, 71.67]
+2025-06-27 18:15:04,280 [trainer.py] => Average Accuracy [Art] (CNN): 48.845
+2025-06-27 18:15:04,280 [trainer.py] => Average Accuracy [Art] (NME): 51.565
+2025-06-27 18:15:04,280 [trainer.py] => CNN [Clipart]: {'total': 67.59, '00-12': 73.6, '13-25': 61.75, 'old': 73.6, 'new': 61.75}
+2025-06-27 18:15:04,280 [trainer.py] => NME [Clipart]: {'total': 67.87, '00-12': 74.16, '13-25': 61.75, 'old': 74.16, 'new': 61.75}
+2025-06-27 18:15:04,280 [trainer.py] => CNN [Clipart] top1 curve: [70.79, 67.59]
+2025-06-27 18:15:04,281 [trainer.py] => CNN [Clipart] top5 curve: [92.13, 85.6]
+2025-06-27 18:15:04,281 [trainer.py] => NME [Clipart] top1 curve: [70.22, 67.87]
+2025-06-27 18:15:04,281 [trainer.py] => NME [Clipart] top5 curve: [94.94, 87.53]
+2025-06-27 18:15:04,281 [trainer.py] => Average Accuracy [Clipart] (CNN): 69.19
+2025-06-27 18:15:04,281 [trainer.py] => Average Accuracy [Clipart] (NME): 69.045
+2025-06-27 18:15:04,281 [trainer.py] => CNN [Product]: {'total': 49.21, '00-12': 60.58, '13-25': 35.29, 'old': 60.58, 'new': 35.29}
+2025-06-27 18:15:04,281 [trainer.py] => NME [Product]: {'total': 49.74, '00-12': 58.65, '13-25': 38.82, 'old': 58.65, 'new': 38.82}
+2025-06-27 18:15:04,281 [trainer.py] => CNN [Product] top1 curve: [59.62, 49.21]
+2025-06-27 18:15:04,281 [trainer.py] => CNN [Product] top5 curve: [88.94, 75.93]
+2025-06-27 18:15:04,281 [trainer.py] => NME [Product] top1 curve: [58.17, 49.74]
+2025-06-27 18:15:04,281 [trainer.py] => NME [Product] top5 curve: [89.9, 78.57]
+2025-06-27 18:15:04,282 [trainer.py] => Average Accuracy [Product] (CNN): 54.415
+2025-06-27 18:15:04,282 [trainer.py] => Average Accuracy [Product] (NME): 53.955
+2025-06-27 18:15:04,282 [trainer.py] => CNN [Real World]: {'total': 51.12, '00-12': 66.3, '13-25': 35.06, 'old': 66.3, 'new': 35.06}
+2025-06-27 18:15:04,282 [trainer.py] => NME [Real World]: {'total': 53.91, '00-12': 64.13, '13-25': 43.1, 'old': 64.13, 'new': 43.1}
+2025-06-27 18:15:04,282 [trainer.py] => CNN [Real World] top1 curve: [63.59, 51.12]
+2025-06-27 18:15:04,282 [trainer.py] => CNN [Real World] top5 curve: [89.67, 79.33]
+2025-06-27 18:15:04,282 [trainer.py] => NME [Real World] top1 curve: [63.04, 53.91]
+2025-06-27 18:15:04,282 [trainer.py] => NME [Real World] top5 curve: [94.57, 82.68]
+2025-06-27 18:15:04,282 [trainer.py] => Average Accuracy [Real World] (CNN): 57.355000000000004
+2025-06-27 18:15:04,282 [trainer.py] => Average Accuracy [Real World] (NME): 58.474999999999994
+2025-06-27 18:15:04,282 [trainer.py] => NME Harmonic Mean : 52.8318
+2025-06-27 18:15:04,283 [trainer.py] => NME Macro Mean : 54.6850
+2025-06-27 18:15:04,283 [trainer.py] => CNN Harmonic Mean : 51.7516
+2025-06-27 18:15:04,283 [trainer.py] => CNN Macro Mean : 53.2300
+2025-06-27 18:15:04,283 [trainer.py] => All params: 21338024
+2025-06-27 18:15:04,284 [trainer.py] => Trainable params: 21338024
+2025-06-27 18:15:04,287 [icarl.py] => Learning on 26-39
+2025-06-27 18:15:44,369 [icarl.py] => Task 2, Epoch 1/200 => Loss 6.517, Loss_clf 3.673, Loss_kd 2.835, Loss_kernel 0.009, Train_accy 17.12, Test_accy {'Art': 12.11, 'Clipart': 20.23, 'Real World': 22.08, 'Product': 16.2}
+2025-06-27 18:16:10,578 [icarl.py] => Task 2, Epoch 2/200 => Loss 5.824, Loss_clf 3.018, Loss_kd 2.797, Loss_kernel 0.009, Train_accy 22.91
+2025-06-27 18:16:37,613 [icarl.py] => Task 2, Epoch 3/200 => Loss 5.477, Loss_clf 2.769, Loss_kd 2.700, Loss_kernel 0.007, Train_accy 26.96
+2025-06-27 18:17:03,825 [icarl.py] => Task 2, Epoch 4/200 => Loss 5.179, Loss_clf 2.549, Loss_kd 2.624, Loss_kernel 0.007, Train_accy 32.08
+2025-06-27 18:17:30,850 [icarl.py] => Task 2, Epoch 5/200 => Loss 5.115, Loss_clf 2.508, Loss_kd 2.600, Loss_kernel 0.007, Train_accy 33.91
+2025-06-27 18:18:10,582 [icarl.py] => Task 2, Epoch 6/200 => Loss 4.906, Loss_clf 2.355, Loss_kd 2.545, Loss_kernel 0.006, Train_accy 37.31, Test_accy {'Art': 20.42, 'Clipart': 38.55, 'Real World': 33.02, 'Product': 26.41}
+2025-06-27 18:18:38,260 [icarl.py] => Task 2, Epoch 7/200 => Loss 4.768, Loss_clf 2.238, Loss_kd 2.523, Loss_kernel 0.006, Train_accy 38.84
+2025-06-27 18:19:04,223 [icarl.py] => Task 2, Epoch 8/200 => Loss 4.632, Loss_clf 2.124, Loss_kd 2.502, Loss_kernel 0.006, Train_accy 42.96
+2025-06-27 18:19:30,419 [icarl.py] => Task 2, Epoch 9/200 => Loss 4.605, Loss_clf 2.113, Loss_kd 2.486, Loss_kernel 0.006, Train_accy 42.43
+2025-06-27 18:19:56,360 [icarl.py] => Task 2, Epoch 10/200 => Loss 4.484, Loss_clf 2.009, Loss_kd 2.468, Loss_kernel 0.006, Train_accy 44.37
+2025-06-27 18:20:34,568 [icarl.py] => Task 2, Epoch 11/200 => Loss 4.488, Loss_clf 2.007, Loss_kd 2.474, Loss_kernel 0.006, Train_accy 45.80, Test_accy {'Art': 20.76, 'Clipart': 41.79, 'Real World': 39.7, 'Product': 29.4}
+2025-06-27 18:21:00,857 [icarl.py] => Task 2, Epoch 12/200 => Loss 4.369, Loss_clf 1.897, Loss_kd 2.465, Loss_kernel 0.006, Train_accy 47.92
+2025-06-27 18:21:26,740 [icarl.py] => Task 2, Epoch 13/200 => Loss 4.408, Loss_clf 1.931, Loss_kd 2.470, Loss_kernel 0.006, Train_accy 48.28
+2025-06-27 18:21:52,520 [icarl.py] => Task 2, Epoch 14/200 => Loss 4.285, Loss_clf 1.838, Loss_kd 2.441, Loss_kernel 0.006, Train_accy 49.66
+2025-06-27 18:22:18,622 [icarl.py] => Task 2, Epoch 15/200 => Loss 4.220, Loss_clf 1.795, Loss_kd 2.418, Loss_kernel 0.006, Train_accy 50.40
+2025-06-27 18:22:57,727 [icarl.py] => Task 2, Epoch 16/200 => Loss 4.167, Loss_clf 1.745, Loss_kd 2.417, Loss_kernel 0.006, Train_accy 52.58, Test_accy {'Art': 24.57, 'Clipart': 46.56, 'Real World': 39.33, 'Product': 33.8}
+2025-06-27 18:23:24,198 [icarl.py] => Task 2, Epoch 17/200 => Loss 4.097, Loss_clf 1.694, Loss_kd 2.398, Loss_kernel 0.006, Train_accy 53.31
+2025-06-27 18:23:50,481 [icarl.py] => Task 2, Epoch 18/200 => Loss 4.070, Loss_clf 1.662, Loss_kd 2.401, Loss_kernel 0.006, Train_accy 55.33
+2025-06-27 18:24:16,687 [icarl.py] => Task 2, Epoch 19/200 => Loss 4.043, Loss_clf 1.654, Loss_kd 2.382, Loss_kernel 0.006, Train_accy 55.23
+2025-06-27 18:24:42,446 [icarl.py] => Task 2, Epoch 20/200 => Loss 3.920, Loss_clf 1.542, Loss_kd 2.373, Loss_kernel 0.006, Train_accy 57.93
+2025-06-27 18:25:21,389 [icarl.py] => Task 2, Epoch 21/200 => Loss 3.870, Loss_clf 1.503, Loss_kd 2.361, Loss_kernel 0.006, Train_accy 59.08, Test_accy {'Art': 20.07, 'Clipart': 44.08, 'Real World': 39.33, 'Product': 33.8}
+2025-06-27 18:25:47,798 [icarl.py] => Task 2, Epoch 22/200 => Loss 3.922, Loss_clf 1.542, Loss_kd 2.375, Loss_kernel 0.006, Train_accy 58.20
+2025-06-27 18:26:13,615 [icarl.py] => Task 2, Epoch 23/200 => Loss 3.799, Loss_clf 1.432, Loss_kd 2.361, Loss_kernel 0.006, Train_accy 60.57
+2025-06-27 18:26:40,292 [icarl.py] => Task 2, Epoch 24/200 => Loss 3.785, Loss_clf 1.438, Loss_kd 2.341, Loss_kernel 0.006, Train_accy 61.67
+2025-06-27 18:27:06,653 [icarl.py] => Task 2, Epoch 25/200 => Loss 3.764, Loss_clf 1.411, Loss_kd 2.348, Loss_kernel 0.006, Train_accy 61.75
+2025-06-27 18:27:46,066 [icarl.py] => Task 2, Epoch 26/200 => Loss 3.722, Loss_clf 1.380, Loss_kd 2.337, Loss_kernel 0.005, Train_accy 62.27, Test_accy {'Art': 24.57, 'Clipart': 48.28, 'Real World': 38.03, 'Product': 33.27}
+2025-06-27 18:28:12,185 [icarl.py] => Task 2, Epoch 27/200 => Loss 3.736, Loss_clf 1.392, Loss_kd 2.338, Loss_kernel 0.006, Train_accy 62.28
+2025-06-27 18:28:38,487 [icarl.py] => Task 2, Epoch 28/200 => Loss 3.622, Loss_clf 1.305, Loss_kd 2.311, Loss_kernel 0.006, Train_accy 65.03
+2025-06-27 18:29:04,871 [icarl.py] => Task 2, Epoch 29/200 => Loss 3.585, Loss_clf 1.263, Loss_kd 2.316, Loss_kernel 0.005, Train_accy 66.18
+2025-06-27 18:29:31,187 [icarl.py] => Task 2, Epoch 30/200 => Loss 3.643, Loss_clf 1.303, Loss_kd 2.334, Loss_kernel 0.006, Train_accy 64.31
+2025-06-27 18:30:09,371 [icarl.py] => Task 2, Epoch 31/200 => Loss 3.566, Loss_clf 1.250, Loss_kd 2.311, Loss_kernel 0.005, Train_accy 65.60, Test_accy {'Art': 25.95, 'Clipart': 50.0, 'Real World': 41.74, 'Product': 36.62}
+2025-06-27 18:30:35,814 [icarl.py] => Task 2, Epoch 32/200 => Loss 3.537, Loss_clf 1.225, Loss_kd 2.307, Loss_kernel 0.006, Train_accy 66.41
+2025-06-27 18:31:02,213 [icarl.py] => Task 2, Epoch 33/200 => Loss 3.544, Loss_clf 1.217, Loss_kd 2.321, Loss_kernel 0.006, Train_accy 66.57
+2025-06-27 18:31:28,121 [icarl.py] => Task 2, Epoch 34/200 => Loss 3.534, Loss_clf 1.214, Loss_kd 2.314, Loss_kernel 0.006, Train_accy 66.60
+2025-06-27 18:31:54,311 [icarl.py] => Task 2, Epoch 35/200 => Loss 3.491, Loss_clf 1.186, Loss_kd 2.299, Loss_kernel 0.005, Train_accy 67.36
+2025-06-27 18:32:33,355 [icarl.py] => Task 2, Epoch 36/200 => Loss 3.451, Loss_clf 1.142, Loss_kd 2.304, Loss_kernel 0.005, Train_accy 68.47, Test_accy {'Art': 29.07, 'Clipart': 50.95, 'Real World': 44.71, 'Product': 39.61}
+2025-06-27 18:33:00,657 [icarl.py] => Task 2, Epoch 37/200 => Loss 3.472, Loss_clf 1.164, Loss_kd 2.303, Loss_kernel 0.005, Train_accy 68.58
+2025-06-27 18:33:27,470 [icarl.py] => Task 2, Epoch 38/200 => Loss 3.380, Loss_clf 1.092, Loss_kd 2.282, Loss_kernel 0.006, Train_accy 70.75
+2025-06-27 18:33:55,007 [icarl.py] => Task 2, Epoch 39/200 => Loss 3.388, Loss_clf 1.116, Loss_kd 2.266, Loss_kernel 0.005, Train_accy 69.65
+2025-06-27 18:34:22,501 [icarl.py] => Task 2, Epoch 40/200 => Loss 3.391, Loss_clf 1.091, Loss_kd 2.294, Loss_kernel 0.005, Train_accy 70.96
+2025-06-27 18:35:01,745 [icarl.py] => Task 2, Epoch 41/200 => Loss 3.358, Loss_clf 1.080, Loss_kd 2.272, Loss_kernel 0.005, Train_accy 71.45, Test_accy {'Art': 27.34, 'Clipart': 45.42, 'Real World': 36.36, 'Product': 31.16}
+2025-06-27 18:35:28,286 [icarl.py] => Task 2, Epoch 42/200 => Loss 3.362, Loss_clf 1.084, Loss_kd 2.273, Loss_kernel 0.005, Train_accy 70.57
+2025-06-27 18:35:54,884 [icarl.py] => Task 2, Epoch 43/200 => Loss 3.385, Loss_clf 1.100, Loss_kd 2.280, Loss_kernel 0.005, Train_accy 70.99
+2025-06-27 18:36:21,124 [icarl.py] => Task 2, Epoch 44/200 => Loss 3.336, Loss_clf 1.058, Loss_kd 2.272, Loss_kernel 0.006, Train_accy 71.50
+2025-06-27 18:36:47,657 [icarl.py] => Task 2, Epoch 45/200 => Loss 3.334, Loss_clf 1.049, Loss_kd 2.280, Loss_kernel 0.005, Train_accy 71.29
+2025-06-27 18:37:26,559 [icarl.py] => Task 2, Epoch 46/200 => Loss 3.300, Loss_clf 1.032, Loss_kd 2.263, Loss_kernel 0.005, Train_accy 71.80, Test_accy {'Art': 25.95, 'Clipart': 50.19, 'Real World': 41.56, 'Product': 35.56}
+2025-06-27 18:37:52,969 [icarl.py] => Task 2, Epoch 47/200 => Loss 3.321, Loss_clf 1.036, Loss_kd 2.280, Loss_kernel 0.005, Train_accy 72.59
+2025-06-27 18:38:18,964 [icarl.py] => Task 2, Epoch 48/200 => Loss 3.302, Loss_clf 1.020, Loss_kd 2.276, Loss_kernel 0.005, Train_accy 73.19
+2025-06-27 18:38:44,831 [icarl.py] => Task 2, Epoch 49/200 => Loss 3.225, Loss_clf 0.962, Loss_kd 2.257, Loss_kernel 0.005, Train_accy 74.39
+2025-06-27 18:39:10,713 [icarl.py] => Task 2, Epoch 50/200 => Loss 3.281, Loss_clf 1.015, Loss_kd 2.261, Loss_kernel 0.005, Train_accy 72.89
+2025-06-27 18:39:48,575 [icarl.py] => Task 2, Epoch 51/200 => Loss 3.365, Loss_clf 1.076, Loss_kd 2.284, Loss_kernel 0.005, Train_accy 70.60, Test_accy {'Art': 26.3, 'Clipart': 51.15, 'Real World': 44.16, 'Product': 36.27}
+2025-06-27 18:40:14,289 [icarl.py] => Task 2, Epoch 52/200 => Loss 3.212, Loss_clf 0.962, Loss_kd 2.245, Loss_kernel 0.005, Train_accy 74.04
+2025-06-27 18:40:40,578 [icarl.py] => Task 2, Epoch 53/200 => Loss 3.234, Loss_clf 0.986, Loss_kd 2.243, Loss_kernel 0.005, Train_accy 73.93
+2025-06-27 18:41:06,374 [icarl.py] => Task 2, Epoch 54/200 => Loss 3.232, Loss_clf 0.968, Loss_kd 2.258, Loss_kernel 0.005, Train_accy 73.18
+2025-06-27 18:41:32,210 [icarl.py] => Task 2, Epoch 55/200 => Loss 3.234, Loss_clf 0.971, Loss_kd 2.258, Loss_kernel 0.005, Train_accy 73.59
+2025-06-27 18:42:12,342 [icarl.py] => Task 2, Epoch 56/200 => Loss 3.228, Loss_clf 0.973, Loss_kd 2.250, Loss_kernel 0.005, Train_accy 74.18, Test_accy {'Art': 29.41, 'Clipart': 49.43, 'Real World': 39.52, 'Product': 31.87}
+2025-06-27 18:42:38,627 [icarl.py] => Task 2, Epoch 57/200 => Loss 3.202, Loss_clf 0.950, Loss_kd 2.247, Loss_kernel 0.005, Train_accy 74.04
+2025-06-27 18:43:04,601 [icarl.py] => Task 2, Epoch 58/200 => Loss 3.169, Loss_clf 0.923, Loss_kd 2.241, Loss_kernel 0.005, Train_accy 75.70
+2025-06-27 18:43:30,685 [icarl.py] => Task 2, Epoch 59/200 => Loss 3.100, Loss_clf 0.863, Loss_kd 2.232, Loss_kernel 0.005, Train_accy 77.33
+2025-06-27 18:43:56,634 [icarl.py] => Task 2, Epoch 60/200 => Loss 3.136, Loss_clf 0.893, Loss_kd 2.239, Loss_kernel 0.005, Train_accy 75.79
+2025-06-27 18:44:35,241 [icarl.py] => Task 2, Epoch 61/200 => Loss 3.122, Loss_clf 0.884, Loss_kd 2.233, Loss_kernel 0.005, Train_accy 76.73, Test_accy {'Art': 27.68, 'Clipart': 50.19, 'Real World': 42.12, 'Product': 37.85}
+2025-06-27 18:45:01,701 [icarl.py] => Task 2, Epoch 62/200 => Loss 3.110, Loss_clf 0.883, Loss_kd 2.223, Loss_kernel 0.005, Train_accy 76.06
+2025-06-27 18:45:28,269 [icarl.py] => Task 2, Epoch 63/200 => Loss 3.058, Loss_clf 0.824, Loss_kd 2.229, Loss_kernel 0.005, Train_accy 78.04
+2025-06-27 18:45:54,682 [icarl.py] => Task 2, Epoch 64/200 => Loss 3.053, Loss_clf 0.819, Loss_kd 2.229, Loss_kernel 0.005, Train_accy 78.54
+2025-06-27 18:46:20,358 [icarl.py] => Task 2, Epoch 65/200 => Loss 3.056, Loss_clf 0.828, Loss_kd 2.223, Loss_kernel 0.005, Train_accy 77.32
+2025-06-27 18:46:59,936 [icarl.py] => Task 2, Epoch 66/200 => Loss 3.052, Loss_clf 0.828, Loss_kd 2.219, Loss_kernel 0.005, Train_accy 77.64, Test_accy {'Art': 29.41, 'Clipart': 51.72, 'Real World': 42.49, 'Product': 37.15}
+2025-06-27 18:47:25,676 [icarl.py] => Task 2, Epoch 67/200 => Loss 3.103, Loss_clf 0.873, Loss_kd 2.225, Loss_kernel 0.005, Train_accy 77.00
+2025-06-27 18:47:52,155 [icarl.py] => Task 2, Epoch 68/200 => Loss 3.070, Loss_clf 0.851, Loss_kd 2.214, Loss_kernel 0.005, Train_accy 77.63
+2025-06-27 18:48:18,193 [icarl.py] => Task 2, Epoch 69/200 => Loss 3.025, Loss_clf 0.804, Loss_kd 2.216, Loss_kernel 0.005, Train_accy 79.07
+2025-06-27 18:48:44,333 [icarl.py] => Task 2, Epoch 70/200 => Loss 3.079, Loss_clf 0.843, Loss_kd 2.231, Loss_kernel 0.005, Train_accy 76.90
+2025-06-27 18:49:22,464 [icarl.py] => Task 2, Epoch 71/200 => Loss 3.041, Loss_clf 0.813, Loss_kd 2.223, Loss_kernel 0.005, Train_accy 78.71, Test_accy {'Art': 25.95, 'Clipart': 52.67, 'Real World': 43.97, 'Product': 38.38}
+2025-06-27 18:49:49,033 [icarl.py] => Task 2, Epoch 72/200 => Loss 3.037, Loss_clf 0.808, Loss_kd 2.224, Loss_kernel 0.005, Train_accy 78.40
+2025-06-27 18:50:15,113 [icarl.py] => Task 2, Epoch 73/200 => Loss 3.041, Loss_clf 0.813, Loss_kd 2.223, Loss_kernel 0.005, Train_accy 78.23
+2025-06-27 18:50:41,043 [icarl.py] => Task 2, Epoch 74/200 => Loss 3.024, Loss_clf 0.807, Loss_kd 2.213, Loss_kernel 0.005, Train_accy 78.58
+2025-06-27 18:51:06,913 [icarl.py] => Task 2, Epoch 75/200 => Loss 2.991, Loss_clf 0.770, Loss_kd 2.217, Loss_kernel 0.005, Train_accy 79.48
+2025-06-27 18:51:45,979 [icarl.py] => Task 2, Epoch 76/200 => Loss 3.007, Loss_clf 0.800, Loss_kd 2.203, Loss_kernel 0.004, Train_accy 78.66, Test_accy {'Art': 29.07, 'Clipart': 51.91, 'Real World': 41.0, 'Product': 39.26}
+2025-06-27 18:52:12,443 [icarl.py] => Task 2, Epoch 77/200 => Loss 2.958, Loss_clf 0.750, Loss_kd 2.204, Loss_kernel 0.004, Train_accy 80.36
+2025-06-27 18:52:38,293 [icarl.py] => Task 2, Epoch 78/200 => Loss 2.961, Loss_clf 0.754, Loss_kd 2.202, Loss_kernel 0.004, Train_accy 80.11
+2025-06-27 18:53:05,798 [icarl.py] => Task 2, Epoch 79/200 => Loss 2.972, Loss_clf 0.771, Loss_kd 2.197, Loss_kernel 0.004, Train_accy 80.05
+2025-06-27 18:53:32,415 [icarl.py] => Task 2, Epoch 80/200 => Loss 2.921, Loss_clf 0.722, Loss_kd 2.195, Loss_kernel 0.004, Train_accy 81.52
+2025-06-27 18:54:13,896 [icarl.py] => Task 2, Epoch 81/200 => Loss 2.861, Loss_clf 0.685, Loss_kd 2.172, Loss_kernel 0.004, Train_accy 82.49, Test_accy {'Art': 28.72, 'Clipart': 51.53, 'Real World': 42.49, 'Product': 37.15}
+2025-06-27 18:54:41,052 [icarl.py] => Task 2, Epoch 82/200 => Loss 2.872, Loss_clf 0.689, Loss_kd 2.179, Loss_kernel 0.004, Train_accy 82.06
+2025-06-27 18:55:06,745 [icarl.py] => Task 2, Epoch 83/200 => Loss 2.917, Loss_clf 0.719, Loss_kd 2.194, Loss_kernel 0.004, Train_accy 80.54
+2025-06-27 18:55:33,233 [icarl.py] => Task 2, Epoch 84/200 => Loss 2.902, Loss_clf 0.710, Loss_kd 2.188, Loss_kernel 0.004, Train_accy 81.54
+2025-06-27 18:55:59,179 [icarl.py] => Task 2, Epoch 85/200 => Loss 2.885, Loss_clf 0.695, Loss_kd 2.186, Loss_kernel 0.004, Train_accy 82.08
+2025-06-27 18:56:37,602 [icarl.py] => Task 2, Epoch 86/200 => Loss 2.884, Loss_clf 0.701, Loss_kd 2.179, Loss_kernel 0.004, Train_accy 80.82, Test_accy {'Art': 28.37, 'Clipart': 50.95, 'Real World': 44.9, 'Product': 41.2}
+2025-06-27 18:57:03,890 [icarl.py] => Task 2, Epoch 87/200 => Loss 2.861, Loss_clf 0.672, Loss_kd 2.185, Loss_kernel 0.004, Train_accy 81.79
+2025-06-27 18:57:32,472 [icarl.py] => Task 2, Epoch 88/200 => Loss 2.809, Loss_clf 0.646, Loss_kd 2.159, Loss_kernel 0.004, Train_accy 83.05
+2025-06-27 18:57:58,660 [icarl.py] => Task 2, Epoch 89/200 => Loss 2.798, Loss_clf 0.627, Loss_kd 2.167, Loss_kernel 0.004, Train_accy 83.35
+2025-06-27 18:58:24,260 [icarl.py] => Task 2, Epoch 90/200 => Loss 2.843, Loss_clf 0.664, Loss_kd 2.175, Loss_kernel 0.004, Train_accy 82.01
+2025-06-27 18:59:03,963 [icarl.py] => Task 2, Epoch 91/200 => Loss 2.860, Loss_clf 0.686, Loss_kd 2.169, Loss_kernel 0.004, Train_accy 82.12, Test_accy {'Art': 25.26, 'Clipart': 55.34, 'Real World': 44.16, 'Product': 38.91}
+2025-06-27 18:59:29,690 [icarl.py] => Task 2, Epoch 92/200 => Loss 2.798, Loss_clf 0.634, Loss_kd 2.160, Loss_kernel 0.004, Train_accy 82.86
+2025-06-27 18:59:55,593 [icarl.py] => Task 2, Epoch 93/200 => Loss 2.841, Loss_clf 0.674, Loss_kd 2.163, Loss_kernel 0.004, Train_accy 82.07
+2025-06-27 19:00:21,422 [icarl.py] => Task 2, Epoch 94/200 => Loss 2.785, Loss_clf 0.624, Loss_kd 2.157, Loss_kernel 0.004, Train_accy 83.67
+2025-06-27 19:00:46,095 [icarl.py] => Task 2, Epoch 95/200 => Loss 2.791, Loss_clf 0.635, Loss_kd 2.152, Loss_kernel 0.004, Train_accy 83.90
+2025-06-27 19:01:24,610 [icarl.py] => Task 2, Epoch 96/200 => Loss 2.793, Loss_clf 0.620, Loss_kd 2.169, Loss_kernel 0.004, Train_accy 84.37, Test_accy {'Art': 30.45, 'Clipart': 54.77, 'Real World': 44.34, 'Product': 38.56}
+2025-06-27 19:01:49,948 [icarl.py] => Task 2, Epoch 97/200 => Loss 2.809, Loss_clf 0.633, Loss_kd 2.172, Loss_kernel 0.004, Train_accy 83.80
+2025-06-27 19:02:16,199 [icarl.py] => Task 2, Epoch 98/200 => Loss 2.775, Loss_clf 0.607, Loss_kd 2.164, Loss_kernel 0.004, Train_accy 84.02
+2025-06-27 19:02:41,938 [icarl.py] => Task 2, Epoch 99/200 => Loss 2.704, Loss_clf 0.565, Loss_kd 2.135, Loss_kernel 0.004, Train_accy 85.37
+2025-06-27 19:03:07,525 [icarl.py] => Task 2, Epoch 100/200 => Loss 2.757, Loss_clf 0.602, Loss_kd 2.151, Loss_kernel 0.004, Train_accy 84.32
+2025-06-27 19:03:47,772 [icarl.py] => Task 2, Epoch 101/200 => Loss 2.743, Loss_clf 0.591, Loss_kd 2.148, Loss_kernel 0.004, Train_accy 84.40, Test_accy {'Art': 27.68, 'Clipart': 54.77, 'Real World': 45.83, 'Product': 43.66}
+2025-06-27 19:04:13,634 [icarl.py] => Task 2, Epoch 102/200 => Loss 2.726, Loss_clf 0.582, Loss_kd 2.140, Loss_kernel 0.004, Train_accy 85.16
+2025-06-27 19:04:38,755 [icarl.py] => Task 2, Epoch 103/200 => Loss 2.686, Loss_clf 0.551, Loss_kd 2.132, Loss_kernel 0.004, Train_accy 85.58
+2025-06-27 19:05:04,167 [icarl.py] => Task 2, Epoch 104/200 => Loss 2.682, Loss_clf 0.547, Loss_kd 2.131, Loss_kernel 0.004, Train_accy 85.92
+2025-06-27 19:05:29,091 [icarl.py] => Task 2, Epoch 105/200 => Loss 2.710, Loss_clf 0.569, Loss_kd 2.137, Loss_kernel 0.004, Train_accy 84.77
+2025-06-27 19:06:07,420 [icarl.py] => Task 2, Epoch 106/200 => Loss 2.688, Loss_clf 0.549, Loss_kd 2.135, Loss_kernel 0.004, Train_accy 85.98, Test_accy {'Art': 27.34, 'Clipart': 53.82, 'Real World': 42.67, 'Product': 41.02}
+2025-06-27 19:06:33,130 [icarl.py] => Task 2, Epoch 107/200 => Loss 2.652, Loss_clf 0.522, Loss_kd 2.126, Loss_kernel 0.004, Train_accy 86.90
+2025-06-27 19:06:58,791 [icarl.py] => Task 2, Epoch 108/200 => Loss 2.668, Loss_clf 0.530, Loss_kd 2.134, Loss_kernel 0.004, Train_accy 85.98
+2025-06-27 19:07:24,206 [icarl.py] => Task 2, Epoch 109/200 => Loss 2.651, Loss_clf 0.517, Loss_kd 2.130, Loss_kernel 0.004, Train_accy 86.70
+2025-06-27 19:07:49,721 [icarl.py] => Task 2, Epoch 110/200 => Loss 2.618, Loss_clf 0.495, Loss_kd 2.120, Loss_kernel 0.003, Train_accy 87.16
+2025-06-27 19:08:28,930 [icarl.py] => Task 2, Epoch 111/200 => Loss 2.674, Loss_clf 0.537, Loss_kd 2.133, Loss_kernel 0.004, Train_accy 86.39, Test_accy {'Art': 31.14, 'Clipart': 55.53, 'Real World': 47.12, 'Product': 41.9}
+2025-06-27 19:08:54,386 [icarl.py] => Task 2, Epoch 112/200 => Loss 2.604, Loss_clf 0.497, Loss_kd 2.104, Loss_kernel 0.004, Train_accy 87.13
+2025-06-27 19:09:19,834 [icarl.py] => Task 2, Epoch 113/200 => Loss 2.646, Loss_clf 0.517, Loss_kd 2.126, Loss_kernel 0.003, Train_accy 86.96
+2025-06-27 19:09:44,928 [icarl.py] => Task 2, Epoch 114/200 => Loss 2.618, Loss_clf 0.503, Loss_kd 2.111, Loss_kernel 0.004, Train_accy 87.03
+2025-06-27 19:10:10,630 [icarl.py] => Task 2, Epoch 115/200 => Loss 2.660, Loss_clf 0.537, Loss_kd 2.120, Loss_kernel 0.003, Train_accy 85.86
+2025-06-27 19:10:48,025 [icarl.py] => Task 2, Epoch 116/200 => Loss 2.618, Loss_clf 0.490, Loss_kd 2.125, Loss_kernel 0.004, Train_accy 86.88, Test_accy {'Art': 31.14, 'Clipart': 58.02, 'Real World': 45.08, 'Product': 42.25}
+2025-06-27 19:11:13,647 [icarl.py] => Task 2, Epoch 117/200 => Loss 2.559, Loss_clf 0.447, Loss_kd 2.109, Loss_kernel 0.003, Train_accy 88.81
+2025-06-27 19:11:38,329 [icarl.py] => Task 2, Epoch 118/200 => Loss 2.576, Loss_clf 0.456, Loss_kd 2.117, Loss_kernel 0.003, Train_accy 88.32
+2025-06-27 19:12:04,216 [icarl.py] => Task 2, Epoch 119/200 => Loss 2.569, Loss_clf 0.466, Loss_kd 2.100, Loss_kernel 0.003, Train_accy 87.69
+2025-06-27 19:12:29,525 [icarl.py] => Task 2, Epoch 120/200 => Loss 2.567, Loss_clf 0.468, Loss_kd 2.096, Loss_kernel 0.003, Train_accy 88.13
+2025-06-27 19:13:09,412 [icarl.py] => Task 2, Epoch 121/200 => Loss 2.579, Loss_clf 0.470, Loss_kd 2.106, Loss_kernel 0.004, Train_accy 88.33, Test_accy {'Art': 32.18, 'Clipart': 58.97, 'Real World': 45.08, 'Product': 41.9}
+2025-06-27 19:13:35,282 [icarl.py] => Task 2, Epoch 122/200 => Loss 2.533, Loss_clf 0.436, Loss_kd 2.094, Loss_kernel 0.003, Train_accy 88.67
+2025-06-27 19:14:00,441 [icarl.py] => Task 2, Epoch 123/200 => Loss 2.536, Loss_clf 0.436, Loss_kd 2.097, Loss_kernel 0.003, Train_accy 88.46
+2025-06-27 19:14:26,459 [icarl.py] => Task 2, Epoch 124/200 => Loss 2.532, Loss_clf 0.431, Loss_kd 2.098, Loss_kernel 0.003, Train_accy 88.47
+2025-06-27 19:14:51,747 [icarl.py] => Task 2, Epoch 125/200 => Loss 2.535, Loss_clf 0.425, Loss_kd 2.107, Loss_kernel 0.003, Train_accy 89.19
+2025-06-27 19:15:29,250 [icarl.py] => Task 2, Epoch 126/200 => Loss 2.519, Loss_clf 0.430, Loss_kd 2.086, Loss_kernel 0.003, Train_accy 89.29, Test_accy {'Art': 30.1, 'Clipart': 57.82, 'Real World': 47.68, 'Product': 43.13}
+2025-06-27 19:15:53,819 [icarl.py] => Task 2, Epoch 127/200 => Loss 2.470, Loss_clf 0.396, Loss_kd 2.071, Loss_kernel 0.003, Train_accy 90.11
+2025-06-27 19:16:18,980 [icarl.py] => Task 2, Epoch 128/200 => Loss 2.483, Loss_clf 0.405, Loss_kd 2.074, Loss_kernel 0.003, Train_accy 89.53
+2025-06-27 19:16:43,982 [icarl.py] => Task 2, Epoch 129/200 => Loss 2.497, Loss_clf 0.415, Loss_kd 2.079, Loss_kernel 0.003, Train_accy 89.28
+2025-06-27 19:17:09,712 [icarl.py] => Task 2, Epoch 130/200 => Loss 2.498, Loss_clf 0.418, Loss_kd 2.076, Loss_kernel 0.003, Train_accy 89.32
+2025-06-27 19:17:49,547 [icarl.py] => Task 2, Epoch 131/200 => Loss 2.452, Loss_clf 0.379, Loss_kd 2.070, Loss_kernel 0.003, Train_accy 89.91, Test_accy {'Art': 30.45, 'Clipart': 57.82, 'Real World': 44.71, 'Product': 41.02}
+2025-06-27 19:18:15,060 [icarl.py] => Task 2, Epoch 132/200 => Loss 2.485, Loss_clf 0.409, Loss_kd 2.073, Loss_kernel 0.003, Train_accy 89.79
+2025-06-27 19:18:40,491 [icarl.py] => Task 2, Epoch 133/200 => Loss 2.475, Loss_clf 0.404, Loss_kd 2.068, Loss_kernel 0.003, Train_accy 89.26
+2025-06-27 19:19:05,570 [icarl.py] => Task 2, Epoch 134/200 => Loss 2.432, Loss_clf 0.368, Loss_kd 2.061, Loss_kernel 0.003, Train_accy 90.50
+2025-06-27 19:19:30,433 [icarl.py] => Task 2, Epoch 135/200 => Loss 2.432, Loss_clf 0.366, Loss_kd 2.063, Loss_kernel 0.003, Train_accy 90.54
+2025-06-27 19:20:06,352 [icarl.py] => Task 2, Epoch 136/200 => Loss 2.399, Loss_clf 0.339, Loss_kd 2.058, Loss_kernel 0.003, Train_accy 91.74, Test_accy {'Art': 30.1, 'Clipart': 58.02, 'Real World': 46.94, 'Product': 42.78}
+2025-06-27 19:20:30,056 [icarl.py] => Task 2, Epoch 137/200 => Loss 2.393, Loss_clf 0.349, Loss_kd 2.041, Loss_kernel 0.003, Train_accy 91.10
+2025-06-27 19:20:54,972 [icarl.py] => Task 2, Epoch 138/200 => Loss 2.422, Loss_clf 0.358, Loss_kd 2.061, Loss_kernel 0.003, Train_accy 91.01
+2025-06-27 19:21:19,640 [icarl.py] => Task 2, Epoch 139/200 => Loss 2.421, Loss_clf 0.351, Loss_kd 2.067, Loss_kernel 0.003, Train_accy 91.18
+2025-06-27 19:21:45,147 [icarl.py] => Task 2, Epoch 140/200 => Loss 2.463, Loss_clf 0.383, Loss_kd 2.077, Loss_kernel 0.003, Train_accy 90.12
+2025-06-27 19:22:22,143 [icarl.py] => Task 2, Epoch 141/200 => Loss 2.392, Loss_clf 0.331, Loss_kd 2.058, Loss_kernel 0.003, Train_accy 91.58, Test_accy {'Art': 34.26, 'Clipart': 57.63, 'Real World': 46.94, 'Product': 42.08}
+2025-06-27 19:22:47,680 [icarl.py] => Task 2, Epoch 142/200 => Loss 2.422, Loss_clf 0.357, Loss_kd 2.061, Loss_kernel 0.003, Train_accy 91.15
+2025-06-27 19:23:12,555 [icarl.py] => Task 2, Epoch 143/200 => Loss 2.369, Loss_clf 0.325, Loss_kd 2.041, Loss_kernel 0.003, Train_accy 91.70
+2025-06-27 19:23:37,296 [icarl.py] => Task 2, Epoch 144/200 => Loss 2.417, Loss_clf 0.354, Loss_kd 2.060, Loss_kernel 0.003, Train_accy 90.62
+2025-06-27 19:24:02,650 [icarl.py] => Task 2, Epoch 145/200 => Loss 2.387, Loss_clf 0.325, Loss_kd 2.059, Loss_kernel 0.003, Train_accy 91.85
+2025-06-27 19:24:40,421 [icarl.py] => Task 2, Epoch 146/200 => Loss 2.337, Loss_clf 0.290, Loss_kd 2.044, Loss_kernel 0.003, Train_accy 92.92, Test_accy {'Art': 32.18, 'Clipart': 57.63, 'Real World': 45.83, 'Product': 41.37}
+2025-06-27 19:25:06,272 [icarl.py] => Task 2, Epoch 147/200 => Loss 2.377, Loss_clf 0.315, Loss_kd 2.059, Loss_kernel 0.003, Train_accy 92.08
+2025-06-27 19:25:32,699 [icarl.py] => Task 2, Epoch 148/200 => Loss 2.383, Loss_clf 0.340, Loss_kd 2.040, Loss_kernel 0.003, Train_accy 91.27
+2025-06-27 19:25:57,155 [icarl.py] => Task 2, Epoch 149/200 => Loss 2.326, Loss_clf 0.284, Loss_kd 2.040, Loss_kernel 0.003, Train_accy 93.13
+2025-06-27 19:26:21,696 [icarl.py] => Task 2, Epoch 150/200 => Loss 2.366, Loss_clf 0.319, Loss_kd 2.044, Loss_kernel 0.003, Train_accy 91.93
+2025-06-27 19:26:57,410 [icarl.py] => Task 2, Epoch 151/200 => Loss 2.313, Loss_clf 0.280, Loss_kd 2.030, Loss_kernel 0.003, Train_accy 93.13, Test_accy {'Art': 31.49, 'Clipart': 57.44, 'Real World': 48.05, 'Product': 42.08}
+2025-06-27 19:27:22,123 [icarl.py] => Task 2, Epoch 152/200 => Loss 2.299, Loss_clf 0.269, Loss_kd 2.027, Loss_kernel 0.003, Train_accy 93.61
+2025-06-27 19:27:46,841 [icarl.py] => Task 2, Epoch 153/200 => Loss 2.311, Loss_clf 0.272, Loss_kd 2.036, Loss_kernel 0.003, Train_accy 93.20
+2025-06-27 19:28:12,076 [icarl.py] => Task 2, Epoch 154/200 => Loss 2.320, Loss_clf 0.281, Loss_kd 2.036, Loss_kernel 0.003, Train_accy 93.19
+2025-06-27 19:28:37,094 [icarl.py] => Task 2, Epoch 155/200 => Loss 2.321, Loss_clf 0.288, Loss_kd 2.031, Loss_kernel 0.003, Train_accy 92.43
+2025-06-27 19:29:15,025 [icarl.py] => Task 2, Epoch 156/200 => Loss 2.304, Loss_clf 0.268, Loss_kd 2.034, Loss_kernel 0.003, Train_accy 93.30, Test_accy {'Art': 33.56, 'Clipart': 59.73, 'Real World': 48.24, 'Product': 41.9}
+2025-06-27 19:29:39,106 [icarl.py] => Task 2, Epoch 157/200 => Loss 2.299, Loss_clf 0.263, Loss_kd 2.033, Loss_kernel 0.003, Train_accy 93.54
+2025-06-27 19:30:04,514 [icarl.py] => Task 2, Epoch 158/200 => Loss 2.307, Loss_clf 0.269, Loss_kd 2.036, Loss_kernel 0.003, Train_accy 93.49
+2025-06-27 19:30:29,463 [icarl.py] => Task 2, Epoch 159/200 => Loss 2.318, Loss_clf 0.286, Loss_kd 2.029, Loss_kernel 0.003, Train_accy 92.64
+2025-06-27 19:30:54,899 [icarl.py] => Task 2, Epoch 160/200 => Loss 2.283, Loss_clf 0.257, Loss_kd 2.023, Loss_kernel 0.003, Train_accy 93.56
+2025-06-27 19:31:32,164 [icarl.py] => Task 2, Epoch 161/200 => Loss 2.291, Loss_clf 0.265, Loss_kd 2.024, Loss_kernel 0.003, Train_accy 93.18, Test_accy {'Art': 33.22, 'Clipart': 59.35, 'Real World': 48.24, 'Product': 40.14}
+2025-06-27 19:31:57,280 [icarl.py] => Task 2, Epoch 162/200 => Loss 2.287, Loss_clf 0.256, Loss_kd 2.028, Loss_kernel 0.003, Train_accy 93.85
+2025-06-27 19:32:20,950 [icarl.py] => Task 2, Epoch 163/200 => Loss 2.258, Loss_clf 0.242, Loss_kd 2.013, Loss_kernel 0.003, Train_accy 94.04
+2025-06-27 19:32:45,707 [icarl.py] => Task 2, Epoch 164/200 => Loss 2.290, Loss_clf 0.264, Loss_kd 2.023, Loss_kernel 0.003, Train_accy 93.54
+2025-06-27 19:33:09,860 [icarl.py] => Task 2, Epoch 165/200 => Loss 2.298, Loss_clf 0.275, Loss_kd 2.021, Loss_kernel 0.003, Train_accy 93.31
+2025-06-27 19:33:45,423 [icarl.py] => Task 2, Epoch 166/200 => Loss 2.273, Loss_clf 0.231, Loss_kd 2.040, Loss_kernel 0.003, Train_accy 94.34, Test_accy {'Art': 32.18, 'Clipart': 58.4, 'Real World': 48.61, 'Product': 43.31}
+2025-06-27 19:34:09,011 [icarl.py] => Task 2, Epoch 167/200 => Loss 2.271, Loss_clf 0.247, Loss_kd 2.021, Loss_kernel 0.003, Train_accy 93.69
+2025-06-27 19:34:32,628 [icarl.py] => Task 2, Epoch 168/200 => Loss 2.246, Loss_clf 0.238, Loss_kd 2.005, Loss_kernel 0.003, Train_accy 94.20
+2025-06-27 19:34:56,913 [icarl.py] => Task 2, Epoch 169/200 => Loss 2.280, Loss_clf 0.238, Loss_kd 2.039, Loss_kernel 0.003, Train_accy 93.98
+2025-06-27 19:35:21,238 [icarl.py] => Task 2, Epoch 170/200 => Loss 2.263, Loss_clf 0.239, Loss_kd 2.022, Loss_kernel 0.003, Train_accy 94.59
+2025-06-27 19:35:59,607 [icarl.py] => Task 2, Epoch 171/200 => Loss 2.262, Loss_clf 0.244, Loss_kd 2.015, Loss_kernel 0.003, Train_accy 94.33, Test_accy {'Art': 31.49, 'Clipart': 58.02, 'Real World': 49.35, 'Product': 42.43}
+2025-06-27 19:36:24,004 [icarl.py] => Task 2, Epoch 172/200 => Loss 2.245, Loss_clf 0.223, Loss_kd 2.019, Loss_kernel 0.003, Train_accy 94.78
+2025-06-27 19:36:48,814 [icarl.py] => Task 2, Epoch 173/200 => Loss 2.229, Loss_clf 0.227, Loss_kd 1.999, Loss_kernel 0.003, Train_accy 94.52
+2025-06-27 19:37:12,623 [icarl.py] => Task 2, Epoch 174/200 => Loss 2.225, Loss_clf 0.209, Loss_kd 2.013, Loss_kernel 0.003, Train_accy 94.95
+2025-06-27 19:37:35,846 [icarl.py] => Task 2, Epoch 175/200 => Loss 2.216, Loss_clf 0.218, Loss_kd 1.995, Loss_kernel 0.003, Train_accy 94.42
+2025-06-27 19:38:12,737 [icarl.py] => Task 2, Epoch 176/200 => Loss 2.213, Loss_clf 0.214, Loss_kd 1.997, Loss_kernel 0.003, Train_accy 94.39, Test_accy {'Art': 31.83, 'Clipart': 58.97, 'Real World': 49.17, 'Product': 43.31}
+2025-06-27 19:38:36,699 [icarl.py] => Task 2, Epoch 177/200 => Loss 2.238, Loss_clf 0.224, Loss_kd 2.011, Loss_kernel 0.003, Train_accy 94.45
+2025-06-27 19:38:59,294 [icarl.py] => Task 2, Epoch 178/200 => Loss 2.211, Loss_clf 0.203, Loss_kd 2.006, Loss_kernel 0.003, Train_accy 95.07
+2025-06-27 19:39:24,302 [icarl.py] => Task 2, Epoch 179/200 => Loss 2.207, Loss_clf 0.202, Loss_kd 2.002, Loss_kernel 0.003, Train_accy 95.23
+2025-06-27 19:39:48,385 [icarl.py] => Task 2, Epoch 180/200 => Loss 2.184, Loss_clf 0.195, Loss_kd 1.987, Loss_kernel 0.002, Train_accy 95.22
+2025-06-27 19:40:24,111 [icarl.py] => Task 2, Epoch 181/200 => Loss 2.204, Loss_clf 0.196, Loss_kd 2.006, Loss_kernel 0.003, Train_accy 95.23, Test_accy {'Art': 31.14, 'Clipart': 60.11, 'Real World': 49.72, 'Product': 42.43}
+2025-06-27 19:40:47,197 [icarl.py] => Task 2, Epoch 182/200 => Loss 2.222, Loss_clf 0.212, Loss_kd 2.008, Loss_kernel 0.003, Train_accy 95.11
+2025-06-27 19:41:10,511 [icarl.py] => Task 2, Epoch 183/200 => Loss 2.213, Loss_clf 0.197, Loss_kd 2.014, Loss_kernel 0.003, Train_accy 95.74
+2025-06-27 19:41:35,571 [icarl.py] => Task 2, Epoch 184/200 => Loss 2.210, Loss_clf 0.209, Loss_kd 1.998, Loss_kernel 0.003, Train_accy 94.84
+2025-06-27 19:41:59,341 [icarl.py] => Task 2, Epoch 185/200 => Loss 2.203, Loss_clf 0.202, Loss_kd 1.998, Loss_kernel 0.003, Train_accy 94.99
+2025-06-27 19:42:37,620 [icarl.py] => Task 2, Epoch 186/200 => Loss 2.263, Loss_clf 0.239, Loss_kd 2.022, Loss_kernel 0.003, Train_accy 94.15, Test_accy {'Art': 32.18, 'Clipart': 60.11, 'Real World': 50.46, 'Product': 42.78}
+2025-06-27 19:43:01,864 [icarl.py] => Task 2, Epoch 187/200 => Loss 2.213, Loss_clf 0.203, Loss_kd 2.008, Loss_kernel 0.003, Train_accy 95.23
+2025-06-27 19:43:25,286 [icarl.py] => Task 2, Epoch 188/200 => Loss 2.219, Loss_clf 0.210, Loss_kd 2.007, Loss_kernel 0.003, Train_accy 94.64
+2025-06-27 19:43:49,331 [icarl.py] => Task 2, Epoch 189/200 => Loss 2.206, Loss_clf 0.194, Loss_kd 2.009, Loss_kernel 0.003, Train_accy 95.23
+2025-06-27 19:44:13,470 [icarl.py] => Task 2, Epoch 190/200 => Loss 2.217, Loss_clf 0.211, Loss_kd 2.003, Loss_kernel 0.003, Train_accy 95.11
+2025-06-27 19:44:50,496 [icarl.py] => Task 2, Epoch 191/200 => Loss 2.206, Loss_clf 0.214, Loss_kd 1.990, Loss_kernel 0.003, Train_accy 95.00, Test_accy {'Art': 31.49, 'Clipart': 59.35, 'Real World': 49.91, 'Product': 43.66}
+2025-06-27 19:45:14,145 [icarl.py] => Task 2, Epoch 192/200 => Loss 2.195, Loss_clf 0.187, Loss_kd 2.006, Loss_kernel 0.003, Train_accy 95.79
+2025-06-27 19:45:37,295 [icarl.py] => Task 2, Epoch 193/200 => Loss 2.186, Loss_clf 0.182, Loss_kd 2.002, Loss_kernel 0.002, Train_accy 95.60
+2025-06-27 19:46:01,564 [icarl.py] => Task 2, Epoch 194/200 => Loss 2.179, Loss_clf 0.179, Loss_kd 1.997, Loss_kernel 0.002, Train_accy 95.94
+2025-06-27 19:46:23,941 [icarl.py] => Task 2, Epoch 195/200 => Loss 2.176, Loss_clf 0.177, Loss_kd 1.996, Loss_kernel 0.002, Train_accy 96.00
+2025-06-27 19:47:00,190 [icarl.py] => Task 2, Epoch 196/200 => Loss 2.197, Loss_clf 0.199, Loss_kd 1.996, Loss_kernel 0.002, Train_accy 95.03, Test_accy {'Art': 30.8, 'Clipart': 58.78, 'Real World': 50.09, 'Product': 43.13}
+2025-06-27 19:47:23,635 [icarl.py] => Task 2, Epoch 197/200 => Loss 2.184, Loss_clf 0.184, Loss_kd 1.997, Loss_kernel 0.002, Train_accy 95.81
+2025-06-27 19:47:48,167 [icarl.py] => Task 2, Epoch 198/200 => Loss 2.213, Loss_clf 0.204, Loss_kd 2.006, Loss_kernel 0.003, Train_accy 95.18
+2025-06-27 19:48:10,644 [icarl.py] => Task 2, Epoch 199/200 => Loss 2.171, Loss_clf 0.167, Loss_kd 2.002, Loss_kernel 0.002, Train_accy 96.21
+2025-06-27 19:48:34,828 [icarl.py] => Task 2, Epoch 200/200 => Loss 2.180, Loss_clf 0.183, Loss_kd 1.994, Loss_kernel 0.003, Train_accy 95.27
+2025-06-27 19:48:34,829 [base.py] => Reducing exemplars...(33 per classes)
+2025-06-27 19:48:54,161 [base.py] => Constructing exemplars...(33 per classes)
+2025-06-27 19:49:46,826 [icarl.py] => Exemplar size: 1287
+2025-06-27 19:49:47,823 [trainer.py] => CNN [Art]: {'total': 31.49, '00-12': 37.63, '13-25': 21.84, '26-38': 33.94, 'old': 30.0, 'new': 33.94}
+2025-06-27 19:49:47,824 [trainer.py] => NME [Art]: {'total': 32.18, '00-12': 34.41, '13-25': 25.29, '26-38': 35.78, 'old': 30.0, 'new': 35.78}
+2025-06-27 19:49:47,824 [trainer.py] => CNN [Art] top1 curve: [52.69, 45.0, 31.49]
+2025-06-27 19:49:47,824 [trainer.py] => CNN [Art] top5 curve: [77.42, 65.0, 59.17]
+2025-06-27 19:49:47,824 [trainer.py] => NME [Art] top1 curve: [55.91, 47.22, 32.18]
+2025-06-27 19:49:47,824 [trainer.py] => NME [Art] top5 curve: [84.95, 71.67, 59.86]
+2025-06-27 19:49:47,824 [trainer.py] => Average Accuracy [Art] (CNN): 43.06
+2025-06-27 19:49:47,824 [trainer.py] => Average Accuracy [Art] (NME): 45.10333333333333
+2025-06-27 19:49:47,824 [trainer.py] => CNN [Clipart]: {'total': 59.16, '00-12': 63.48, '13-25': 53.01, '26-38': 61.35, 'old': 58.17, 'new': 61.35}
+2025-06-27 19:49:47,825 [trainer.py] => NME [Clipart]: {'total': 60.11, '00-12': 66.29, '13-25': 57.38, '26-38': 56.44, 'old': 61.77, 'new': 56.44}
+2025-06-27 19:49:47,825 [trainer.py] => CNN [Clipart] top1 curve: [70.79, 67.59, 59.16]
+2025-06-27 19:49:47,825 [trainer.py] => CNN [Clipart] top5 curve: [92.13, 85.6, 81.11]
+2025-06-27 19:49:47,825 [trainer.py] => NME [Clipart] top1 curve: [70.22, 67.87, 60.11]
+2025-06-27 19:49:47,825 [trainer.py] => NME [Clipart] top5 curve: [94.94, 87.53, 82.63]
+2025-06-27 19:49:47,825 [trainer.py] => Average Accuracy [Clipart] (CNN): 65.84666666666668
+2025-06-27 19:49:47,825 [trainer.py] => Average Accuracy [Clipart] (NME): 66.06666666666666
+2025-06-27 19:49:47,825 [trainer.py] => CNN [Product]: {'total': 42.78, '00-12': 52.4, '13-25': 32.94, '26-38': 41.05, 'old': 43.65, 'new': 41.05}
+2025-06-27 19:49:47,825 [trainer.py] => NME [Product]: {'total': 46.48, '00-12': 51.44, '13-25': 41.18, '26-38': 45.79, 'old': 46.83, 'new': 45.79}
+2025-06-27 19:49:47,826 [trainer.py] => CNN [Product] top1 curve: [59.62, 49.21, 42.78]
+2025-06-27 19:49:47,826 [trainer.py] => CNN [Product] top5 curve: [88.94, 75.93, 69.89]
+2025-06-27 19:49:47,826 [trainer.py] => NME [Product] top1 curve: [58.17, 49.74, 46.48]
+2025-06-27 19:49:47,826 [trainer.py] => NME [Product] top5 curve: [89.9, 78.57, 71.65]
+2025-06-27 19:49:47,826 [trainer.py] => Average Accuracy [Product] (CNN): 50.53666666666667
+2025-06-27 19:49:47,826 [trainer.py] => Average Accuracy [Product] (NME): 51.46333333333333
+2025-06-27 19:49:47,826 [trainer.py] => CNN [Real World]: {'total': 50.46, '00-12': 53.8, '13-25': 34.48, '26-38': 62.43, 'old': 44.41, 'new': 62.43}
+2025-06-27 19:49:47,826 [trainer.py] => NME [Real World]: {'total': 50.09, '00-12': 47.83, '13-25': 38.51, '26-38': 63.54, 'old': 43.3, 'new': 63.54}
+2025-06-27 19:49:47,826 [trainer.py] => CNN [Real World] top1 curve: [63.59, 51.12, 50.46]
+2025-06-27 19:49:47,827 [trainer.py] => CNN [Real World] top5 curve: [89.67, 79.33, 76.07]
+2025-06-27 19:49:47,827 [trainer.py] => NME [Real World] top1 curve: [63.04, 53.91, 50.09]
+2025-06-27 19:49:47,827 [trainer.py] => NME [Real World] top5 curve: [94.57, 82.68, 77.92]
+2025-06-27 19:49:47,827 [trainer.py] => Average Accuracy [Real World] (CNN): 55.05666666666667
+2025-06-27 19:49:47,827 [trainer.py] => Average Accuracy [Real World] (NME): 55.68
+2025-06-27 19:49:47,827 [trainer.py] => NME Harmonic Mean : 46.9649
+2025-06-27 19:49:47,827 [trainer.py] => NME Macro Mean : 47.2150
+2025-06-27 19:49:47,827 [trainer.py] => CNN Harmonic Mean : 44.8075
+2025-06-27 19:49:47,827 [trainer.py] => CNN Macro Mean : 45.9725
+2025-06-27 19:49:47,829 [trainer.py] => All params: 21344693
+2025-06-27 19:49:47,830 [trainer.py] => Trainable params: 21344693
+2025-06-27 19:49:47,832 [icarl.py] => Learning on 39-52
+2025-06-27 19:50:32,660 [icarl.py] => Task 3, Epoch 1/200 => Loss 6.997, Loss_clf 3.721, Loss_kd 3.268, Loss_kernel 0.008, Train_accy 19.65, Test_accy {'Art': 5.35, 'Clipart': 14.33, 'Real World': 8.93, 'Product': 8.57}
+2025-06-27 19:51:00,728 [icarl.py] => Task 3, Epoch 2/200 => Loss 6.326, Loss_clf 3.070, Loss_kd 3.246, Loss_kernel 0.009, Train_accy 24.37
+2025-06-27 19:51:28,111 [icarl.py] => Task 3, Epoch 3/200 => Loss 5.863, Loss_clf 2.748, Loss_kd 3.108, Loss_kernel 0.007, Train_accy 28.71
+2025-06-27 19:51:55,444 [icarl.py] => Task 3, Epoch 4/200 => Loss 5.584, Loss_clf 2.550, Loss_kd 3.027, Loss_kernel 0.007, Train_accy 33.67
+2025-06-27 19:52:22,899 [icarl.py] => Task 3, Epoch 5/200 => Loss 5.421, Loss_clf 2.416, Loss_kd 2.999, Loss_kernel 0.007, Train_accy 35.97
+2025-06-27 19:53:08,066 [icarl.py] => Task 3, Epoch 6/200 => Loss 5.332, Loss_clf 2.335, Loss_kd 2.990, Loss_kernel 0.007, Train_accy 38.92, Test_accy {'Art': 18.25, 'Clipart': 33.9, 'Real World': 31.87, 'Product': 25.84}
+2025-06-27 19:53:36,991 [icarl.py] => Task 3, Epoch 7/200 => Loss 5.209, Loss_clf 2.248, Loss_kd 2.954, Loss_kernel 0.007, Train_accy 40.35
+2025-06-27 19:54:04,071 [icarl.py] => Task 3, Epoch 8/200 => Loss 5.064, Loss_clf 2.145, Loss_kd 2.913, Loss_kernel 0.006, Train_accy 43.29
+2025-06-27 19:54:31,737 [icarl.py] => Task 3, Epoch 9/200 => Loss 4.952, Loss_clf 2.052, Loss_kd 2.894, Loss_kernel 0.007, Train_accy 45.48
+2025-06-27 19:54:59,405 [icarl.py] => Task 3, Epoch 10/200 => Loss 4.818, Loss_clf 1.947, Loss_kd 2.865, Loss_kernel 0.006, Train_accy 47.57
+2025-06-27 19:55:43,724 [icarl.py] => Task 3, Epoch 11/200 => Loss 4.771, Loss_clf 1.901, Loss_kd 2.863, Loss_kernel 0.006, Train_accy 48.03, Test_accy {'Art': 21.65, 'Clipart': 35.32, 'Real World': 32.69, 'Product': 25.84}
+2025-06-27 19:56:11,163 [icarl.py] => Task 3, Epoch 12/200 => Loss 4.744, Loss_clf 1.879, Loss_kd 2.858, Loss_kernel 0.006, Train_accy 49.50
+2025-06-27 19:56:38,819 [icarl.py] => Task 3, Epoch 13/200 => Loss 4.544, Loss_clf 1.730, Loss_kd 2.808, Loss_kernel 0.006, Train_accy 53.79
+2025-06-27 19:57:06,090 [icarl.py] => Task 3, Epoch 14/200 => Loss 4.607, Loss_clf 1.770, Loss_kd 2.830, Loss_kernel 0.007, Train_accy 52.02
+2025-06-27 19:57:33,847 [icarl.py] => Task 3, Epoch 15/200 => Loss 4.547, Loss_clf 1.734, Loss_kd 2.807, Loss_kernel 0.006, Train_accy 54.53
+2025-06-27 19:58:18,533 [icarl.py] => Task 3, Epoch 16/200 => Loss 4.404, Loss_clf 1.632, Loss_kd 2.766, Loss_kernel 0.006, Train_accy 56.38, Test_accy {'Art': 22.63, 'Clipart': 42.13, 'Real World': 37.09, 'Product': 28.25}
+2025-06-27 19:58:45,926 [icarl.py] => Task 3, Epoch 17/200 => Loss 4.337, Loss_clf 1.557, Loss_kd 2.774, Loss_kernel 0.006, Train_accy 58.39
+2025-06-27 19:59:13,347 [icarl.py] => Task 3, Epoch 18/200 => Loss 4.330, Loss_clf 1.544, Loss_kd 2.780, Loss_kernel 0.006, Train_accy 56.80
+2025-06-27 19:59:40,393 [icarl.py] => Task 3, Epoch 19/200 => Loss 4.208, Loss_clf 1.474, Loss_kd 2.728, Loss_kernel 0.006, Train_accy 60.18
+2025-06-27 20:00:08,543 [icarl.py] => Task 3, Epoch 20/200 => Loss 4.254, Loss_clf 1.497, Loss_kd 2.751, Loss_kernel 0.006, Train_accy 59.83
+2025-06-27 20:00:53,065 [icarl.py] => Task 3, Epoch 21/200 => Loss 4.191, Loss_clf 1.451, Loss_kd 2.734, Loss_kernel 0.006, Train_accy 61.15, Test_accy {'Art': 20.19, 'Clipart': 40.0, 'Real World': 30.49, 'Product': 25.44}
+2025-06-27 20:01:20,628 [icarl.py] => Task 3, Epoch 22/200 => Loss 4.123, Loss_clf 1.408, Loss_kd 2.709, Loss_kernel 0.007, Train_accy 62.51
+2025-06-27 20:01:47,665 [icarl.py] => Task 3, Epoch 23/200 => Loss 4.109, Loss_clf 1.380, Loss_kd 2.723, Loss_kernel 0.006, Train_accy 62.61
+2025-06-27 20:02:15,074 [icarl.py] => Task 3, Epoch 24/200 => Loss 4.029, Loss_clf 1.319, Loss_kd 2.704, Loss_kernel 0.006, Train_accy 64.04
+2025-06-27 20:02:42,457 [icarl.py] => Task 3, Epoch 25/200 => Loss 4.071, Loss_clf 1.340, Loss_kd 2.725, Loss_kernel 0.006, Train_accy 64.09
+2025-06-27 20:03:26,862 [icarl.py] => Task 3, Epoch 26/200 => Loss 4.031, Loss_clf 1.319, Loss_kd 2.706, Loss_kernel 0.006, Train_accy 64.69, Test_accy {'Art': 23.36, 'Clipart': 42.84, 'Real World': 38.74, 'Product': 27.44}
+2025-06-27 20:03:54,187 [icarl.py] => Task 3, Epoch 27/200 => Loss 3.958, Loss_clf 1.262, Loss_kd 2.690, Loss_kernel 0.006, Train_accy 65.80
+2025-06-27 20:04:21,600 [icarl.py] => Task 3, Epoch 28/200 => Loss 3.930, Loss_clf 1.236, Loss_kd 2.688, Loss_kernel 0.006, Train_accy 66.87
+2025-06-27 20:04:51,344 [icarl.py] => Task 3, Epoch 29/200 => Loss 3.936, Loss_clf 1.235, Loss_kd 2.696, Loss_kernel 0.006, Train_accy 66.48
+2025-06-27 20:05:18,930 [icarl.py] => Task 3, Epoch 30/200 => Loss 3.958, Loss_clf 1.264, Loss_kd 2.688, Loss_kernel 0.006, Train_accy 65.79
+2025-06-27 20:06:03,657 [icarl.py] => Task 3, Epoch 31/200 => Loss 3.849, Loss_clf 1.178, Loss_kd 2.665, Loss_kernel 0.006, Train_accy 68.39, Test_accy {'Art': 24.09, 'Clipart': 44.26, 'Real World': 37.23, 'Product': 31.06}
+2025-06-27 20:06:31,212 [icarl.py] => Task 3, Epoch 32/200 => Loss 3.896, Loss_clf 1.183, Loss_kd 2.707, Loss_kernel 0.006, Train_accy 68.87
+2025-06-27 20:06:58,704 [icarl.py] => Task 3, Epoch 33/200 => Loss 3.850, Loss_clf 1.175, Loss_kd 2.669, Loss_kernel 0.006, Train_accy 68.60
+2025-06-27 20:07:25,751 [icarl.py] => Task 3, Epoch 34/200 => Loss 3.793, Loss_clf 1.129, Loss_kd 2.658, Loss_kernel 0.006, Train_accy 70.39
+2025-06-27 20:07:54,927 [icarl.py] => Task 3, Epoch 35/200 => Loss 3.845, Loss_clf 1.172, Loss_kd 2.667, Loss_kernel 0.006, Train_accy 69.28
+2025-06-27 20:08:40,428 [icarl.py] => Task 3, Epoch 36/200 => Loss 3.739, Loss_clf 1.083, Loss_kd 2.651, Loss_kernel 0.005, Train_accy 70.50, Test_accy {'Art': 25.06, 'Clipart': 46.38, 'Real World': 36.54, 'Product': 31.46}
+2025-06-27 20:09:07,838 [icarl.py] => Task 3, Epoch 37/200 => Loss 3.685, Loss_clf 1.044, Loss_kd 2.636, Loss_kernel 0.005, Train_accy 72.89
+2025-06-27 20:09:35,302 [icarl.py] => Task 3, Epoch 38/200 => Loss 3.660, Loss_clf 1.020, Loss_kd 2.635, Loss_kernel 0.005, Train_accy 72.88
+2025-06-27 20:10:02,539 [icarl.py] => Task 3, Epoch 39/200 => Loss 3.645, Loss_clf 1.011, Loss_kd 2.628, Loss_kernel 0.005, Train_accy 73.10
+2025-06-27 20:10:30,025 [icarl.py] => Task 3, Epoch 40/200 => Loss 3.704, Loss_clf 1.054, Loss_kd 2.644, Loss_kernel 0.005, Train_accy 71.85
+2025-06-27 20:11:14,254 [icarl.py] => Task 3, Epoch 41/200 => Loss 3.733, Loss_clf 1.080, Loss_kd 2.648, Loss_kernel 0.005, Train_accy 70.92, Test_accy {'Art': 24.33, 'Clipart': 46.38, 'Real World': 39.7, 'Product': 33.87}
+2025-06-27 20:11:41,800 [icarl.py] => Task 3, Epoch 42/200 => Loss 3.730, Loss_clf 1.073, Loss_kd 2.652, Loss_kernel 0.005, Train_accy 71.64
+2025-06-27 20:12:09,289 [icarl.py] => Task 3, Epoch 43/200 => Loss 3.695, Loss_clf 1.041, Loss_kd 2.649, Loss_kernel 0.005, Train_accy 71.92
+2025-06-27 20:12:36,325 [icarl.py] => Task 3, Epoch 44/200 => Loss 3.715, Loss_clf 1.053, Loss_kd 2.656, Loss_kernel 0.005, Train_accy 72.12
+2025-06-27 20:13:03,709 [icarl.py] => Task 3, Epoch 45/200 => Loss 3.585, Loss_clf 0.977, Loss_kd 2.603, Loss_kernel 0.005, Train_accy 74.58
+2025-06-27 20:13:47,385 [icarl.py] => Task 3, Epoch 46/200 => Loss 3.532, Loss_clf 0.915, Loss_kd 2.613, Loss_kernel 0.005, Train_accy 76.01, Test_accy {'Art': 23.11, 'Clipart': 44.96, 'Real World': 37.09, 'Product': 30.92}
+2025-06-27 20:14:14,737 [icarl.py] => Task 3, Epoch 47/200 => Loss 3.582, Loss_clf 0.959, Loss_kd 2.619, Loss_kernel 0.005, Train_accy 75.12
+2025-06-27 20:14:42,407 [icarl.py] => Task 3, Epoch 48/200 => Loss 3.575, Loss_clf 0.958, Loss_kd 2.611, Loss_kernel 0.005, Train_accy 75.22
+2025-06-27 20:15:10,118 [icarl.py] => Task 3, Epoch 49/200 => Loss 3.534, Loss_clf 0.918, Loss_kd 2.611, Loss_kernel 0.005, Train_accy 76.25
+2025-06-27 20:15:37,586 [icarl.py] => Task 3, Epoch 50/200 => Loss 3.532, Loss_clf 0.920, Loss_kd 2.607, Loss_kernel 0.005, Train_accy 75.53
+2025-06-27 20:16:21,934 [icarl.py] => Task 3, Epoch 51/200 => Loss 3.571, Loss_clf 0.962, Loss_kd 2.605, Loss_kernel 0.005, Train_accy 74.58, Test_accy {'Art': 23.36, 'Clipart': 42.7, 'Real World': 34.2, 'Product': 29.85}
+2025-06-27 20:16:49,853 [icarl.py] => Task 3, Epoch 52/200 => Loss 3.557, Loss_clf 0.935, Loss_kd 2.617, Loss_kernel 0.005, Train_accy 74.76
+2025-06-27 20:17:17,565 [icarl.py] => Task 3, Epoch 53/200 => Loss 3.568, Loss_clf 0.952, Loss_kd 2.611, Loss_kernel 0.005, Train_accy 74.81
+2025-06-27 20:17:45,155 [icarl.py] => Task 3, Epoch 54/200 => Loss 3.554, Loss_clf 0.936, Loss_kd 2.613, Loss_kernel 0.005, Train_accy 74.89
+2025-06-27 20:18:12,500 [icarl.py] => Task 3, Epoch 55/200 => Loss 3.532, Loss_clf 0.931, Loss_kd 2.596, Loss_kernel 0.005, Train_accy 74.96
+2025-06-27 20:18:56,775 [icarl.py] => Task 3, Epoch 56/200 => Loss 3.527, Loss_clf 0.921, Loss_kd 2.602, Loss_kernel 0.005, Train_accy 76.04, Test_accy {'Art': 24.82, 'Clipart': 43.97, 'Real World': 36.81, 'Product': 31.33}
+2025-06-27 20:19:24,054 [icarl.py] => Task 3, Epoch 57/200 => Loss 3.518, Loss_clf 0.903, Loss_kd 2.610, Loss_kernel 0.005, Train_accy 76.54
+2025-06-27 20:19:51,888 [icarl.py] => Task 3, Epoch 58/200 => Loss 3.474, Loss_clf 0.875, Loss_kd 2.595, Loss_kernel 0.004, Train_accy 76.78
+2025-06-27 20:20:19,587 [icarl.py] => Task 3, Epoch 59/200 => Loss 3.458, Loss_clf 0.872, Loss_kd 2.581, Loss_kernel 0.005, Train_accy 76.66
+2025-06-27 20:20:47,223 [icarl.py] => Task 3, Epoch 60/200 => Loss 3.486, Loss_clf 0.888, Loss_kd 2.594, Loss_kernel 0.005, Train_accy 76.10
+2025-06-27 20:21:31,622 [icarl.py] => Task 3, Epoch 61/200 => Loss 3.427, Loss_clf 0.844, Loss_kd 2.579, Loss_kernel 0.004, Train_accy 77.58, Test_accy {'Art': 25.3, 'Clipart': 45.82, 'Real World': 36.95, 'Product': 30.12}
+2025-06-27 20:21:59,222 [icarl.py] => Task 3, Epoch 62/200 => Loss 3.434, Loss_clf 0.849, Loss_kd 2.581, Loss_kernel 0.004, Train_accy 77.75
+2025-06-27 20:22:26,587 [icarl.py] => Task 3, Epoch 63/200 => Loss 3.431, Loss_clf 0.848, Loss_kd 2.578, Loss_kernel 0.004, Train_accy 77.76
+2025-06-27 20:22:56,176 [icarl.py] => Task 3, Epoch 64/200 => Loss 3.422, Loss_clf 0.836, Loss_kd 2.581, Loss_kernel 0.004, Train_accy 77.98
+2025-06-27 20:23:24,366 [icarl.py] => Task 3, Epoch 65/200 => Loss 3.428, Loss_clf 0.851, Loss_kd 2.573, Loss_kernel 0.004, Train_accy 78.01
+2025-06-27 20:24:08,995 [icarl.py] => Task 3, Epoch 66/200 => Loss 3.409, Loss_clf 0.827, Loss_kd 2.577, Loss_kernel 0.004, Train_accy 78.26, Test_accy {'Art': 25.55, 'Clipart': 47.8, 'Real World': 38.19, 'Product': 32.4}
+2025-06-27 20:24:36,341 [icarl.py] => Task 3, Epoch 67/200 => Loss 3.399, Loss_clf 0.813, Loss_kd 2.581, Loss_kernel 0.004, Train_accy 78.27
+2025-06-27 20:25:03,820 [icarl.py] => Task 3, Epoch 68/200 => Loss 3.407, Loss_clf 0.823, Loss_kd 2.579, Loss_kernel 0.004, Train_accy 78.44
+2025-06-27 20:25:31,326 [icarl.py] => Task 3, Epoch 69/200 => Loss 3.437, Loss_clf 0.852, Loss_kd 2.580, Loss_kernel 0.004, Train_accy 77.31
+2025-06-27 20:25:58,660 [icarl.py] => Task 3, Epoch 70/200 => Loss 3.344, Loss_clf 0.781, Loss_kd 2.559, Loss_kernel 0.004, Train_accy 78.95
+2025-06-27 20:26:42,942 [icarl.py] => Task 3, Epoch 71/200 => Loss 3.359, Loss_clf 0.784, Loss_kd 2.571, Loss_kernel 0.004, Train_accy 79.62, Test_accy {'Art': 23.36, 'Clipart': 44.11, 'Real World': 38.6, 'Product': 30.12}
+2025-06-27 20:27:10,473 [icarl.py] => Task 3, Epoch 72/200 => Loss 3.314, Loss_clf 0.754, Loss_kd 2.556, Loss_kernel 0.004, Train_accy 80.53
+2025-06-27 20:27:37,662 [icarl.py] => Task 3, Epoch 73/200 => Loss 3.280, Loss_clf 0.733, Loss_kd 2.542, Loss_kernel 0.004, Train_accy 80.52
+2025-06-27 20:28:05,862 [icarl.py] => Task 3, Epoch 74/200 => Loss 3.301, Loss_clf 0.746, Loss_kd 2.551, Loss_kernel 0.004, Train_accy 80.40
+2025-06-27 20:28:34,420 [icarl.py] => Task 3, Epoch 75/200 => Loss 3.256, Loss_clf 0.709, Loss_kd 2.543, Loss_kernel 0.004, Train_accy 80.55
+2025-06-27 20:29:21,226 [icarl.py] => Task 3, Epoch 76/200 => Loss 3.284, Loss_clf 0.728, Loss_kd 2.552, Loss_kernel 0.004, Train_accy 80.66, Test_accy {'Art': 25.55, 'Clipart': 49.36, 'Real World': 40.11, 'Product': 33.73}
+2025-06-27 20:29:48,994 [icarl.py] => Task 3, Epoch 77/200 => Loss 3.315, Loss_clf 0.745, Loss_kd 2.567, Loss_kernel 0.004, Train_accy 80.24
+2025-06-27 20:30:16,780 [icarl.py] => Task 3, Epoch 78/200 => Loss 3.296, Loss_clf 0.742, Loss_kd 2.549, Loss_kernel 0.004, Train_accy 81.09
+2025-06-27 20:30:44,336 [icarl.py] => Task 3, Epoch 79/200 => Loss 3.316, Loss_clf 0.753, Loss_kd 2.559, Loss_kernel 0.004, Train_accy 80.48
+2025-06-27 20:31:11,877 [icarl.py] => Task 3, Epoch 80/200 => Loss 3.268, Loss_clf 0.732, Loss_kd 2.533, Loss_kernel 0.004, Train_accy 80.67
+2025-06-27 20:31:55,950 [icarl.py] => Task 3, Epoch 81/200 => Loss 3.293, Loss_clf 0.734, Loss_kd 2.555, Loss_kernel 0.004, Train_accy 80.67, Test_accy {'Art': 25.06, 'Clipart': 41.84, 'Real World': 35.16, 'Product': 30.39}
+2025-06-27 20:32:23,012 [icarl.py] => Task 3, Epoch 82/200 => Loss 3.230, Loss_clf 0.701, Loss_kd 2.526, Loss_kernel 0.004, Train_accy 82.24
+2025-06-27 20:32:50,017 [icarl.py] => Task 3, Epoch 83/200 => Loss 3.261, Loss_clf 0.719, Loss_kd 2.538, Loss_kernel 0.004, Train_accy 81.46
+2025-06-27 20:33:17,392 [icarl.py] => Task 3, Epoch 84/200 => Loss 3.236, Loss_clf 0.686, Loss_kd 2.546, Loss_kernel 0.004, Train_accy 81.55
+2025-06-27 20:33:44,242 [icarl.py] => Task 3, Epoch 85/200 => Loss 3.251, Loss_clf 0.700, Loss_kd 2.548, Loss_kernel 0.004, Train_accy 81.29
+2025-06-27 20:34:28,422 [icarl.py] => Task 3, Epoch 86/200 => Loss 3.198, Loss_clf 0.666, Loss_kd 2.528, Loss_kernel 0.004, Train_accy 82.75, Test_accy {'Art': 25.79, 'Clipart': 50.21, 'Real World': 39.15, 'Product': 35.21}
+2025-06-27 20:34:55,902 [icarl.py] => Task 3, Epoch 87/200 => Loss 3.226, Loss_clf 0.693, Loss_kd 2.530, Loss_kernel 0.004, Train_accy 82.49
+2025-06-27 20:35:23,615 [icarl.py] => Task 3, Epoch 88/200 => Loss 3.127, Loss_clf 0.619, Loss_kd 2.504, Loss_kernel 0.004, Train_accy 83.62
+2025-06-27 20:35:50,715 [icarl.py] => Task 3, Epoch 89/200 => Loss 3.200, Loss_clf 0.672, Loss_kd 2.524, Loss_kernel 0.004, Train_accy 82.38
+2025-06-27 20:36:17,981 [icarl.py] => Task 3, Epoch 90/200 => Loss 3.134, Loss_clf 0.619, Loss_kd 2.512, Loss_kernel 0.003, Train_accy 84.39
+2025-06-27 20:37:02,412 [icarl.py] => Task 3, Epoch 91/200 => Loss 3.111, Loss_clf 0.606, Loss_kd 2.502, Loss_kernel 0.003, Train_accy 84.16, Test_accy {'Art': 26.03, 'Clipart': 46.1, 'Real World': 36.13, 'Product': 32.66}
+2025-06-27 20:37:29,883 [icarl.py] => Task 3, Epoch 92/200 => Loss 3.137, Loss_clf 0.626, Loss_kd 2.508, Loss_kernel 0.003, Train_accy 83.69
+2025-06-27 20:37:57,381 [icarl.py] => Task 3, Epoch 93/200 => Loss 3.133, Loss_clf 0.629, Loss_kd 2.501, Loss_kernel 0.003, Train_accy 83.06
+2025-06-27 20:38:24,564 [icarl.py] => Task 3, Epoch 94/200 => Loss 3.135, Loss_clf 0.631, Loss_kd 2.500, Loss_kernel 0.003, Train_accy 83.34
+2025-06-27 20:38:51,690 [icarl.py] => Task 3, Epoch 95/200 => Loss 3.142, Loss_clf 0.631, Loss_kd 2.508, Loss_kernel 0.003, Train_accy 83.45
+2025-06-27 20:39:36,102 [icarl.py] => Task 3, Epoch 96/200 => Loss 3.160, Loss_clf 0.639, Loss_kd 2.518, Loss_kernel 0.003, Train_accy 83.21, Test_accy {'Art': 28.71, 'Clipart': 49.65, 'Real World': 40.93, 'Product': 34.67}
+2025-06-27 20:40:02,469 [icarl.py] => Task 3, Epoch 97/200 => Loss 3.065, Loss_clf 0.573, Loss_kd 2.489, Loss_kernel 0.003, Train_accy 84.75
+2025-06-27 20:40:29,932 [icarl.py] => Task 3, Epoch 98/200 => Loss 3.155, Loss_clf 0.629, Loss_kd 2.522, Loss_kernel 0.003, Train_accy 83.58
+2025-06-27 20:40:57,489 [icarl.py] => Task 3, Epoch 99/200 => Loss 3.120, Loss_clf 0.605, Loss_kd 2.512, Loss_kernel 0.003, Train_accy 84.37
+2025-06-27 20:41:24,894 [icarl.py] => Task 3, Epoch 100/200 => Loss 3.060, Loss_clf 0.573, Loss_kd 2.483, Loss_kernel 0.003, Train_accy 84.99
+2025-06-27 20:42:08,720 [icarl.py] => Task 3, Epoch 101/200 => Loss 3.097, Loss_clf 0.607, Loss_kd 2.486, Loss_kernel 0.003, Train_accy 84.12, Test_accy {'Art': 27.01, 'Clipart': 47.38, 'Real World': 40.38, 'Product': 33.33}
+2025-06-27 20:42:36,014 [icarl.py] => Task 3, Epoch 102/200 => Loss 3.095, Loss_clf 0.595, Loss_kd 2.497, Loss_kernel 0.003, Train_accy 84.18
+2025-06-27 20:43:01,124 [icarl.py] => Task 3, Epoch 103/200 => Loss 3.015, Loss_clf 0.531, Loss_kd 2.480, Loss_kernel 0.003, Train_accy 86.25
+2025-06-27 20:43:28,557 [icarl.py] => Task 3, Epoch 104/200 => Loss 3.062, Loss_clf 0.577, Loss_kd 2.482, Loss_kernel 0.003, Train_accy 85.69
+2025-06-27 20:43:55,650 [icarl.py] => Task 3, Epoch 105/200 => Loss 3.060, Loss_clf 0.564, Loss_kd 2.493, Loss_kernel 0.003, Train_accy 85.06
+2025-06-27 20:44:40,117 [icarl.py] => Task 3, Epoch 106/200 => Loss 3.074, Loss_clf 0.565, Loss_kd 2.506, Loss_kernel 0.003, Train_accy 85.51, Test_accy {'Art': 26.52, 'Clipart': 46.67, 'Real World': 39.7, 'Product': 35.48}
+2025-06-27 20:45:07,904 [icarl.py] => Task 3, Epoch 107/200 => Loss 3.010, Loss_clf 0.532, Loss_kd 2.474, Loss_kernel 0.003, Train_accy 86.27
+2025-06-27 20:45:35,876 [icarl.py] => Task 3, Epoch 108/200 => Loss 3.000, Loss_clf 0.530, Loss_kd 2.467, Loss_kernel 0.003, Train_accy 85.99
+2025-06-27 20:46:02,321 [icarl.py] => Task 3, Epoch 109/200 => Loss 2.996, Loss_clf 0.519, Loss_kd 2.473, Loss_kernel 0.003, Train_accy 86.88
+2025-06-27 20:46:30,905 [icarl.py] => Task 3, Epoch 110/200 => Loss 3.000, Loss_clf 0.527, Loss_kd 2.469, Loss_kernel 0.003, Train_accy 86.53
+2025-06-27 20:47:14,897 [icarl.py] => Task 3, Epoch 111/200 => Loss 2.985, Loss_clf 0.506, Loss_kd 2.476, Loss_kernel 0.003, Train_accy 86.87, Test_accy {'Art': 28.22, 'Clipart': 50.07, 'Real World': 38.46, 'Product': 36.28}
+2025-06-27 20:47:42,194 [icarl.py] => Task 3, Epoch 112/200 => Loss 2.941, Loss_clf 0.481, Loss_kd 2.458, Loss_kernel 0.003, Train_accy 86.94
+2025-06-27 20:48:09,113 [icarl.py] => Task 3, Epoch 113/200 => Loss 2.962, Loss_clf 0.491, Loss_kd 2.468, Loss_kernel 0.003, Train_accy 86.82
+2025-06-27 20:48:36,053 [icarl.py] => Task 3, Epoch 114/200 => Loss 2.980, Loss_clf 0.509, Loss_kd 2.468, Loss_kernel 0.003, Train_accy 87.05
+2025-06-27 20:49:02,746 [icarl.py] => Task 3, Epoch 115/200 => Loss 2.962, Loss_clf 0.491, Loss_kd 2.469, Loss_kernel 0.003, Train_accy 87.51
+2025-06-27 20:49:45,939 [icarl.py] => Task 3, Epoch 116/200 => Loss 2.881, Loss_clf 0.431, Loss_kd 2.447, Loss_kernel 0.003, Train_accy 88.88, Test_accy {'Art': 25.06, 'Clipart': 48.51, 'Real World': 39.84, 'Product': 34.81}
+2025-06-27 20:50:12,543 [icarl.py] => Task 3, Epoch 117/200 => Loss 2.909, Loss_clf 0.452, Loss_kd 2.455, Loss_kernel 0.003, Train_accy 88.12
+2025-06-27 20:50:39,681 [icarl.py] => Task 3, Epoch 118/200 => Loss 2.936, Loss_clf 0.483, Loss_kd 2.450, Loss_kernel 0.003, Train_accy 87.65
+2025-06-27 20:51:06,683 [icarl.py] => Task 3, Epoch 119/200 => Loss 2.941, Loss_clf 0.485, Loss_kd 2.453, Loss_kernel 0.003, Train_accy 87.53
+2025-06-27 20:51:35,677 [icarl.py] => Task 3, Epoch 120/200 => Loss 2.932, Loss_clf 0.478, Loss_kd 2.451, Loss_kernel 0.003, Train_accy 87.62
+2025-06-27 20:52:18,188 [icarl.py] => Task 3, Epoch 121/200 => Loss 2.914, Loss_clf 0.456, Loss_kd 2.455, Loss_kernel 0.003, Train_accy 88.53, Test_accy {'Art': 28.47, 'Clipart': 49.79, 'Real World': 39.7, 'Product': 36.81}
+2025-06-27 20:52:44,585 [icarl.py] => Task 3, Epoch 122/200 => Loss 2.851, Loss_clf 0.418, Loss_kd 2.430, Loss_kernel 0.003, Train_accy 89.26
+2025-06-27 20:53:10,399 [icarl.py] => Task 3, Epoch 123/200 => Loss 2.862, Loss_clf 0.430, Loss_kd 2.429, Loss_kernel 0.003, Train_accy 88.39
+2025-06-27 20:53:36,665 [icarl.py] => Task 3, Epoch 124/200 => Loss 2.865, Loss_clf 0.431, Loss_kd 2.431, Loss_kernel 0.003, Train_accy 88.98
+2025-06-27 20:54:04,046 [icarl.py] => Task 3, Epoch 125/200 => Loss 2.885, Loss_clf 0.445, Loss_kd 2.438, Loss_kernel 0.003, Train_accy 88.46
+2025-06-27 20:54:47,713 [icarl.py] => Task 3, Epoch 126/200 => Loss 2.909, Loss_clf 0.457, Loss_kd 2.449, Loss_kernel 0.003, Train_accy 88.62, Test_accy {'Art': 28.47, 'Clipart': 52.34, 'Real World': 41.07, 'Product': 38.29}
+2025-06-27 20:55:14,156 [icarl.py] => Task 3, Epoch 127/200 => Loss 2.818, Loss_clf 0.396, Loss_kd 2.419, Loss_kernel 0.003, Train_accy 89.90
+2025-06-27 20:55:40,912 [icarl.py] => Task 3, Epoch 128/200 => Loss 2.832, Loss_clf 0.394, Loss_kd 2.436, Loss_kernel 0.003, Train_accy 90.11
+2025-06-27 20:56:07,445 [icarl.py] => Task 3, Epoch 129/200 => Loss 2.831, Loss_clf 0.402, Loss_kd 2.426, Loss_kernel 0.003, Train_accy 89.57
+2025-06-27 20:56:34,197 [icarl.py] => Task 3, Epoch 130/200 => Loss 2.853, Loss_clf 0.421, Loss_kd 2.430, Loss_kernel 0.003, Train_accy 89.40
+2025-06-27 20:57:17,528 [icarl.py] => Task 3, Epoch 131/200 => Loss 2.841, Loss_clf 0.403, Loss_kd 2.435, Loss_kernel 0.003, Train_accy 89.70, Test_accy {'Art': 26.03, 'Clipart': 50.07, 'Real World': 41.35, 'Product': 35.88}
+2025-06-27 20:57:43,944 [icarl.py] => Task 3, Epoch 132/200 => Loss 2.795, Loss_clf 0.373, Loss_kd 2.420, Loss_kernel 0.003, Train_accy 90.87
+2025-06-27 20:58:10,406 [icarl.py] => Task 3, Epoch 133/200 => Loss 2.782, Loss_clf 0.376, Loss_kd 2.404, Loss_kernel 0.003, Train_accy 90.75
+2025-06-27 20:58:37,629 [icarl.py] => Task 3, Epoch 134/200 => Loss 2.785, Loss_clf 0.375, Loss_kd 2.408, Loss_kernel 0.002, Train_accy 90.43
+2025-06-27 20:59:04,078 [icarl.py] => Task 3, Epoch 135/200 => Loss 2.783, Loss_clf 0.364, Loss_kd 2.417, Loss_kernel 0.002, Train_accy 91.06
+2025-06-27 20:59:47,751 [icarl.py] => Task 3, Epoch 136/200 => Loss 2.794, Loss_clf 0.377, Loss_kd 2.414, Loss_kernel 0.002, Train_accy 90.27, Test_accy {'Art': 28.95, 'Clipart': 52.62, 'Real World': 42.17, 'Product': 36.41}
+2025-06-27 21:00:13,857 [icarl.py] => Task 3, Epoch 137/200 => Loss 2.763, Loss_clf 0.347, Loss_kd 2.413, Loss_kernel 0.002, Train_accy 91.16
+2025-06-27 21:00:40,424 [icarl.py] => Task 3, Epoch 138/200 => Loss 2.729, Loss_clf 0.335, Loss_kd 2.392, Loss_kernel 0.002, Train_accy 91.49
+2025-06-27 21:01:07,230 [icarl.py] => Task 3, Epoch 139/200 => Loss 2.765, Loss_clf 0.355, Loss_kd 2.408, Loss_kernel 0.002, Train_accy 90.62
+2025-06-27 21:01:34,068 [icarl.py] => Task 3, Epoch 140/200 => Loss 2.742, Loss_clf 0.345, Loss_kd 2.395, Loss_kernel 0.002, Train_accy 91.12
+2025-06-27 21:02:17,319 [icarl.py] => Task 3, Epoch 141/200 => Loss 2.729, Loss_clf 0.340, Loss_kd 2.386, Loss_kernel 0.002, Train_accy 91.15, Test_accy {'Art': 27.01, 'Clipart': 52.62, 'Real World': 40.93, 'Product': 36.68}
+2025-06-27 21:02:43,634 [icarl.py] => Task 3, Epoch 142/200 => Loss 2.759, Loss_clf 0.353, Loss_kd 2.404, Loss_kernel 0.002, Train_accy 90.86
+2025-06-27 21:03:09,588 [icarl.py] => Task 3, Epoch 143/200 => Loss 2.717, Loss_clf 0.323, Loss_kd 2.392, Loss_kernel 0.002, Train_accy 92.10
+2025-06-27 21:03:37,834 [icarl.py] => Task 3, Epoch 144/200 => Loss 2.719, Loss_clf 0.325, Loss_kd 2.392, Loss_kernel 0.002, Train_accy 91.60
+2025-06-27 21:04:03,650 [icarl.py] => Task 3, Epoch 145/200 => Loss 2.690, Loss_clf 0.310, Loss_kd 2.379, Loss_kernel 0.002, Train_accy 92.43
+2025-06-27 21:04:48,142 [icarl.py] => Task 3, Epoch 146/200 => Loss 2.683, Loss_clf 0.303, Loss_kd 2.378, Loss_kernel 0.002, Train_accy 92.30, Test_accy {'Art': 26.03, 'Clipart': 50.92, 'Real World': 41.35, 'Product': 35.34}
+2025-06-27 21:05:14,150 [icarl.py] => Task 3, Epoch 147/200 => Loss 2.700, Loss_clf 0.326, Loss_kd 2.372, Loss_kernel 0.002, Train_accy 92.20
+2025-06-27 21:05:40,366 [icarl.py] => Task 3, Epoch 148/200 => Loss 2.697, Loss_clf 0.312, Loss_kd 2.383, Loss_kernel 0.002, Train_accy 91.99
+2025-06-27 21:06:06,500 [icarl.py] => Task 3, Epoch 149/200 => Loss 2.676, Loss_clf 0.299, Loss_kd 2.375, Loss_kernel 0.002, Train_accy 92.30
+2025-06-27 21:06:33,148 [icarl.py] => Task 3, Epoch 150/200 => Loss 2.691, Loss_clf 0.321, Loss_kd 2.367, Loss_kernel 0.002, Train_accy 91.57
+2025-06-27 21:07:15,272 [icarl.py] => Task 3, Epoch 151/200 => Loss 2.647, Loss_clf 0.267, Loss_kd 2.378, Loss_kernel 0.002, Train_accy 93.46, Test_accy {'Art': 26.52, 'Clipart': 51.35, 'Real World': 41.62, 'Product': 36.81}
+2025-06-27 21:07:40,973 [icarl.py] => Task 3, Epoch 152/200 => Loss 2.653, Loss_clf 0.284, Loss_kd 2.367, Loss_kernel 0.002, Train_accy 92.71
+2025-06-27 21:08:07,718 [icarl.py] => Task 3, Epoch 153/200 => Loss 2.698, Loss_clf 0.305, Loss_kd 2.392, Loss_kernel 0.002, Train_accy 92.00
+2025-06-27 21:08:34,235 [icarl.py] => Task 3, Epoch 154/200 => Loss 2.658, Loss_clf 0.284, Loss_kd 2.371, Loss_kernel 0.002, Train_accy 92.93
+2025-06-27 21:09:01,022 [icarl.py] => Task 3, Epoch 155/200 => Loss 2.677, Loss_clf 0.294, Loss_kd 2.381, Loss_kernel 0.002, Train_accy 92.34
+2025-06-27 21:09:43,857 [icarl.py] => Task 3, Epoch 156/200 => Loss 2.648, Loss_clf 0.276, Loss_kd 2.369, Loss_kernel 0.002, Train_accy 93.06, Test_accy {'Art': 27.98, 'Clipart': 51.21, 'Real World': 41.76, 'Product': 38.82}
+2025-06-27 21:10:09,056 [icarl.py] => Task 3, Epoch 157/200 => Loss 2.661, Loss_clf 0.280, Loss_kd 2.379, Loss_kernel 0.002, Train_accy 93.01
+2025-06-27 21:10:33,602 [icarl.py] => Task 3, Epoch 158/200 => Loss 2.607, Loss_clf 0.253, Loss_kd 2.352, Loss_kernel 0.002, Train_accy 93.64
+2025-06-27 21:11:00,421 [icarl.py] => Task 3, Epoch 159/200 => Loss 2.664, Loss_clf 0.276, Loss_kd 2.386, Loss_kernel 0.002, Train_accy 92.80
+2025-06-27 21:11:26,264 [icarl.py] => Task 3, Epoch 160/200 => Loss 2.653, Loss_clf 0.272, Loss_kd 2.379, Loss_kernel 0.002, Train_accy 93.21
+2025-06-27 21:12:10,561 [icarl.py] => Task 3, Epoch 161/200 => Loss 2.618, Loss_clf 0.253, Loss_kd 2.363, Loss_kernel 0.002, Train_accy 93.43, Test_accy {'Art': 27.25, 'Clipart': 50.07, 'Real World': 42.31, 'Product': 37.88}
+2025-06-27 21:12:36,949 [icarl.py] => Task 3, Epoch 162/200 => Loss 2.603, Loss_clf 0.247, Loss_kd 2.354, Loss_kernel 0.002, Train_accy 93.81
+2025-06-27 21:13:04,193 [icarl.py] => Task 3, Epoch 163/200 => Loss 2.614, Loss_clf 0.258, Loss_kd 2.354, Loss_kernel 0.002, Train_accy 93.51
+2025-06-27 21:13:29,889 [icarl.py] => Task 3, Epoch 164/200 => Loss 2.602, Loss_clf 0.241, Loss_kd 2.359, Loss_kernel 0.002, Train_accy 93.79
+2025-06-27 21:13:54,783 [icarl.py] => Task 3, Epoch 165/200 => Loss 2.585, Loss_clf 0.241, Loss_kd 2.342, Loss_kernel 0.002, Train_accy 93.65
+2025-06-27 21:14:37,300 [icarl.py] => Task 3, Epoch 166/200 => Loss 2.593, Loss_clf 0.237, Loss_kd 2.354, Loss_kernel 0.002, Train_accy 94.23, Test_accy {'Art': 27.25, 'Clipart': 52.06, 'Real World': 41.35, 'Product': 37.48}
+2025-06-27 21:15:03,499 [icarl.py] => Task 3, Epoch 167/200 => Loss 2.601, Loss_clf 0.243, Loss_kd 2.356, Loss_kernel 0.002, Train_accy 93.96
+2025-06-27 21:15:29,552 [icarl.py] => Task 3, Epoch 168/200 => Loss 2.603, Loss_clf 0.246, Loss_kd 2.355, Loss_kernel 0.002, Train_accy 93.79
+2025-06-27 21:15:56,085 [icarl.py] => Task 3, Epoch 169/200 => Loss 2.569, Loss_clf 0.218, Loss_kd 2.348, Loss_kernel 0.002, Train_accy 94.60
+2025-06-27 21:16:21,962 [icarl.py] => Task 3, Epoch 170/200 => Loss 2.548, Loss_clf 0.210, Loss_kd 2.336, Loss_kernel 0.002, Train_accy 94.52
+2025-06-27 21:17:05,802 [icarl.py] => Task 3, Epoch 171/200 => Loss 2.595, Loss_clf 0.235, Loss_kd 2.358, Loss_kernel 0.002, Train_accy 93.67, Test_accy {'Art': 27.49, 'Clipart': 52.48, 'Real World': 42.03, 'Product': 38.15}
+2025-06-27 21:17:31,919 [icarl.py] => Task 3, Epoch 172/200 => Loss 2.588, Loss_clf 0.221, Loss_kd 2.365, Loss_kernel 0.002, Train_accy 94.77
+2025-06-27 21:17:56,583 [icarl.py] => Task 3, Epoch 173/200 => Loss 2.573, Loss_clf 0.221, Loss_kd 2.351, Loss_kernel 0.002, Train_accy 94.90
+2025-06-27 21:18:23,274 [icarl.py] => Task 3, Epoch 174/200 => Loss 2.606, Loss_clf 0.240, Loss_kd 2.364, Loss_kernel 0.002, Train_accy 94.18
+2025-06-27 21:18:47,946 [icarl.py] => Task 3, Epoch 175/200 => Loss 2.567, Loss_clf 0.223, Loss_kd 2.342, Loss_kernel 0.002, Train_accy 94.23
+2025-06-27 21:19:30,582 [icarl.py] => Task 3, Epoch 176/200 => Loss 2.590, Loss_clf 0.229, Loss_kd 2.359, Loss_kernel 0.002, Train_accy 94.48, Test_accy {'Art': 27.25, 'Clipart': 52.48, 'Real World': 41.76, 'Product': 38.29}
+2025-06-27 21:19:55,518 [icarl.py] => Task 3, Epoch 177/200 => Loss 2.546, Loss_clf 0.199, Loss_kd 2.345, Loss_kernel 0.002, Train_accy 95.27
+2025-06-27 21:20:20,152 [icarl.py] => Task 3, Epoch 178/200 => Loss 2.517, Loss_clf 0.192, Loss_kd 2.323, Loss_kernel 0.002, Train_accy 95.21
+2025-06-27 21:20:47,207 [icarl.py] => Task 3, Epoch 179/200 => Loss 2.533, Loss_clf 0.208, Loss_kd 2.323, Loss_kernel 0.002, Train_accy 95.14
+2025-06-27 21:21:12,460 [icarl.py] => Task 3, Epoch 180/200 => Loss 2.531, Loss_clf 0.197, Loss_kd 2.332, Loss_kernel 0.002, Train_accy 95.28
+2025-06-27 21:21:54,134 [icarl.py] => Task 3, Epoch 181/200 => Loss 2.537, Loss_clf 0.190, Loss_kd 2.345, Loss_kernel 0.002, Train_accy 95.40, Test_accy {'Art': 27.98, 'Clipart': 52.77, 'Real World': 42.58, 'Product': 38.69}
+2025-06-27 21:22:20,535 [icarl.py] => Task 3, Epoch 182/200 => Loss 2.556, Loss_clf 0.210, Loss_kd 2.344, Loss_kernel 0.002, Train_accy 94.66
+2025-06-27 21:22:46,733 [icarl.py] => Task 3, Epoch 183/200 => Loss 2.554, Loss_clf 0.216, Loss_kd 2.336, Loss_kernel 0.002, Train_accy 94.63
+2025-06-27 21:23:13,826 [icarl.py] => Task 3, Epoch 184/200 => Loss 2.537, Loss_clf 0.198, Loss_kd 2.337, Loss_kernel 0.002, Train_accy 95.09
+2025-06-27 21:23:39,581 [icarl.py] => Task 3, Epoch 185/200 => Loss 2.551, Loss_clf 0.210, Loss_kd 2.339, Loss_kernel 0.002, Train_accy 95.04
+2025-06-27 21:24:20,838 [icarl.py] => Task 3, Epoch 186/200 => Loss 2.532, Loss_clf 0.199, Loss_kd 2.331, Loss_kernel 0.002, Train_accy 95.07, Test_accy {'Art': 28.47, 'Clipart': 53.19, 'Real World': 42.03, 'Product': 37.62}
+2025-06-27 21:24:46,120 [icarl.py] => Task 3, Epoch 187/200 => Loss 2.565, Loss_clf 0.208, Loss_kd 2.355, Loss_kernel 0.002, Train_accy 95.22
+2025-06-27 21:25:12,290 [icarl.py] => Task 3, Epoch 188/200 => Loss 2.550, Loss_clf 0.207, Loss_kd 2.341, Loss_kernel 0.002, Train_accy 94.97
+2025-06-27 21:25:36,465 [icarl.py] => Task 3, Epoch 189/200 => Loss 2.523, Loss_clf 0.188, Loss_kd 2.333, Loss_kernel 0.002, Train_accy 95.27
+2025-06-27 21:26:01,107 [icarl.py] => Task 3, Epoch 190/200 => Loss 2.541, Loss_clf 0.191, Loss_kd 2.347, Loss_kernel 0.002, Train_accy 95.34
+2025-06-27 21:26:44,218 [icarl.py] => Task 3, Epoch 191/200 => Loss 2.484, Loss_clf 0.163, Loss_kd 2.319, Loss_kernel 0.002, Train_accy 96.12, Test_accy {'Art': 27.98, 'Clipart': 53.05, 'Real World': 41.76, 'Product': 37.48}
+2025-06-27 21:27:07,443 [icarl.py] => Task 3, Epoch 192/200 => Loss 2.532, Loss_clf 0.194, Loss_kd 2.337, Loss_kernel 0.002, Train_accy 95.20
+2025-06-27 21:27:32,586 [icarl.py] => Task 3, Epoch 193/200 => Loss 2.556, Loss_clf 0.213, Loss_kd 2.341, Loss_kernel 0.002, Train_accy 94.74
+2025-06-27 21:27:58,649 [icarl.py] => Task 3, Epoch 194/200 => Loss 2.531, Loss_clf 0.195, Loss_kd 2.335, Loss_kernel 0.002, Train_accy 94.99
+2025-06-27 21:28:23,190 [icarl.py] => Task 3, Epoch 195/200 => Loss 2.507, Loss_clf 0.173, Loss_kd 2.332, Loss_kernel 0.002, Train_accy 95.68
+2025-06-27 21:29:03,846 [icarl.py] => Task 3, Epoch 196/200 => Loss 2.497, Loss_clf 0.171, Loss_kd 2.325, Loss_kernel 0.002, Train_accy 95.72, Test_accy {'Art': 28.71, 'Clipart': 53.9, 'Real World': 42.17, 'Product': 38.29}
+2025-06-27 21:29:29,071 [icarl.py] => Task 3, Epoch 197/200 => Loss 2.509, Loss_clf 0.178, Loss_kd 2.329, Loss_kernel 0.002, Train_accy 95.73
+2025-06-27 21:29:54,794 [icarl.py] => Task 3, Epoch 198/200 => Loss 2.535, Loss_clf 0.183, Loss_kd 2.350, Loss_kernel 0.002, Train_accy 95.23
+2025-06-27 21:30:19,879 [icarl.py] => Task 3, Epoch 199/200 => Loss 2.499, Loss_clf 0.172, Loss_kd 2.325, Loss_kernel 0.002, Train_accy 95.84
+2025-06-27 21:30:44,840 [icarl.py] => Task 3, Epoch 200/200 => Loss 2.514, Loss_clf 0.178, Loss_kd 2.335, Loss_kernel 0.002, Train_accy 95.49
+2025-06-27 21:30:44,841 [base.py] => Reducing exemplars...(25 per classes)
+2025-06-27 21:31:09,592 [base.py] => Constructing exemplars...(25 per classes)
+2025-06-27 21:32:13,581 [icarl.py] => Exemplar size: 1300
+2025-06-27 21:32:14,663 [trainer.py] => CNN [Art]: {'total': 28.95, '00-12': 37.63, '13-25': 17.24, '26-38': 16.51, '39-51': 41.8, 'old': 23.53, 'new': 41.8}
+2025-06-27 21:32:14,663 [trainer.py] => NME [Art]: {'total': 28.71, '00-12': 34.41, '13-25': 19.54, '26-38': 22.02, '39-51': 36.89, 'old': 25.26, 'new': 36.89}
+2025-06-27 21:32:14,663 [trainer.py] => CNN [Art] top1 curve: [52.69, 45.0, 31.49, 28.95]
+2025-06-27 21:32:14,664 [trainer.py] => CNN [Art] top5 curve: [77.42, 65.0, 59.17, 52.31]
+2025-06-27 21:32:14,664 [trainer.py] => NME [Art] top1 curve: [55.91, 47.22, 32.18, 28.71]
+2025-06-27 21:32:14,664 [trainer.py] => NME [Art] top5 curve: [84.95, 71.67, 59.86, 54.74]
+2025-06-27 21:32:14,664 [trainer.py] => Average Accuracy [Art] (CNN): 39.5325
+2025-06-27 21:32:14,664 [trainer.py] => Average Accuracy [Art] (NME): 41.004999999999995
+2025-06-27 21:32:14,664 [trainer.py] => CNN [Clipart]: {'total': 53.19, '00-12': 57.3, '13-25': 43.72, '26-38': 34.36, '39-51': 75.69, 'old': 45.42, 'new': 75.69}
+2025-06-27 21:32:14,664 [trainer.py] => NME [Clipart]: {'total': 53.76, '00-12': 57.87, '13-25': 45.36, '26-38': 38.04, '39-51': 72.38, 'old': 47.33, 'new': 72.38}
+2025-06-27 21:32:14,664 [trainer.py] => CNN [Clipart] top1 curve: [70.79, 67.59, 59.16, 53.19]
+2025-06-27 21:32:14,664 [trainer.py] => CNN [Clipart] top5 curve: [92.13, 85.6, 81.11, 73.05]
+2025-06-27 21:32:14,664 [trainer.py] => NME [Clipart] top1 curve: [70.22, 67.87, 60.11, 53.76]
+2025-06-27 21:32:14,664 [trainer.py] => NME [Clipart] top5 curve: [94.94, 87.53, 82.63, 74.89]
+2025-06-27 21:32:14,664 [trainer.py] => Average Accuracy [Clipart] (CNN): 62.682500000000005
+2025-06-27 21:32:14,664 [trainer.py] => Average Accuracy [Clipart] (NME): 62.99
+2025-06-27 21:32:14,664 [trainer.py] => CNN [Product]: {'total': 38.69, '00-12': 46.63, '13-25': 28.24, '26-38': 23.68, '39-51': 55.31, 'old': 33.45, 'new': 55.31}
+2025-06-27 21:32:14,664 [trainer.py] => NME [Product]: {'total': 40.56, '00-12': 44.23, '13-25': 31.76, '26-38': 33.68, '39-51': 51.96, 'old': 36.97, 'new': 51.96}
+2025-06-27 21:32:14,664 [trainer.py] => CNN [Product] top1 curve: [59.62, 49.21, 42.78, 38.69]
+2025-06-27 21:32:14,664 [trainer.py] => CNN [Product] top5 curve: [88.94, 75.93, 69.89, 66.13]
+2025-06-27 21:32:14,664 [trainer.py] => NME [Product] top1 curve: [58.17, 49.74, 46.48, 40.56]
+2025-06-27 21:32:14,664 [trainer.py] => NME [Product] top5 curve: [89.9, 78.57, 71.65, 67.07]
+2025-06-27 21:32:14,664 [trainer.py] => Average Accuracy [Product] (CNN): 47.575
+2025-06-27 21:32:14,664 [trainer.py] => Average Accuracy [Product] (NME): 48.7375
+2025-06-27 21:32:14,664 [trainer.py] => CNN [Real World]: {'total': 42.17, '00-12': 46.2, '13-25': 24.71, '26-38': 41.44, '39-51': 55.03, 'old': 37.66, 'new': 55.03}
+2025-06-27 21:32:14,664 [trainer.py] => NME [Real World]: {'total': 45.47, '00-12': 42.93, '13-25': 32.76, '26-38': 47.51, '39-51': 57.67, 'old': 41.19, 'new': 57.67}
+2025-06-27 21:32:14,664 [trainer.py] => CNN [Real World] top1 curve: [63.59, 51.12, 50.46, 42.17]
+2025-06-27 21:32:14,665 [trainer.py] => CNN [Real World] top5 curve: [89.67, 79.33, 76.07, 71.7]
+2025-06-27 21:32:14,665 [trainer.py] => NME [Real World] top1 curve: [63.04, 53.91, 50.09, 45.47]
+2025-06-27 21:32:14,665 [trainer.py] => NME [Real World] top5 curve: [94.57, 82.68, 77.92, 73.35]
+2025-06-27 21:32:14,665 [trainer.py] => Average Accuracy [Real World] (CNN): 51.835
+2025-06-27 21:32:14,665 [trainer.py] => Average Accuracy [Real World] (NME): 53.1275
+2025-06-27 21:32:14,665 [trainer.py] => NME Harmonic Mean : 41.5772
+2025-06-27 21:32:14,665 [trainer.py] => NME Macro Mean : 42.1250
+2025-06-27 21:32:14,665 [trainer.py] => CNN Harmonic Mean : 40.0163
+2025-06-27 21:32:14,665 [trainer.py] => CNN Macro Mean : 40.7500
+2025-06-27 21:32:14,665 [trainer.py] => All params: 21351362
+2025-06-27 21:32:14,666 [trainer.py] => Trainable params: 21351362
+2025-06-27 21:32:14,667 [icarl.py] => Learning on 52-65
+2025-06-27 21:33:00,416 [icarl.py] => Task 4, Epoch 1/200 => Loss 7.138, Loss_clf 3.674, Loss_kd 3.455, Loss_kernel 0.008, Train_accy 20.48, Test_accy {'Art': 7.3, 'Clipart': 14.56, 'Real World': 11.36, 'Product': 9.73}
+2025-06-27 21:33:26,427 [icarl.py] => Task 4, Epoch 2/200 => Loss 6.697, Loss_clf 3.189, Loss_kd 3.499, Loss_kernel 0.009, Train_accy 23.07
+2025-06-27 21:33:53,079 [icarl.py] => Task 4, Epoch 3/200 => Loss 6.170, Loss_clf 2.805, Loss_kd 3.358, Loss_kernel 0.007, Train_accy 29.82
+2025-06-27 21:34:20,504 [icarl.py] => Task 4, Epoch 4/200 => Loss 5.851, Loss_clf 2.572, Loss_kd 3.272, Loss_kernel 0.007, Train_accy 35.65
+2025-06-27 21:34:46,951 [icarl.py] => Task 4, Epoch 5/200 => Loss 5.708, Loss_clf 2.469, Loss_kd 3.232, Loss_kernel 0.006, Train_accy 36.22
+2025-06-27 21:35:32,546 [icarl.py] => Task 4, Epoch 6/200 => Loss 5.571, Loss_clf 2.378, Loss_kd 3.187, Loss_kernel 0.007, Train_accy 38.30, Test_accy {'Art': 15.38, 'Clipart': 29.79, 'Real World': 29.96, 'Product': 22.84}
+2025-06-27 21:35:58,740 [icarl.py] => Task 4, Epoch 7/200 => Loss 5.346, Loss_clf 2.198, Loss_kd 3.141, Loss_kernel 0.007, Train_accy 42.73
+2025-06-27 21:36:24,364 [icarl.py] => Task 4, Epoch 8/200 => Loss 5.265, Loss_clf 2.137, Loss_kd 3.122, Loss_kernel 0.006, Train_accy 44.27
+2025-06-27 21:36:50,535 [icarl.py] => Task 4, Epoch 9/200 => Loss 5.158, Loss_clf 2.069, Loss_kd 3.082, Loss_kernel 0.006, Train_accy 45.65
+2025-06-27 21:37:16,424 [icarl.py] => Task 4, Epoch 10/200 => Loss 4.998, Loss_clf 1.945, Loss_kd 3.047, Loss_kernel 0.006, Train_accy 48.34
+2025-06-27 21:38:02,216 [icarl.py] => Task 4, Epoch 11/200 => Loss 4.907, Loss_clf 1.875, Loss_kd 3.026, Loss_kernel 0.006, Train_accy 49.57, Test_accy {'Art': 17.16, 'Clipart': 35.61, 'Real World': 30.62, 'Product': 28.31}
+2025-06-27 21:38:28,601 [icarl.py] => Task 4, Epoch 12/200 => Loss 4.716, Loss_clf 1.733, Loss_kd 2.978, Loss_kernel 0.006, Train_accy 53.59
+2025-06-27 21:38:54,968 [icarl.py] => Task 4, Epoch 13/200 => Loss 4.705, Loss_clf 1.720, Loss_kd 2.980, Loss_kernel 0.006, Train_accy 53.35
+2025-06-27 21:39:21,609 [icarl.py] => Task 4, Epoch 14/200 => Loss 4.605, Loss_clf 1.648, Loss_kd 2.951, Loss_kernel 0.006, Train_accy 55.35
+2025-06-27 21:39:47,821 [icarl.py] => Task 4, Epoch 15/200 => Loss 4.565, Loss_clf 1.615, Loss_kd 2.944, Loss_kernel 0.006, Train_accy 56.79
+2025-06-27 21:40:33,306 [icarl.py] => Task 4, Epoch 16/200 => Loss 4.511, Loss_clf 1.570, Loss_kd 2.936, Loss_kernel 0.006, Train_accy 57.90, Test_accy {'Art': 17.75, 'Clipart': 36.28, 'Real World': 30.29, 'Product': 24.81}
+2025-06-27 21:40:59,002 [icarl.py] => Task 4, Epoch 17/200 => Loss 4.458, Loss_clf 1.537, Loss_kd 2.915, Loss_kernel 0.006, Train_accy 59.61
+2025-06-27 21:41:24,808 [icarl.py] => Task 4, Epoch 18/200 => Loss 4.390, Loss_clf 1.465, Loss_kd 2.920, Loss_kernel 0.006, Train_accy 60.05
+2025-06-27 21:41:50,733 [icarl.py] => Task 4, Epoch 19/200 => Loss 4.289, Loss_clf 1.416, Loss_kd 2.868, Loss_kernel 0.005, Train_accy 62.31
+2025-06-27 21:42:16,810 [icarl.py] => Task 4, Epoch 20/200 => Loss 4.129, Loss_clf 1.274, Loss_kd 2.850, Loss_kernel 0.005, Train_accy 65.32
+2025-06-27 21:43:01,759 [icarl.py] => Task 4, Epoch 21/200 => Loss 4.187, Loss_clf 1.321, Loss_kd 2.861, Loss_kernel 0.005, Train_accy 64.88, Test_accy {'Art': 16.37, 'Clipart': 38.97, 'Real World': 28.84, 'Product': 23.83}
+2025-06-27 21:43:27,314 [icarl.py] => Task 4, Epoch 22/200 => Loss 4.119, Loss_clf 1.271, Loss_kd 2.842, Loss_kernel 0.006, Train_accy 66.65
+2025-06-27 21:43:53,177 [icarl.py] => Task 4, Epoch 23/200 => Loss 4.112, Loss_clf 1.247, Loss_kd 2.860, Loss_kernel 0.005, Train_accy 66.35
+2025-06-27 21:44:19,173 [icarl.py] => Task 4, Epoch 24/200 => Loss 4.152, Loss_clf 1.290, Loss_kd 2.857, Loss_kernel 0.005, Train_accy 65.80
+2025-06-27 21:44:45,256 [icarl.py] => Task 4, Epoch 25/200 => Loss 4.114, Loss_clf 1.262, Loss_kd 2.847, Loss_kernel 0.005, Train_accy 66.76
+2025-06-27 21:45:30,317 [icarl.py] => Task 4, Epoch 26/200 => Loss 4.092, Loss_clf 1.246, Loss_kd 2.841, Loss_kernel 0.005, Train_accy 67.25, Test_accy {'Art': 18.74, 'Clipart': 36.84, 'Real World': 29.62, 'Product': 23.61}
+2025-06-27 21:45:57,125 [icarl.py] => Task 4, Epoch 27/200 => Loss 4.053, Loss_clf 1.203, Loss_kd 2.845, Loss_kernel 0.005, Train_accy 67.93
+2025-06-27 21:46:23,442 [icarl.py] => Task 4, Epoch 28/200 => Loss 3.956, Loss_clf 1.145, Loss_kd 2.806, Loss_kernel 0.005, Train_accy 69.16
+2025-06-27 21:46:49,558 [icarl.py] => Task 4, Epoch 29/200 => Loss 4.005, Loss_clf 1.168, Loss_kd 2.832, Loss_kernel 0.005, Train_accy 69.84
+2025-06-27 21:47:15,474 [icarl.py] => Task 4, Epoch 30/200 => Loss 3.992, Loss_clf 1.168, Loss_kd 2.819, Loss_kernel 0.005, Train_accy 68.79
+2025-06-27 21:48:00,411 [icarl.py] => Task 4, Epoch 31/200 => Loss 3.895, Loss_clf 1.087, Loss_kd 2.803, Loss_kernel 0.005, Train_accy 71.07, Test_accy {'Art': 22.68, 'Clipart': 37.18, 'Real World': 31.07, 'Product': 26.01}
+2025-06-27 21:48:26,680 [icarl.py] => Task 4, Epoch 32/200 => Loss 3.918, Loss_clf 1.111, Loss_kd 2.802, Loss_kernel 0.005, Train_accy 70.56
+2025-06-27 21:48:53,088 [icarl.py] => Task 4, Epoch 33/200 => Loss 3.867, Loss_clf 1.075, Loss_kd 2.788, Loss_kernel 0.005, Train_accy 71.33
+2025-06-27 21:49:19,788 [icarl.py] => Task 4, Epoch 34/200 => Loss 3.877, Loss_clf 1.063, Loss_kd 2.809, Loss_kernel 0.005, Train_accy 71.37
+2025-06-27 21:49:46,141 [icarl.py] => Task 4, Epoch 35/200 => Loss 3.831, Loss_clf 1.046, Loss_kd 2.781, Loss_kernel 0.005, Train_accy 72.93
+2025-06-27 21:50:31,482 [icarl.py] => Task 4, Epoch 36/200 => Loss 3.846, Loss_clf 1.038, Loss_kd 2.803, Loss_kernel 0.005, Train_accy 72.57, Test_accy {'Art': 22.09, 'Clipart': 38.86, 'Real World': 31.4, 'Product': 26.01}
+2025-06-27 21:50:57,130 [icarl.py] => Task 4, Epoch 37/200 => Loss 3.760, Loss_clf 0.982, Loss_kd 2.773, Loss_kernel 0.005, Train_accy 74.17
+2025-06-27 21:51:23,298 [icarl.py] => Task 4, Epoch 38/200 => Loss 3.757, Loss_clf 0.984, Loss_kd 2.769, Loss_kernel 0.005, Train_accy 73.90
+2025-06-27 21:51:49,317 [icarl.py] => Task 4, Epoch 39/200 => Loss 3.738, Loss_clf 0.966, Loss_kd 2.766, Loss_kernel 0.005, Train_accy 74.34
+2025-06-27 21:52:15,288 [icarl.py] => Task 4, Epoch 40/200 => Loss 3.729, Loss_clf 0.970, Loss_kd 2.755, Loss_kernel 0.005, Train_accy 74.35
+2025-06-27 21:53:00,743 [icarl.py] => Task 4, Epoch 41/200 => Loss 3.699, Loss_clf 0.938, Loss_kd 2.756, Loss_kernel 0.005, Train_accy 75.74, Test_accy {'Art': 21.89, 'Clipart': 41.1, 'Real World': 34.63, 'Product': 27.1}
+2025-06-27 21:53:26,542 [icarl.py] => Task 4, Epoch 42/200 => Loss 3.689, Loss_clf 0.915, Loss_kd 2.769, Loss_kernel 0.004, Train_accy 75.79
+2025-06-27 21:53:52,909 [icarl.py] => Task 4, Epoch 43/200 => Loss 3.679, Loss_clf 0.931, Loss_kd 2.744, Loss_kernel 0.005, Train_accy 75.06
+2025-06-27 21:54:18,916 [icarl.py] => Task 4, Epoch 44/200 => Loss 3.745, Loss_clf 0.980, Loss_kd 2.761, Loss_kernel 0.005, Train_accy 74.30
+2025-06-27 21:54:44,719 [icarl.py] => Task 4, Epoch 45/200 => Loss 3.687, Loss_clf 0.933, Loss_kd 2.750, Loss_kernel 0.004, Train_accy 75.88
+2025-06-27 21:55:29,932 [icarl.py] => Task 4, Epoch 46/200 => Loss 3.681, Loss_clf 0.925, Loss_kd 2.751, Loss_kernel 0.004, Train_accy 75.73, Test_accy {'Art': 19.33, 'Clipart': 35.95, 'Real World': 29.62, 'Product': 21.64}
+2025-06-27 21:55:56,473 [icarl.py] => Task 4, Epoch 47/200 => Loss 3.648, Loss_clf 0.899, Loss_kd 2.744, Loss_kernel 0.005, Train_accy 75.77
+2025-06-27 21:56:22,988 [icarl.py] => Task 4, Epoch 48/200 => Loss 3.619, Loss_clf 0.878, Loss_kd 2.736, Loss_kernel 0.004, Train_accy 77.05
+2025-06-27 21:56:49,001 [icarl.py] => Task 4, Epoch 49/200 => Loss 3.669, Loss_clf 0.916, Loss_kd 2.749, Loss_kernel 0.004, Train_accy 76.08
+2025-06-27 21:57:15,046 [icarl.py] => Task 4, Epoch 50/200 => Loss 3.612, Loss_clf 0.872, Loss_kd 2.735, Loss_kernel 0.005, Train_accy 77.05
+2025-06-27 21:58:00,245 [icarl.py] => Task 4, Epoch 51/200 => Loss 3.575, Loss_clf 0.846, Loss_kd 2.724, Loss_kernel 0.004, Train_accy 78.10, Test_accy {'Art': 23.08, 'Clipart': 37.74, 'Real World': 31.18, 'Product': 24.15}
+2025-06-27 21:58:26,297 [icarl.py] => Task 4, Epoch 52/200 => Loss 3.550, Loss_clf 0.834, Loss_kd 2.711, Loss_kernel 0.004, Train_accy 78.78
+2025-06-27 21:58:52,053 [icarl.py] => Task 4, Epoch 53/200 => Loss 3.564, Loss_clf 0.850, Loss_kd 2.709, Loss_kernel 0.004, Train_accy 78.16
+2025-06-27 21:59:17,773 [icarl.py] => Task 4, Epoch 54/200 => Loss 3.621, Loss_clf 0.877, Loss_kd 2.740, Loss_kernel 0.004, Train_accy 77.07
+2025-06-27 21:59:44,010 [icarl.py] => Task 4, Epoch 55/200 => Loss 3.636, Loss_clf 0.879, Loss_kd 2.753, Loss_kernel 0.004, Train_accy 76.35
+2025-06-27 22:00:30,131 [icarl.py] => Task 4, Epoch 56/200 => Loss 3.564, Loss_clf 0.834, Loss_kd 2.726, Loss_kernel 0.004, Train_accy 78.00, Test_accy {'Art': 19.33, 'Clipart': 32.03, 'Real World': 28.29, 'Product': 17.7}
+2025-06-27 22:00:55,995 [icarl.py] => Task 4, Epoch 57/200 => Loss 3.518, Loss_clf 0.805, Loss_kd 2.708, Loss_kernel 0.004, Train_accy 78.78
+2025-06-27 22:01:21,886 [icarl.py] => Task 4, Epoch 58/200 => Loss 3.540, Loss_clf 0.810, Loss_kd 2.727, Loss_kernel 0.004, Train_accy 78.49
+2025-06-27 22:01:47,940 [icarl.py] => Task 4, Epoch 59/200 => Loss 3.557, Loss_clf 0.829, Loss_kd 2.723, Loss_kernel 0.004, Train_accy 78.51
+2025-06-27 22:02:13,596 [icarl.py] => Task 4, Epoch 60/200 => Loss 3.490, Loss_clf 0.788, Loss_kd 2.698, Loss_kernel 0.004, Train_accy 78.44
+2025-06-27 22:03:01,550 [icarl.py] => Task 4, Epoch 61/200 => Loss 3.543, Loss_clf 0.818, Loss_kd 2.721, Loss_kernel 0.004, Train_accy 78.61, Test_accy {'Art': 20.32, 'Clipart': 38.07, 'Real World': 33.3, 'Product': 27.32}
+2025-06-27 22:03:28,440 [icarl.py] => Task 4, Epoch 62/200 => Loss 3.530, Loss_clf 0.815, Loss_kd 2.711, Loss_kernel 0.004, Train_accy 79.58
+2025-06-27 22:03:55,112 [icarl.py] => Task 4, Epoch 63/200 => Loss 3.531, Loss_clf 0.815, Loss_kd 2.713, Loss_kernel 0.004, Train_accy 78.94
+2025-06-27 22:04:21,672 [icarl.py] => Task 4, Epoch 64/200 => Loss 3.498, Loss_clf 0.790, Loss_kd 2.704, Loss_kernel 0.004, Train_accy 79.89
+2025-06-27 22:04:47,873 [icarl.py] => Task 4, Epoch 65/200 => Loss 3.441, Loss_clf 0.738, Loss_kd 2.699, Loss_kernel 0.004, Train_accy 80.50
+2025-06-27 22:05:34,184 [icarl.py] => Task 4, Epoch 66/200 => Loss 3.440, Loss_clf 0.736, Loss_kd 2.700, Loss_kernel 0.004, Train_accy 81.35, Test_accy {'Art': 20.71, 'Clipart': 38.86, 'Real World': 32.18, 'Product': 26.78}
+2025-06-27 22:06:01,059 [icarl.py] => Task 4, Epoch 67/200 => Loss 3.452, Loss_clf 0.750, Loss_kd 2.698, Loss_kernel 0.004, Train_accy 80.42
+2025-06-27 22:06:27,863 [icarl.py] => Task 4, Epoch 68/200 => Loss 3.416, Loss_clf 0.732, Loss_kd 2.681, Loss_kernel 0.004, Train_accy 80.14
+2025-06-27 22:06:54,634 [icarl.py] => Task 4, Epoch 69/200 => Loss 3.442, Loss_clf 0.746, Loss_kd 2.692, Loss_kernel 0.004, Train_accy 80.45
+2025-06-27 22:07:21,007 [icarl.py] => Task 4, Epoch 70/200 => Loss 3.415, Loss_clf 0.737, Loss_kd 2.675, Loss_kernel 0.004, Train_accy 80.56
+2025-06-27 22:08:06,374 [icarl.py] => Task 4, Epoch 71/200 => Loss 3.453, Loss_clf 0.752, Loss_kd 2.697, Loss_kernel 0.004, Train_accy 80.78, Test_accy {'Art': 18.74, 'Clipart': 38.52, 'Real World': 30.96, 'Product': 26.99}
+2025-06-27 22:08:33,382 [icarl.py] => Task 4, Epoch 72/200 => Loss 3.431, Loss_clf 0.741, Loss_kd 2.687, Loss_kernel 0.004, Train_accy 80.49
+2025-06-27 22:08:59,584 [icarl.py] => Task 4, Epoch 73/200 => Loss 3.462, Loss_clf 0.756, Loss_kd 2.702, Loss_kernel 0.004, Train_accy 79.78
+2025-06-27 22:09:25,947 [icarl.py] => Task 4, Epoch 74/200 => Loss 3.420, Loss_clf 0.719, Loss_kd 2.698, Loss_kernel 0.004, Train_accy 81.19
+2025-06-27 22:09:52,759 [icarl.py] => Task 4, Epoch 75/200 => Loss 3.453, Loss_clf 0.748, Loss_kd 2.701, Loss_kernel 0.004, Train_accy 80.46
+2025-06-27 22:10:38,950 [icarl.py] => Task 4, Epoch 76/200 => Loss 3.391, Loss_clf 0.705, Loss_kd 2.682, Loss_kernel 0.004, Train_accy 81.74, Test_accy {'Art': 22.49, 'Clipart': 38.41, 'Real World': 32.18, 'Product': 24.81}
+2025-06-27 22:11:05,519 [icarl.py] => Task 4, Epoch 77/200 => Loss 3.405, Loss_clf 0.719, Loss_kd 2.683, Loss_kernel 0.004, Train_accy 81.11
+2025-06-27 22:11:31,901 [icarl.py] => Task 4, Epoch 78/200 => Loss 3.289, Loss_clf 0.637, Loss_kd 2.649, Loss_kernel 0.003, Train_accy 83.22
+2025-06-27 22:11:57,537 [icarl.py] => Task 4, Epoch 79/200 => Loss 3.333, Loss_clf 0.662, Loss_kd 2.667, Loss_kernel 0.004, Train_accy 82.55
+2025-06-27 22:12:23,867 [icarl.py] => Task 4, Epoch 80/200 => Loss 3.320, Loss_clf 0.657, Loss_kd 2.660, Loss_kernel 0.003, Train_accy 82.49
+2025-06-27 22:13:10,116 [icarl.py] => Task 4, Epoch 81/200 => Loss 3.314, Loss_clf 0.658, Loss_kd 2.653, Loss_kernel 0.003, Train_accy 83.25, Test_accy {'Art': 21.7, 'Clipart': 41.32, 'Real World': 31.18, 'Product': 26.23}
+2025-06-27 22:13:35,915 [icarl.py] => Task 4, Epoch 82/200 => Loss 3.307, Loss_clf 0.651, Loss_kd 2.653, Loss_kernel 0.003, Train_accy 82.69
+2025-06-27 22:14:02,308 [icarl.py] => Task 4, Epoch 83/200 => Loss 3.287, Loss_clf 0.632, Loss_kd 2.651, Loss_kernel 0.003, Train_accy 84.22
+2025-06-27 22:14:27,982 [icarl.py] => Task 4, Epoch 84/200 => Loss 3.295, Loss_clf 0.644, Loss_kd 2.647, Loss_kernel 0.003, Train_accy 83.32
+2025-06-27 22:14:53,876 [icarl.py] => Task 4, Epoch 85/200 => Loss 3.245, Loss_clf 0.602, Loss_kd 2.639, Loss_kernel 0.003, Train_accy 83.78
+2025-06-27 22:15:39,949 [icarl.py] => Task 4, Epoch 86/200 => Loss 3.258, Loss_clf 0.611, Loss_kd 2.644, Loss_kernel 0.003, Train_accy 84.78, Test_accy {'Art': 22.49, 'Clipart': 41.43, 'Real World': 34.41, 'Product': 28.63}
+2025-06-27 22:16:06,415 [icarl.py] => Task 4, Epoch 87/200 => Loss 3.253, Loss_clf 0.587, Loss_kd 2.663, Loss_kernel 0.003, Train_accy 85.14
+2025-06-27 22:16:32,373 [icarl.py] => Task 4, Epoch 88/200 => Loss 3.215, Loss_clf 0.579, Loss_kd 2.633, Loss_kernel 0.003, Train_accy 85.20
+2025-06-27 22:16:58,169 [icarl.py] => Task 4, Epoch 89/200 => Loss 3.223, Loss_clf 0.597, Loss_kd 2.622, Loss_kernel 0.003, Train_accy 84.75
+2025-06-27 22:17:24,672 [icarl.py] => Task 4, Epoch 90/200 => Loss 3.214, Loss_clf 0.571, Loss_kd 2.640, Loss_kernel 0.003, Train_accy 84.88
+2025-06-27 22:18:10,405 [icarl.py] => Task 4, Epoch 91/200 => Loss 3.209, Loss_clf 0.576, Loss_kd 2.629, Loss_kernel 0.003, Train_accy 84.71, Test_accy {'Art': 22.49, 'Clipart': 39.98, 'Real World': 33.41, 'Product': 25.79}
+2025-06-27 22:18:36,800 [icarl.py] => Task 4, Epoch 92/200 => Loss 3.184, Loss_clf 0.558, Loss_kd 2.623, Loss_kernel 0.003, Train_accy 85.85
+2025-06-27 22:19:02,872 [icarl.py] => Task 4, Epoch 93/200 => Loss 3.166, Loss_clf 0.562, Loss_kd 2.601, Loss_kernel 0.003, Train_accy 85.34
+2025-06-27 22:19:29,056 [icarl.py] => Task 4, Epoch 94/200 => Loss 3.220, Loss_clf 0.590, Loss_kd 2.627, Loss_kernel 0.003, Train_accy 84.70
+2025-06-27 22:19:55,587 [icarl.py] => Task 4, Epoch 95/200 => Loss 3.182, Loss_clf 0.557, Loss_kd 2.623, Loss_kernel 0.003, Train_accy 85.71
+2025-06-27 22:20:43,183 [icarl.py] => Task 4, Epoch 96/200 => Loss 3.228, Loss_clf 0.574, Loss_kd 2.651, Loss_kernel 0.003, Train_accy 85.06, Test_accy {'Art': 22.09, 'Clipart': 42.55, 'Real World': 34.3, 'Product': 31.15}
+2025-06-27 22:21:10,578 [icarl.py] => Task 4, Epoch 97/200 => Loss 3.146, Loss_clf 0.532, Loss_kd 2.611, Loss_kernel 0.003, Train_accy 86.51
+2025-06-27 22:21:37,370 [icarl.py] => Task 4, Epoch 98/200 => Loss 3.120, Loss_clf 0.513, Loss_kd 2.604, Loss_kernel 0.003, Train_accy 86.32
+2025-06-27 22:22:03,192 [icarl.py] => Task 4, Epoch 99/200 => Loss 3.142, Loss_clf 0.529, Loss_kd 2.610, Loss_kernel 0.003, Train_accy 86.28
+2025-06-27 22:22:29,778 [icarl.py] => Task 4, Epoch 100/200 => Loss 3.123, Loss_clf 0.515, Loss_kd 2.605, Loss_kernel 0.003, Train_accy 86.29
+2025-06-27 22:23:16,390 [icarl.py] => Task 4, Epoch 101/200 => Loss 3.157, Loss_clf 0.539, Loss_kd 2.615, Loss_kernel 0.003, Train_accy 85.98, Test_accy {'Art': 22.29, 'Clipart': 42.44, 'Real World': 34.97, 'Product': 29.18}
+2025-06-27 22:23:42,398 [icarl.py] => Task 4, Epoch 102/200 => Loss 3.145, Loss_clf 0.535, Loss_kd 2.607, Loss_kernel 0.003, Train_accy 86.02
+2025-06-27 22:24:07,584 [icarl.py] => Task 4, Epoch 103/200 => Loss 3.077, Loss_clf 0.482, Loss_kd 2.592, Loss_kernel 0.003, Train_accy 87.80
+2025-06-27 22:24:33,446 [icarl.py] => Task 4, Epoch 104/200 => Loss 3.140, Loss_clf 0.524, Loss_kd 2.613, Loss_kernel 0.003, Train_accy 85.82
+2025-06-27 22:24:58,692 [icarl.py] => Task 4, Epoch 105/200 => Loss 3.083, Loss_clf 0.476, Loss_kd 2.604, Loss_kernel 0.003, Train_accy 88.02
+2025-06-27 22:25:44,154 [icarl.py] => Task 4, Epoch 106/200 => Loss 3.123, Loss_clf 0.510, Loss_kd 2.610, Loss_kernel 0.003, Train_accy 87.23, Test_accy {'Art': 21.89, 'Clipart': 40.2, 'Real World': 32.41, 'Product': 26.78}
+2025-06-27 22:26:10,589 [icarl.py] => Task 4, Epoch 107/200 => Loss 3.138, Loss_clf 0.515, Loss_kd 2.620, Loss_kernel 0.003, Train_accy 86.63
+2025-06-27 22:26:36,580 [icarl.py] => Task 4, Epoch 108/200 => Loss 3.098, Loss_clf 0.488, Loss_kd 2.607, Loss_kernel 0.003, Train_accy 87.65
+2025-06-27 22:27:02,236 [icarl.py] => Task 4, Epoch 109/200 => Loss 3.069, Loss_clf 0.478, Loss_kd 2.588, Loss_kernel 0.003, Train_accy 87.97
+2025-06-27 22:27:27,597 [icarl.py] => Task 4, Epoch 110/200 => Loss 2.974, Loss_clf 0.414, Loss_kd 2.557, Loss_kernel 0.002, Train_accy 89.10
+2025-06-27 22:28:13,375 [icarl.py] => Task 4, Epoch 111/200 => Loss 3.004, Loss_clf 0.434, Loss_kd 2.567, Loss_kernel 0.002, Train_accy 88.88, Test_accy {'Art': 24.65, 'Clipart': 41.77, 'Real World': 34.74, 'Product': 28.52}
+2025-06-27 22:28:39,492 [icarl.py] => Task 4, Epoch 112/200 => Loss 3.026, Loss_clf 0.436, Loss_kd 2.587, Loss_kernel 0.003, Train_accy 88.79
+2025-06-27 22:29:05,071 [icarl.py] => Task 4, Epoch 113/200 => Loss 3.023, Loss_clf 0.448, Loss_kd 2.572, Loss_kernel 0.003, Train_accy 88.06
+2025-06-27 22:29:31,318 [icarl.py] => Task 4, Epoch 114/200 => Loss 3.006, Loss_clf 0.428, Loss_kd 2.575, Loss_kernel 0.003, Train_accy 88.23
+2025-06-27 22:29:57,635 [icarl.py] => Task 4, Epoch 115/200 => Loss 3.055, Loss_clf 0.474, Loss_kd 2.579, Loss_kernel 0.003, Train_accy 87.73
+2025-06-27 22:30:44,014 [icarl.py] => Task 4, Epoch 116/200 => Loss 3.031, Loss_clf 0.459, Loss_kd 2.569, Loss_kernel 0.003, Train_accy 87.75, Test_accy {'Art': 23.67, 'Clipart': 43.23, 'Real World': 34.52, 'Product': 27.32}
+2025-06-27 22:31:09,946 [icarl.py] => Task 4, Epoch 117/200 => Loss 2.988, Loss_clf 0.408, Loss_kd 2.577, Loss_kernel 0.002, Train_accy 89.42
+2025-06-27 22:31:35,822 [icarl.py] => Task 4, Epoch 118/200 => Loss 2.980, Loss_clf 0.426, Loss_kd 2.552, Loss_kernel 0.002, Train_accy 89.56
+2025-06-27 22:32:02,026 [icarl.py] => Task 4, Epoch 119/200 => Loss 2.992, Loss_clf 0.419, Loss_kd 2.571, Loss_kernel 0.002, Train_accy 89.21
+2025-06-27 22:32:27,926 [icarl.py] => Task 4, Epoch 120/200 => Loss 2.974, Loss_clf 0.407, Loss_kd 2.565, Loss_kernel 0.002, Train_accy 89.22
+2025-06-27 22:33:13,593 [icarl.py] => Task 4, Epoch 121/200 => Loss 2.985, Loss_clf 0.425, Loss_kd 2.558, Loss_kernel 0.002, Train_accy 89.74, Test_accy {'Art': 23.47, 'Clipart': 42.22, 'Real World': 34.74, 'Product': 29.62}
+2025-06-27 22:33:38,902 [icarl.py] => Task 4, Epoch 122/200 => Loss 2.925, Loss_clf 0.381, Loss_kd 2.542, Loss_kernel 0.002, Train_accy 90.26
+2025-06-27 22:34:04,463 [icarl.py] => Task 4, Epoch 123/200 => Loss 2.935, Loss_clf 0.382, Loss_kd 2.551, Loss_kernel 0.002, Train_accy 89.84
+2025-06-27 22:34:30,654 [icarl.py] => Task 4, Epoch 124/200 => Loss 2.916, Loss_clf 0.364, Loss_kd 2.550, Loss_kernel 0.002, Train_accy 90.58
+2025-06-27 22:34:56,630 [icarl.py] => Task 4, Epoch 125/200 => Loss 2.943, Loss_clf 0.389, Loss_kd 2.552, Loss_kernel 0.002, Train_accy 89.77
+2025-06-27 22:35:41,846 [icarl.py] => Task 4, Epoch 126/200 => Loss 2.898, Loss_clf 0.338, Loss_kd 2.558, Loss_kernel 0.002, Train_accy 90.89, Test_accy {'Art': 25.05, 'Clipart': 45.8, 'Real World': 37.19, 'Product': 31.69}
+2025-06-27 22:36:08,040 [icarl.py] => Task 4, Epoch 127/200 => Loss 2.904, Loss_clf 0.366, Loss_kd 2.536, Loss_kernel 0.002, Train_accy 90.66
+2025-06-27 22:36:32,972 [icarl.py] => Task 4, Epoch 128/200 => Loss 2.926, Loss_clf 0.360, Loss_kd 2.564, Loss_kernel 0.002, Train_accy 90.47
+2025-06-27 22:36:59,276 [icarl.py] => Task 4, Epoch 129/200 => Loss 2.899, Loss_clf 0.362, Loss_kd 2.535, Loss_kernel 0.002, Train_accy 90.29
+2025-06-27 22:37:24,982 [icarl.py] => Task 4, Epoch 130/200 => Loss 2.884, Loss_clf 0.353, Loss_kd 2.529, Loss_kernel 0.002, Train_accy 90.94
+2025-06-27 22:38:09,887 [icarl.py] => Task 4, Epoch 131/200 => Loss 2.886, Loss_clf 0.360, Loss_kd 2.525, Loss_kernel 0.002, Train_accy 90.64, Test_accy {'Art': 23.67, 'Clipart': 44.23, 'Real World': 35.63, 'Product': 30.6}
+2025-06-27 22:38:35,132 [icarl.py] => Task 4, Epoch 132/200 => Loss 2.884, Loss_clf 0.346, Loss_kd 2.536, Loss_kernel 0.002, Train_accy 91.28
+2025-06-27 22:39:01,366 [icarl.py] => Task 4, Epoch 133/200 => Loss 2.928, Loss_clf 0.380, Loss_kd 2.546, Loss_kernel 0.002, Train_accy 90.20
+2025-06-27 22:39:27,401 [icarl.py] => Task 4, Epoch 134/200 => Loss 2.852, Loss_clf 0.321, Loss_kd 2.528, Loss_kernel 0.002, Train_accy 91.84
+2025-06-27 22:39:53,562 [icarl.py] => Task 4, Epoch 135/200 => Loss 2.823, Loss_clf 0.296, Loss_kd 2.525, Loss_kernel 0.002, Train_accy 92.82
+2025-06-27 22:40:37,732 [icarl.py] => Task 4, Epoch 136/200 => Loss 2.846, Loss_clf 0.310, Loss_kd 2.534, Loss_kernel 0.002, Train_accy 92.07, Test_accy {'Art': 26.23, 'Clipart': 44.79, 'Real World': 38.86, 'Product': 32.68}
+2025-06-27 22:41:03,185 [icarl.py] => Task 4, Epoch 137/200 => Loss 2.848, Loss_clf 0.326, Loss_kd 2.519, Loss_kernel 0.002, Train_accy 91.85
+2025-06-27 22:41:28,833 [icarl.py] => Task 4, Epoch 138/200 => Loss 2.780, Loss_clf 0.291, Loss_kd 2.487, Loss_kernel 0.002, Train_accy 92.30
+2025-06-27 22:41:54,649 [icarl.py] => Task 4, Epoch 139/200 => Loss 2.848, Loss_clf 0.317, Loss_kd 2.530, Loss_kernel 0.002, Train_accy 92.07
+2025-06-27 22:42:19,158 [icarl.py] => Task 4, Epoch 140/200 => Loss 2.810, Loss_clf 0.286, Loss_kd 2.522, Loss_kernel 0.002, Train_accy 92.60
+2025-06-27 22:43:03,994 [icarl.py] => Task 4, Epoch 141/200 => Loss 2.819, Loss_clf 0.301, Loss_kd 2.515, Loss_kernel 0.002, Train_accy 92.78, Test_accy {'Art': 24.85, 'Clipart': 45.24, 'Real World': 37.53, 'Product': 31.26}
+2025-06-27 22:43:29,953 [icarl.py] => Task 4, Epoch 142/200 => Loss 2.786, Loss_clf 0.281, Loss_kd 2.503, Loss_kernel 0.002, Train_accy 92.99
+2025-06-27 22:43:55,500 [icarl.py] => Task 4, Epoch 143/200 => Loss 2.823, Loss_clf 0.298, Loss_kd 2.523, Loss_kernel 0.002, Train_accy 92.65
+2025-06-27 22:44:22,063 [icarl.py] => Task 4, Epoch 144/200 => Loss 2.792, Loss_clf 0.284, Loss_kd 2.506, Loss_kernel 0.002, Train_accy 93.07
+2025-06-27 22:44:47,670 [icarl.py] => Task 4, Epoch 145/200 => Loss 2.802, Loss_clf 0.298, Loss_kd 2.502, Loss_kernel 0.002, Train_accy 92.53
+2025-06-27 22:45:33,470 [icarl.py] => Task 4, Epoch 146/200 => Loss 2.796, Loss_clf 0.288, Loss_kd 2.505, Loss_kernel 0.002, Train_accy 92.40, Test_accy {'Art': 25.25, 'Clipart': 42.78, 'Real World': 37.97, 'Product': 30.6}
+2025-06-27 22:45:58,304 [icarl.py] => Task 4, Epoch 147/200 => Loss 2.805, Loss_clf 0.287, Loss_kd 2.517, Loss_kernel 0.002, Train_accy 92.94
+2025-06-27 22:46:23,773 [icarl.py] => Task 4, Epoch 148/200 => Loss 2.747, Loss_clf 0.269, Loss_kd 2.476, Loss_kernel 0.002, Train_accy 93.21
+2025-06-27 22:46:49,704 [icarl.py] => Task 4, Epoch 149/200 => Loss 2.758, Loss_clf 0.258, Loss_kd 2.498, Loss_kernel 0.002, Train_accy 93.14
+2025-06-27 22:47:16,626 [icarl.py] => Task 4, Epoch 150/200 => Loss 2.743, Loss_clf 0.250, Loss_kd 2.491, Loss_kernel 0.002, Train_accy 93.81
+2025-06-27 22:48:02,046 [icarl.py] => Task 4, Epoch 151/200 => Loss 2.728, Loss_clf 0.245, Loss_kd 2.482, Loss_kernel 0.002, Train_accy 93.96, Test_accy {'Art': 26.04, 'Clipart': 46.02, 'Real World': 38.64, 'Product': 33.01}
+2025-06-27 22:48:26,568 [icarl.py] => Task 4, Epoch 152/200 => Loss 2.747, Loss_clf 0.255, Loss_kd 2.490, Loss_kernel 0.002, Train_accy 93.51
+2025-06-27 22:48:52,194 [icarl.py] => Task 4, Epoch 153/200 => Loss 2.735, Loss_clf 0.250, Loss_kd 2.483, Loss_kernel 0.002, Train_accy 93.85
+2025-06-27 22:49:16,629 [icarl.py] => Task 4, Epoch 154/200 => Loss 2.737, Loss_clf 0.255, Loss_kd 2.480, Loss_kernel 0.002, Train_accy 93.20
+2025-06-27 22:49:42,142 [icarl.py] => Task 4, Epoch 155/200 => Loss 2.747, Loss_clf 0.245, Loss_kd 2.500, Loss_kernel 0.002, Train_accy 94.22
+2025-06-27 22:50:27,740 [icarl.py] => Task 4, Epoch 156/200 => Loss 2.732, Loss_clf 0.238, Loss_kd 2.493, Loss_kernel 0.002, Train_accy 94.36, Test_accy {'Art': 26.63, 'Clipart': 44.79, 'Real World': 38.98, 'Product': 32.24}
+2025-06-27 22:50:55,765 [icarl.py] => Task 4, Epoch 157/200 => Loss 2.675, Loss_clf 0.213, Loss_kd 2.461, Loss_kernel 0.002, Train_accy 94.51
+2025-06-27 22:51:20,183 [icarl.py] => Task 4, Epoch 158/200 => Loss 2.743, Loss_clf 0.240, Loss_kd 2.501, Loss_kernel 0.002, Train_accy 94.17
+2025-06-27 22:51:45,694 [icarl.py] => Task 4, Epoch 159/200 => Loss 2.674, Loss_clf 0.203, Loss_kd 2.469, Loss_kernel 0.002, Train_accy 95.28
+2025-06-27 22:52:11,220 [icarl.py] => Task 4, Epoch 160/200 => Loss 2.658, Loss_clf 0.206, Loss_kd 2.451, Loss_kernel 0.002, Train_accy 94.85
+2025-06-27 22:52:57,634 [icarl.py] => Task 4, Epoch 161/200 => Loss 2.712, Loss_clf 0.233, Loss_kd 2.477, Loss_kernel 0.002, Train_accy 94.28, Test_accy {'Art': 26.04, 'Clipart': 45.35, 'Real World': 38.98, 'Product': 32.9}
+2025-06-27 22:53:23,126 [icarl.py] => Task 4, Epoch 162/200 => Loss 2.720, Loss_clf 0.234, Loss_kd 2.485, Loss_kernel 0.002, Train_accy 94.27
+2025-06-27 22:53:48,013 [icarl.py] => Task 4, Epoch 163/200 => Loss 2.722, Loss_clf 0.223, Loss_kd 2.497, Loss_kernel 0.002, Train_accy 94.86
+2025-06-27 22:54:13,079 [icarl.py] => Task 4, Epoch 164/200 => Loss 2.654, Loss_clf 0.191, Loss_kd 2.461, Loss_kernel 0.002, Train_accy 95.01
+2025-06-27 22:54:38,221 [icarl.py] => Task 4, Epoch 165/200 => Loss 2.666, Loss_clf 0.197, Loss_kd 2.468, Loss_kernel 0.002, Train_accy 95.03
+2025-06-27 22:55:23,769 [icarl.py] => Task 4, Epoch 166/200 => Loss 2.632, Loss_clf 0.190, Loss_kd 2.440, Loss_kernel 0.002, Train_accy 95.24, Test_accy {'Art': 26.82, 'Clipart': 45.02, 'Real World': 37.97, 'Product': 31.37}
+2025-06-27 22:55:48,244 [icarl.py] => Task 4, Epoch 167/200 => Loss 2.655, Loss_clf 0.188, Loss_kd 2.465, Loss_kernel 0.002, Train_accy 95.56
+2025-06-27 22:56:12,549 [icarl.py] => Task 4, Epoch 168/200 => Loss 2.643, Loss_clf 0.192, Loss_kd 2.450, Loss_kernel 0.002, Train_accy 95.39
+2025-06-27 22:56:37,912 [icarl.py] => Task 4, Epoch 169/200 => Loss 2.677, Loss_clf 0.216, Loss_kd 2.459, Loss_kernel 0.002, Train_accy 94.69
+2025-06-27 22:57:03,054 [icarl.py] => Task 4, Epoch 170/200 => Loss 2.690, Loss_clf 0.215, Loss_kd 2.473, Loss_kernel 0.002, Train_accy 94.53
+2025-06-27 22:57:46,342 [icarl.py] => Task 4, Epoch 171/200 => Loss 2.682, Loss_clf 0.190, Loss_kd 2.491, Loss_kernel 0.002, Train_accy 95.35, Test_accy {'Art': 24.46, 'Clipart': 45.46, 'Real World': 38.08, 'Product': 33.01}
+2025-06-27 22:58:13,517 [icarl.py] => Task 4, Epoch 172/200 => Loss 2.593, Loss_clf 0.169, Loss_kd 2.423, Loss_kernel 0.002, Train_accy 96.09
+2025-06-27 22:58:39,215 [icarl.py] => Task 4, Epoch 173/200 => Loss 2.663, Loss_clf 0.205, Loss_kd 2.457, Loss_kernel 0.002, Train_accy 95.47
+2025-06-27 22:59:04,828 [icarl.py] => Task 4, Epoch 174/200 => Loss 2.657, Loss_clf 0.195, Loss_kd 2.461, Loss_kernel 0.002, Train_accy 95.14
+2025-06-27 22:59:29,455 [icarl.py] => Task 4, Epoch 175/200 => Loss 2.653, Loss_clf 0.184, Loss_kd 2.467, Loss_kernel 0.002, Train_accy 95.58
+2025-06-27 23:00:13,123 [icarl.py] => Task 4, Epoch 176/200 => Loss 2.624, Loss_clf 0.166, Loss_kd 2.457, Loss_kernel 0.002, Train_accy 96.05, Test_accy {'Art': 26.63, 'Clipart': 45.58, 'Real World': 38.75, 'Product': 32.57}
+2025-06-27 23:00:35,980 [icarl.py] => Task 4, Epoch 177/200 => Loss 2.647, Loss_clf 0.190, Loss_kd 2.456, Loss_kernel 0.002, Train_accy 95.30
+2025-06-27 23:01:00,620 [icarl.py] => Task 4, Epoch 178/200 => Loss 2.646, Loss_clf 0.177, Loss_kd 2.467, Loss_kernel 0.002, Train_accy 96.07
+2025-06-27 23:01:25,647 [icarl.py] => Task 4, Epoch 179/200 => Loss 2.634, Loss_clf 0.182, Loss_kd 2.450, Loss_kernel 0.002, Train_accy 95.42
+2025-06-27 23:01:51,530 [icarl.py] => Task 4, Epoch 180/200 => Loss 2.656, Loss_clf 0.197, Loss_kd 2.457, Loss_kernel 0.002, Train_accy 95.02
+2025-06-27 23:02:36,267 [icarl.py] => Task 4, Epoch 181/200 => Loss 2.629, Loss_clf 0.184, Loss_kd 2.443, Loss_kernel 0.002, Train_accy 95.69, Test_accy {'Art': 25.84, 'Clipart': 45.13, 'Real World': 38.42, 'Product': 31.8}
+2025-06-27 23:03:00,247 [icarl.py] => Task 4, Epoch 182/200 => Loss 2.611, Loss_clf 0.162, Loss_kd 2.447, Loss_kernel 0.002, Train_accy 96.12
+2025-06-27 23:03:25,140 [icarl.py] => Task 4, Epoch 183/200 => Loss 2.622, Loss_clf 0.158, Loss_kd 2.462, Loss_kernel 0.002, Train_accy 96.34
+2025-06-27 23:03:50,501 [icarl.py] => Task 4, Epoch 184/200 => Loss 2.628, Loss_clf 0.174, Loss_kd 2.452, Loss_kernel 0.002, Train_accy 96.09
+2025-06-27 23:04:14,687 [icarl.py] => Task 4, Epoch 185/200 => Loss 2.609, Loss_clf 0.168, Loss_kd 2.440, Loss_kernel 0.002, Train_accy 95.96
+2025-06-27 23:04:59,611 [icarl.py] => Task 4, Epoch 186/200 => Loss 2.654, Loss_clf 0.176, Loss_kd 2.476, Loss_kernel 0.002, Train_accy 96.19, Test_accy {'Art': 26.43, 'Clipart': 46.02, 'Real World': 38.86, 'Product': 33.01}
+2025-06-27 23:05:25,253 [icarl.py] => Task 4, Epoch 187/200 => Loss 2.617, Loss_clf 0.167, Loss_kd 2.448, Loss_kernel 0.002, Train_accy 96.26
+2025-06-27 23:05:49,506 [icarl.py] => Task 4, Epoch 188/200 => Loss 2.597, Loss_clf 0.162, Loss_kd 2.434, Loss_kernel 0.002, Train_accy 96.21
+2025-06-27 23:06:14,697 [icarl.py] => Task 4, Epoch 189/200 => Loss 2.647, Loss_clf 0.188, Loss_kd 2.458, Loss_kernel 0.002, Train_accy 95.53
+2025-06-27 23:06:39,611 [icarl.py] => Task 4, Epoch 190/200 => Loss 2.617, Loss_clf 0.174, Loss_kd 2.442, Loss_kernel 0.002, Train_accy 95.96
+2025-06-27 23:07:22,261 [icarl.py] => Task 4, Epoch 191/200 => Loss 2.610, Loss_clf 0.165, Loss_kd 2.443, Loss_kernel 0.002, Train_accy 96.07, Test_accy {'Art': 25.84, 'Clipart': 46.36, 'Real World': 37.31, 'Product': 33.01}
+2025-06-27 23:07:44,534 [icarl.py] => Task 4, Epoch 192/200 => Loss 2.640, Loss_clf 0.176, Loss_kd 2.463, Loss_kernel 0.002, Train_accy 95.98
+2025-06-27 23:08:08,465 [icarl.py] => Task 4, Epoch 193/200 => Loss 2.583, Loss_clf 0.147, Loss_kd 2.434, Loss_kernel 0.002, Train_accy 96.82
+2025-06-27 23:08:31,423 [icarl.py] => Task 4, Epoch 194/200 => Loss 2.596, Loss_clf 0.140, Loss_kd 2.455, Loss_kernel 0.002, Train_accy 96.81
+2025-06-27 23:08:55,445 [icarl.py] => Task 4, Epoch 195/200 => Loss 2.594, Loss_clf 0.160, Loss_kd 2.433, Loss_kernel 0.002, Train_accy 95.95
+2025-06-27 23:09:35,844 [icarl.py] => Task 4, Epoch 196/200 => Loss 2.587, Loss_clf 0.140, Loss_kd 2.445, Loss_kernel 0.002, Train_accy 96.94, Test_accy {'Art': 27.02, 'Clipart': 46.14, 'Real World': 37.31, 'Product': 33.11}
+2025-06-27 23:10:00,533 [icarl.py] => Task 4, Epoch 197/200 => Loss 2.620, Loss_clf 0.167, Loss_kd 2.451, Loss_kernel 0.002, Train_accy 95.98
+2025-06-27 23:10:27,013 [icarl.py] => Task 4, Epoch 198/200 => Loss 2.609, Loss_clf 0.153, Loss_kd 2.455, Loss_kernel 0.002, Train_accy 96.62
+2025-06-27 23:10:51,097 [icarl.py] => Task 4, Epoch 199/200 => Loss 2.610, Loss_clf 0.160, Loss_kd 2.448, Loss_kernel 0.002, Train_accy 96.23
+2025-06-27 23:11:15,891 [icarl.py] => Task 4, Epoch 200/200 => Loss 2.613, Loss_clf 0.163, Loss_kd 2.449, Loss_kernel 0.002, Train_accy 95.77
+2025-06-27 23:11:15,892 [base.py] => Reducing exemplars...(20 per classes)
+2025-06-27 23:11:48,158 [base.py] => Constructing exemplars...(20 per classes)
+2025-06-27 23:12:56,308 [icarl.py] => Exemplar size: 1300
+2025-06-27 23:12:57,368 [trainer.py] => CNN [Art]: {'total': 25.84, '00-12': 36.56, '13-25': 16.09, '26-38': 13.76, '39-51': 14.75, '52-64': 52.08, 'old': 19.71, 'new': 52.08}
+2025-06-27 23:12:57,369 [trainer.py] => NME [Art]: {'total': 28.8, '00-12': 36.56, '13-25': 19.54, '26-38': 19.27, '39-51': 21.31, '52-64': 50.0, 'old': 23.84, 'new': 50.0}
+2025-06-27 23:12:57,369 [trainer.py] => CNN [Art] top1 curve: [52.69, 45.0, 31.49, 28.95, 25.84]
+2025-06-27 23:12:57,369 [trainer.py] => CNN [Art] top5 curve: [77.42, 65.0, 59.17, 52.31, 46.55]
+2025-06-27 23:12:57,369 [trainer.py] => NME [Art] top1 curve: [55.91, 47.22, 32.18, 28.71, 28.8]
+2025-06-27 23:12:57,369 [trainer.py] => NME [Art] top5 curve: [84.95, 71.67, 59.86, 54.74, 47.53]
+2025-06-27 23:12:57,370 [trainer.py] => Average Accuracy [Art] (CNN): 36.794
+2025-06-27 23:12:57,370 [trainer.py] => Average Accuracy [Art] (NME): 38.564
+2025-06-27 23:12:57,370 [trainer.py] => CNN [Clipart]: {'total': 46.14, '00-12': 48.88, '13-25': 42.08, '26-38': 26.38, '39-51': 50.83, '52-64': 60.11, 'old': 42.41, 'new': 60.11}
+2025-06-27 23:12:57,370 [trainer.py] => NME [Clipart]: {'total': 48.04, '00-12': 51.12, '13-25': 44.26, '26-38': 28.83, '39-51': 56.91, '52-64': 56.91, 'old': 45.67, 'new': 56.91}
+2025-06-27 23:12:57,370 [trainer.py] => CNN [Clipart] top1 curve: [70.79, 67.59, 59.16, 53.19, 46.14]
+2025-06-27 23:12:57,370 [trainer.py] => CNN [Clipart] top5 curve: [92.13, 85.6, 81.11, 73.05, 71.0]
+2025-06-27 23:12:57,370 [trainer.py] => NME [Clipart] top1 curve: [70.22, 67.87, 60.11, 53.76, 48.04]
+2025-06-27 23:12:57,370 [trainer.py] => NME [Clipart] top5 curve: [94.94, 87.53, 82.63, 74.89, 70.66]
+2025-06-27 23:12:57,371 [trainer.py] => Average Accuracy [Clipart] (CNN): 59.374
+2025-06-27 23:12:57,371 [trainer.py] => Average Accuracy [Clipart] (NME): 60.0
+2025-06-27 23:12:57,371 [trainer.py] => CNN [Product]: {'total': 32.79, '00-12': 42.31, '13-25': 27.65, '26-38': 20.53, '39-51': 31.28, '52-64': 41.67, 'old': 30.79, 'new': 41.67}
+2025-06-27 23:12:57,371 [trainer.py] => NME [Product]: {'total': 36.61, '00-12': 41.35, '13-25': 27.65, '26-38': 32.11, '39-51': 36.31, '52-64': 45.24, 'old': 34.67, 'new': 45.24}
+2025-06-27 23:12:57,371 [trainer.py] => CNN [Product] top1 curve: [59.62, 49.21, 42.78, 38.69, 32.79]
+2025-06-27 23:12:57,371 [trainer.py] => CNN [Product] top5 curve: [88.94, 75.93, 69.89, 66.13, 61.42]
+2025-06-27 23:12:57,371 [trainer.py] => NME [Product] top1 curve: [58.17, 49.74, 46.48, 40.56, 36.61]
+2025-06-27 23:12:57,371 [trainer.py] => NME [Product] top5 curve: [89.9, 78.57, 71.65, 67.07, 62.19]
+2025-06-27 23:12:57,371 [trainer.py] => Average Accuracy [Product] (CNN): 44.618
+2025-06-27 23:12:57,372 [trainer.py] => Average Accuracy [Product] (NME): 46.312
+2025-06-27 23:12:57,372 [trainer.py] => CNN [Real World]: {'total': 37.64, '00-12': 38.04, '13-25': 24.71, '26-38': 33.7, '39-51': 33.86, '52-64': 58.82, 'old': 32.69, 'new': 58.82}
+2025-06-27 23:12:57,372 [trainer.py] => NME [Real World]: {'total': 41.54, '00-12': 39.13, '13-25': 27.01, '26-38': 40.33, '39-51': 41.27, '52-64': 60.59, 'old': 37.09, 'new': 60.59}
+2025-06-27 23:12:57,372 [trainer.py] => CNN [Real World] top1 curve: [63.59, 51.12, 50.46, 42.17, 37.64]
+2025-06-27 23:12:57,372 [trainer.py] => CNN [Real World] top5 curve: [89.67, 79.33, 76.07, 71.7, 66.93]
+2025-06-27 23:12:57,372 [trainer.py] => NME [Real World] top1 curve: [63.04, 53.91, 50.09, 45.47, 41.54]
+2025-06-27 23:12:57,372 [trainer.py] => NME [Real World] top5 curve: [94.57, 82.68, 77.92, 73.35, 69.49]
+2025-06-27 23:12:57,372 [trainer.py] => Average Accuracy [Real World] (CNN): 48.996
+2025-06-27 23:12:57,372 [trainer.py] => Average Accuracy [Real World] (NME): 50.81
+2025-06-27 23:12:57,373 [trainer.py] => NME Harmonic Mean : 37.9816
+2025-06-27 23:12:57,373 [trainer.py] => NME Macro Mean : 38.7475
+2025-06-27 23:12:57,373 [trainer.py] => CNN Harmonic Mean : 34.5636
+2025-06-27 23:12:57,373 [trainer.py] => CNN Macro Mean : 35.6025
+2025-06-27 23:12:57,375 [trainer.py] => Forgetting (CNN) [Art]: 21.5875
+2025-06-27 23:12:57,376 [trainer.py] => Forgetting (CNN) [Clipart]: 26.054999999999996
+2025-06-27 23:12:57,376 [trainer.py] => Forgetting (CNN) [Product]: 17.615
+2025-06-27 23:12:57,377 [trainer.py] => Forgetting (CNN) [Real World]: 22.1275
+2025-06-27 23:12:57,378 [trainer.py] => Forgetting (NME) [Art]: 19.47
+2025-06-27 23:12:57,378 [trainer.py] => Forgetting (NME) [Clipart]: 20.9025
+2025-06-27 23:12:57,378 [trainer.py] => Forgetting (NME) [Product]: 15.04
+2025-06-27 23:12:57,378 [trainer.py] => Forgetting (NME) [Real World]: 20.174999999999997
+'13_product_art_top1':[52.69, 45.0, 31.49, 28.95, 25.84],
+'13_product_art_top5':[77.42, 65.0, 59.17, 52.31, 46.55],
+'13_product_clipart_top1':[70.79, 67.59, 59.16, 53.19, 46.14],
+'13_product_clipart_top5':[92.13, 85.6, 81.11, 73.05, 71.0],
+'13_product_product_top1':[59.62, 49.21, 42.78, 38.69, 32.79],
+'13_product_product_top5':[88.94, 75.93, 69.89, 66.13, 61.42],
+'13_product_real world_top1':[63.59, 51.12, 50.46, 42.17, 37.64],
+'13_product_real world_top5':[89.67, 79.33, 76.07, 71.7, 66.93],

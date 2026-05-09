@@ -1,0 +1,46 @@
+{
+    "prefix": "reproduce",
+    "dataset": "officehome",
+    "device": [
+        "2"
+    ],
+    "topk": 5,
+
+    "inter_refinement": true,
+    "intra_refinement": true,
+    "inter_ref_high": false,
+    "intra_ref_high": true,
+    "lamda_ref": 0.15,
+    "kernel": true,
+    "k_cosine": false,
+    "k_tstd": true,
+    "lamda_kernel": 0.005,
+
+    "EPSILON": 1e-08,
+    "batch_size": 200,
+    "init_epoch": 200,
+    "epochs": 200,
+    "memory_size": 1300,
+    "memory_per_class": 20,
+    "learning_rate": 0.1,
+    "init_weight_decay": 0.0005,
+    "weight_decay": 0.0002,
+    "T": 2,
+    "num_workers": 2,
+    "fixed_memory": false,
+    "shuffle": true,
+    "init_cls": 13,
+    "increment": 13,
+    "model_name": "icarl_corf",
+    "convnet_type": "resnet34",
+    "seed": [
+        1993
+    ],
+    "source_domain": [
+        "Art",
+        "Clipart",
+        "Product"
+    ],
+    "target_domain": "Real World",
+    "resume": false
+}
