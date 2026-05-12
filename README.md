@@ -19,7 +19,7 @@
 
 <div align="center">
     
-  <a href="https://tex.nju.edu.cn/share/92c1ef8b570543c09e563daf5c4762cc">
+  <a href="https://arxiv.org/abs/2605.08839">
     <img src="https://img.shields.io/badge/Paper-red" alt="arXiv">
   </a>
 
@@ -44,7 +44,7 @@ The code repository for "Cross-Sample Relational Fusion: Unifying Domain General
 
 [05/2026] Code has been released.
 
-[05/2026] [arXiv]() paper has been released.
+[05/2026] [arXiv](https://arxiv.org/abs/2605.08839) paper has been released.
 
 
 # 📝 Introduction
